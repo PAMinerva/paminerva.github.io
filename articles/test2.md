@@ -5,11 +5,11 @@ In relazione al calcolo del reciproco della radice quadrata $$y = \frac{1}{\sqrt
 $$y_{i+1} = y_i - \frac{y_i^{-2} - x}{-2y_i^{-3}} = y_i - \frac{y_i^{-2}}{-2y_i^{-3}} + \frac{x}{2y_i^{-3}} =\\ y_i - \frac{y_i}{-2} + \frac{xy_i^3}{2} = y_i - \frac{y_i}{2}(xy_i^2 - 1) = \frac{2y_i - y_i(xy_i^2 - 1)}{2} =\\ \frac{2y_i - xy_i^3 + y_i}{2} = \frac{3y_i - xy_i^3}{2}= \frac{3y_i}{2} - \frac{xy_i^3}{2} = y_i(\frac{3}{2} - \frac{x}{2}y_i^2)$$
 
 &&\begin{align}\label{eq:1}m &= \frac{M}{L}, \quad L =  2^{Mb} \\
-e &= E - B\label{eq:2}\end{align}&&
+e &= E - B{align}&&
 
-$$\begin{equation}\label{eq:3}T(\mathbf{b}) = T(b_0\mathbf{v_0} + b_1\mathbf{v_1} + \cdots + b_{n-1}\mathbf{v_{n-1}}) = b_0T(\mathbf{v_0}) + b_1T(\mathbf{v_1}) + \cdots + b_{n-1}T(\mathbf{v_{n-1}})\end{equation}$$
+$$\begin{equation}\label{eq:2}T(\mathbf{b}) = T(b_0\mathbf{v_0} + b_1\mathbf{v_1} + \cdots + b_{n-1}\mathbf{v_{n-1}}) = b_0T(\mathbf{v_0}) + b_1T(\mathbf{v_1}) + \cdots + b_{n-1}T(\mathbf{v_{n-1}})\end{equation}$$
 
-Sostituendo $$\eqref{eq:1}$$ in $$\eqref{eq:3}$$ si ha che
+Sostituendo $$\eqref{eq:1}$$ in $$\eqref{eq:2}$$ si ha che
 
 $$X_{AP}^2 + Y_{AP}^2 = (X_{AP} - X_{AB})^2 + (Y_{AP} - Y_{AB})^2$$
 $$X_{AP}^2 + Y_{AP}^2 = X_{AP}^2 - 2X_{AP}X_{AB} + X_{AB}^2 + Y_{AP}^2 - 2Y_{AP}Y_{AB} + Y_{AB}^2$$
