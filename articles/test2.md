@@ -1,2 +1,7 @@
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-you can use an inline formula $$\forall x \in R$$ like this one
+
+In relazione al calcolo del reciproco della radice quadrata $y = \frac{1}{\sqrt x} = x^{-1/2}$, si può trovare $y$ come radice positiva dell'equazione $\frac{1}{y^2} - x = 0$, ottenuta quadrando e moltiplicando per $\frac{x}{y^2}$ entrambi i membri dell'equazione precedente. La relazione di ricorrenza diventa quindi (con $x$ fissato dato che si tratta del valore sotto il segno di radice di cui vogliamo trovare la radice, appunto)
+
+\[y_{i+1} = y_i - \frac{y_i^{-2} - x}{-2y_i^{-3}} = y_i - \frac{y_i^{-2}}{-2y_i^{-3}} + \frac{x}{2y_i^{-3}} =\\ y_i - \frac{y_i}{-2} + \frac{xy_i^3}{2} = y_i - \frac{y_i}{2}(xy_i^2 - 1) = \frac{2y_i - y_i(xy_i^2 - 1)}{2} =\\ \frac{2y_i - xy_i^3 + y_i}{2} = \frac{3y_i - xy_i^3}{2}= \frac{3y_i}{2} - \frac{xy_i^3}{2} = y_i(\frac{3}{2} - \frac{x}{2}y_i^2)\]
+
+che è esattamente quanto calcolato dall'istruzione alla riga 7 (con l'ausilio dell'istruzione alla riga 3) di FastInvSqrt e che fornisce all'iterazione successiva (se esiste) una approssimazione migliore del reciproco della radice quadrata ($y_{i+1}$) di quella ottenuta dall'iterazione precedente ($y_i$). In questo caso non c'è una iterazione precedente e si vedrà successivamente come l'istruzione alla riga 7 ottiene tale valore. Tre delle sei istruzioni (le due descritte sopra più return alla riga 8) sono state chiarite. Non resta che vedere le altre tre, le più misteriose.
