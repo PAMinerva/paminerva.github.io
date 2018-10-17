@@ -16,4 +16,5 @@ $$X_{AP}^2 + Y_{AP}^2 = (X_{AP} - X_{AB})^2 + (Y_{AP} - Y_{AB})^2$$
 $$X_{AP}^2 + Y_{AP}^2 = X_{AP}^2 - 2X_{AP}X_{AB} + X_{AB}^2 + Y_{AP}^2 - 2Y_{AP}Y_{AB} + Y_{AB}^2$$
 $$X_{AB}^2 + Y_{AB}^2 = 2X_{AP}X_{AB} + 2Y_{AP}Y_{AB}$$
 $$X_{AB}^2 + Y_{AB}^2 = 2(X_{AP}X_{AB} + Y_{AP}Y_{AB})$$
+
 $$\begin{equation}\label{eq:3}X_{AB}^2 + Y_{AB}^2 = |\overrightarrow{AB}|^2 = |(B - A)|^2 = |(x_b - x_a) - (y_b - y_a)|^2 = 2(X_{AP}X_{AB} + Y_{AP}Y_{AB})\end{equation}$$
