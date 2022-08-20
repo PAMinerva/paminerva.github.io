@@ -51,4 +51,4 @@ vec3.yw = vec1.zz;              // vec3 = (3.0f, 3.0f, 2.0f, 3.0f)
 float4 w = float4(vec1, 5.0);   // w = (1.0f, 2.0f, 3.0f, 5.0f)
 ```
 <br><br>
-![Image](SIMD.jpg)
+![Image](images/SIMD.jpg)
