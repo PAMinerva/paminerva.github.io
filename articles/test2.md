@@ -31,7 +31,7 @@ $\blacksquare$
 Specifying one or more vector components is called swizzling. For example:
 <br><br>
 
-```cpp
+```hlsl
 vector<int, 1> iVector = 1;                             // int iVector = 1;
 vector<double, 4> dVector = { 0.2, 0.3, 0.4, 0.5 };     // float4 dVector = { 0.2, 0.3, 0.4, 0.5 };  
   
