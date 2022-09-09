@@ -1,3 +1,5 @@
+<meta name="google-site-verification" content="nZCqS9fFRC_xxtjXbkae658DSNRTwB6p_oshAkFXOT0" />
+
 # Table of contents (tentative)
 - [00 - Introduction and Prerequisites](https://paminerva.github.io/docs/LearnDirectX/00-Introduction-and-Prerequisites)<br><br>
 - 01 - Hello World<br>
