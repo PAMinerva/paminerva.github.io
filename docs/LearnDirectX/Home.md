@@ -1,11 +1,11 @@
 # Table of contents (tentative)
-- [00 - Introduction and Prerequisites](00-Introduction-and-Prerequisites)<br><br>
+- [00 - Introduction and Prerequisites](https://paminerva.github.io/docs/LearnDirectX/00-Introduction-and-Prerequisites)<br><br>
 - 01 - Hello World<br>
-    - [A - Hello Window ](https://github.com/PAMinerva/LearnDirectX-Samples/wiki/01.A-Hello-Window)
-    - [B - Hello Triangle ](https://github.com/PAMinerva/LearnDirectX-Samples/wiki/01.B-Hello-Triangle)
-    - [C - Hello Bundles ](https://github.com/PAMinerva/LearnDirectX-Samples/wiki/01.C-Hello-Bundles)
-    - [D - Hello Constant Buffers](https://github.com/PAMinerva/LearnDirectX-Samples/wiki/01.D-Hello-Constant-Buffers)
-    - [E - Hello Texture](https://github.com/PAMinerva/LearnDirectX-Samples/wiki/01.E-Hello-Texture)
+    - [A - Hello Window ](https://paminerva.github.io/docs/LearnDirectX/01.A-Hello-Window)
+    - [B - Hello Triangle ](https://paminerva.github.io/docs/LearnDirectX/01.B-Hello-Triangle)
+    - [C - Hello Bundles ](https://paminerva.github.io/docs/LearnDirectX/01.C-Hello-Bundles)
+    - [D - Hello Constant Buffers](https://paminerva.github.io/docs/LearnDirectX/01.D-Hello-Constant-Buffers)
+    - [E - Hello Texture](https://paminerva.github.io/docs/LearnDirectX/01.E-Hello-Texture)
     - F - Hello Frame Buffering
     - G - Hello Transformations
     - H - Hello Lighting <br><br>
