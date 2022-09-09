@@ -1,5 +1,5 @@
 # Table of contents (tentative)
-- [00 - Introduction and Prerequisites](https://github.com/PAMinerva/LearnDirectX-Samples/wiki/00-Introduction-and-Prerequisites)<br><br>
+- [00 - Introduction and Prerequisites](00-Introduction-and-Prerequisites)<br><br>
 - 01 - Hello World<br>
     - [A - Hello Window ](https://github.com/PAMinerva/LearnDirectX-Samples/wiki/01.A-Hello-Window)
     - [B - Hello Triangle ](https://github.com/PAMinerva/LearnDirectX-Samples/wiki/01.B-Hello-Triangle)
