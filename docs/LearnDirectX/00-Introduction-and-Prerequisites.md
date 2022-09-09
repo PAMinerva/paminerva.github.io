@@ -1,4 +1,4 @@
-# 1 - Introduction
+0# 1 - Introduction
 
 New graphics APIs, like DirectX 12 and Vulkan, have a reputation of being difficult to learn for beginners. The main reason is that modern APIs hide less to the programmer than the old ones (DirectX 11 and OpenGL) so you just end up studying low-level details even to draw a single triangle. However, learning DirectX 12 also has some advantages as it designed to make full use of multi-threading, and to get a finer control on resource management and CPU/GPU synchronization. Thanks to a better support for multi-threading, the CPU workload is more evenly distributed across all cores. Also, if you understand the use and re-use of resources, then you can take advantage of that by minimizing uploading and copying. That way you can free up CPU time to increase the number of draw calls (and consequently the GPU workload), to enhance performance of your graphics applications.
 
@@ -7,7 +7,7 @@ Currently, you have three ways to learn DirectX 12 from scratch, each with its a
 <br>
 
 **Frank Luna's book: Introduction to 3D Game Programming with DirectX 12** <br>
-$\text{\color{#44FFAA}{The Good}}$: It explains both theory and practice. Also, it can be used both as an API reference and a computer graphics textbook (at least at the beginning). <br>
+$\color{#44FFAA}\text{The Good}$: It explains both theory and practice. Also, it can be used both as an API reference and a computer graphics textbook (at least at the beginning). <br>
 $\text{\color{#FF6666}{The Bad}}$: It's a book. So, to reduce cost and size, it omits some important low-level details. Also, it's a bit dated now.
 
 **Online tutorials (included YouTube videos)** <br>
