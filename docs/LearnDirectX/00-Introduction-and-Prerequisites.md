@@ -12,11 +12,11 @@ $\color{#FF6666}\text{The Bad}$: It's a book. So, to reduce cost and size, it om
 
 **Online tutorials (included YouTube videos)** <br>
 $\color{#44FFAA}\text{The Good}$: Free and easy to follow. <br>
-$\text{\color{#FF6666}{The Bad}}$: Often, they mainly focus on the API, completely avoiding math and theory, or merely providing the equations with no explanation. <br>
+$\color{#FF6666}\text{The Bad}$: Often, they mainly focus on the API, completely avoiding math and theory, or merely providing the equations with no explanation. <br>
 
 **Official repositories and documentation** <br>
 $\color{#44FFAA}\text{The Good}$: All the source code and level of detail you need, for free.<br>
-$\text{\color{#FF6666}{The Bad}}$: The documentation is written as a reference for graphics programmers. That is, it assumes you have basic knowledge of computer graphics, GPU architectures and system programming.<br>
+$\color{#FF6666}\text{The Bad}$: The documentation is written as a reference for graphics programmers. That is, it assumes you have basic knowledge of computer graphics, GPU architectures and system programming.<br>
 
 <br>
 
