@@ -8,14 +8,14 @@ Currently, you have three ways to learn DirectX 12 from scratch, each with its a
 
 **Frank Luna's book: Introduction to 3D Game Programming with DirectX 12** <br>
 $\color{#44FFAA}\text{The Good}$: It explains both theory and practice. Also, it can be used both as an API reference and a computer graphics textbook (at least at the beginning). <br>
-$\text{\color{#FF6666}{The Bad}}$: It's a book. So, to reduce cost and size, it omits some important low-level details. Also, it's a bit dated now.
+$\color{#FF6666}\text{The Bad}$: It's a book. So, to reduce cost and size, it omits some important low-level details. Also, it's a bit dated now.
 
 **Online tutorials (included YouTube videos)** <br>
-$\text{\color{#44FFAA}{The Good}}$: Free and easy to follow. <br>
+$\color{#44FFAA}\text{The Good}$: Free and easy to follow. <br>
 $\text{\color{#FF6666}{The Bad}}$: Often, they mainly focus on the API, completely avoiding math and theory, or merely providing the equations with no explanation. <br>
 
 **Official repositories and documentation** <br>
-$\text{\color{#44FFAA}{The Good}}$: All the source code and level of detail you need, for free.<br>
+$\color{#44FFAA}\text{The Good}$: All the source code and level of detail you need, for free.<br>
 $\text{\color{#FF6666}{The Bad}}$: The documentation is written as a reference for graphics programmers. That is, it assumes you have basic knowledge of computer graphics, GPU architectures and system programming.<br>
 
 <br>
