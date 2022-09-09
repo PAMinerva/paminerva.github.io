@@ -1,3 +1,3 @@
 ## Tutorial series
 
-- [Learn DirectX 12 from code samples](Home)
+- [Learn DirectX 12 from code samples](/docs/LearnDirectX/Home)
