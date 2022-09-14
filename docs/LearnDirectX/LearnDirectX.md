@@ -32,3 +32,13 @@
 - A.05 - Analytic Geometry
 - A.06 -  (Yet to be determined)
 - A.0X - (Bézier curves and surfaces, Quaternions, Image processing, Bounding volumes, Spatial data structures, Monte Carlo integration, Physics of light, Animations, etc.)
+
+<br>
+
+***
+If you found the content of this website somewhat helpful or interesting, please consider supporting further development by clicking on the **Sponsor** button.  Whether a small tip, a one time donation, or a recurring payment, it's all welcome! Thank you!<br><br>
+<p align="center">
+ <a href="https://github.com/sponsors/PAMinerva">
+         <img alt="Sponsor" src="https://paminerva.github.io/docs/LearnDirectX/images/sponsor.PNG">
+      </a>
+</p><br>
