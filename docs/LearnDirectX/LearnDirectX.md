@@ -9,26 +9,26 @@
     - [F - Hello Frame Buffering](https://paminerva.github.io/docs/LearnDirectX/01.F-Hello-Frame-Buffering)
     - G - Hello Transformations
     - H - Hello Lighting <br><br>
-- 02 - Output Merger Stage
+- 02 - Intermediate Topics
     - A - Blending
-    - B - Mirror <br><br>
-- 03 - Geometry shader and Stream Output
-    - A - Billboarding
-    - B - Particle effect <br><br>
-- 04 - Tessellation
-    - A - Simple Bézier surface
-    - B - Dynamic LOD <br><br>
-- 05 - Compute shader
-    - A - Simple compute
-    - B - Compute Particles <br><br>
-- 06 - (Yet to be determined)<br><br>
-- 0X - (Instancing, Local and Global illuminations, Shadows, Texturing, Post-processing effects, 2D text, multi-threading, Shader Model 6.X, Mesh shaders, Reserved resources, VRS, Antialiasing techniques, Culling techniques, User input, Audio, Collision detection, Decals, Skinning animations, etc.) <br><br>
+    - B - Mirror
+    - C - Billboarding
+    - D - Particle effect
+    - E - Simple Bézier surface
+    - F - Dynamic LOD
+    - G - Simple compute
+    - H - Compute Particles <br><br>
+- 03 - Advanced Topics
+    - (Yet to be determined)<br><br>
+- 0X - Specific Topics
+    - (Instancing, Local and Global illuminations, Shadows, Texturing, Post-processing effects, 2D text, multi-threading, Shader Model 6.X, Mesh shaders, Reserved resources, VRS, Antialiasing techniques, Culling techniques, User input, Audio, Collision detection, Decals, Skinning animations, etc.) <br><br>
 
 ## Appendices
-- A - Vectors
-- B - Matrices
-- C - Transformations
-- D - Spaces
-- E - Analytic Geometry
-- F -  (Yet to be determined)
-- X - (Bézier curves and surfaces, Quaternions, Image processing, Bounding volumes, Spatial data structures, Monte Carlo integration, Physics of light, Animations, etc.)
+
+- A.01 - Vectors
+- A.02 - Matrices
+- A.03 - Transformations
+- A.04 - Spaces
+- A.05 - Analytic Geometry
+- A.06 -  (Yet to be determined)
+- A.0X - (Bézier curves and surfaces, Quaternions, Image processing, Bounding volumes, Spatial data structures, Monte Carlo integration, Physics of light, Animations, etc.)
