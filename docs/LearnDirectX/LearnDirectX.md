@@ -19,9 +19,11 @@
     - G - Simple compute
     - H - Compute Particles <br><br>
 - 03 - Advanced Topics
-    - (Yet to be determined)<br><br>
+    - (Yet to be determined)
+    - (Instancing, 2D text, multi-threading, Shader Model 6.X, Mesh shaders, Reserved resources, Variable Rate Shading, User input, etc.) <br><br>
 - 0X - Selected Topics
-    - (Instancing, Local and Global illuminations, Shadows, Texturing, Post-processing effects, 2D text, multi-threading, Shader Model 6.X, Mesh shaders, Reserved resources, VRS, Antialiasing techniques, Culling techniques, User input, Audio, Collision detection, Decals, Skinning animations, etc.) <br><br>
+    - (Yet to be determined)
+    - (Local and Global illuminations, Shadows, Texturing, Post-processing effects, Antialiasing techniques, Culling techniques, Audio, Collision detection, Decals, Skinning animations, etc.) <br><br>
 
 ## Appendices
 
