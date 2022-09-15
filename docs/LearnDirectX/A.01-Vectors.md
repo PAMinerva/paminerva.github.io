@@ -51,7 +51,7 @@ Usually the y-axis points up, the x-axis points right while the z-axis points fo
 
 ## 1.3 - Polar coordinate system
 
-In the plane, a ray (called polar axis) from the origin is chosen and the coordinates $(r,\theta)$ of a point specify the distance $r$ from the origin (often called pole) and the angle $\theta$ from the polar axis. The distance from the origin is also called radius. Angles in polar notation are generally expressed in either degrees or radians ($2\pi$ rad being equal to $360°$).
+In the plane, a ray (called polar axis) from the origin is chosen and the coordinates $(r,\theta)$ of a point specify the distance $r$ from the origin (often called pole) and the angle $\theta$ from the polar axis. The distance from the origin is also called radius. Angles in polar notation are generally expressed in either degrees or radians $(2\pi$ rad being equal to $360°)$.
 
 <br>
 
