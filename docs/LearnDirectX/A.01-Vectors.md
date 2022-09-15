@@ -207,7 +207,7 @@ Below are some of the properties of vector addition and scalar multiplication:
 
 ### 2.2.4 - Length of a vector
 
-Now we can define the length of a vector $\|v\|$ (or $\|\|v\|\|$ &#124;$v$&#124;) as the scalar that indicates the magnitude of the vector. Consider the following illustration.
+Now we can define the length of a vector $\|v\|$ (or $\|\|v\|\|$) as the scalar that indicates the magnitude of the vector. Consider the following illustration.
 
 <br>
 
@@ -279,7 +279,7 @@ From the law of cosines $c^2=a^2+b^2-2ab\cos{\theta}$ (a proof is provided at th
 
 <br>
 
-$$\begin{equation}\label{eq1}\tag{1}\mathbf{v}\cdot\mathbf{u}=\|\mathbf{v}\|\ \|\mathbf{u}\|\cos{\theta}\end{equation}$$
+$$\begin{equation}\label{eq1}\mathbf{v}\cdot\mathbf{u}=\|\mathbf{v}\|\ \|\mathbf{u}\|\cos{\theta}\end{equation}$$
 
 <br>
 
@@ -297,7 +297,7 @@ $$
 
 <br>
 
-From the equation $(1)$ we can derive other properties. For example,
+From the equation $\eqref{eq1}$ we can derive other properties. For example,
 
 - If $(\mathbf{u}\cdot\mathbf{v}) = 0$ then the angle $\theta$ between $\mathbf{u}$ and $\mathbf{v}$ is $90°$ (that is, they are orthogonal: $\mathbf{u}\,\bot\,\mathbf{v}$)
 - If $(\mathbf{u}\cdot\mathbf{v}) > 0$ then the angle $\theta$ between $\mathbf{u}$ and $\mathbf{v}$ is less than $90°$
