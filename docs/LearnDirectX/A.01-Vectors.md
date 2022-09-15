@@ -279,7 +279,7 @@ From the law of cosines $c^2=a^2+b^2-2ab\cos{\theta}$ (a proof is provided at th
 
 <br>
 
-$$\begin{equation}\tag{1}\mathbf{v}\cdot\mathbf{u}=\|\mathbf{v}\|\ \|\mathbf{u}\|\cos{\theta}\end{equation}$$
+$$\begin{equation}\tag{1}\mathbf{v}\cdot\mathbf{u}=|\mathbf{v}|\ |\mathbf{u}|\cos{\theta}\end{equation}$$
 
 <br>
 
