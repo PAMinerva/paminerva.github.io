@@ -207,7 +207,7 @@ Below are some of the properties of vector addition and scalar multiplication:
 
 ### 2.2.4 - Length of a vector
 
-Now we can define the length of a vector $\|v\|$ (or &#124;$v$&#124;) as the scalar that indicates the magnitude of the vector. Consider the following illustration.
+Now we can define the length of a vector $\|v\|$ (or $\|\|v\|\|$ &#124;$v$&#124;) as the scalar that indicates the magnitude of the vector. Consider the following illustration.
 
 <br>
 
