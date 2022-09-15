@@ -234,8 +234,6 @@ Geometrically, this is equivalent to scale a vector (that’s why real numbers a
 
 Below are some of the properties of vector addition and scalar multiplication:
 
-<br>
-
 |                         |                                                                                                            |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------- |
 | Commutative (vector)    | $\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}$                                                              |
@@ -260,8 +258,6 @@ $\mathbf{u}\cdot\mathbf{v}=u_xv_x+u_yv_y+u_zv_z$
 
 So, the dot product of two vectors is a sum of products of the corresponding components.
 Below are some of the properties of the dot product:
-
-<br>
 
 |              |                                                                                                                                     |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
