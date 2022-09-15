@@ -267,7 +267,7 @@ Below are some of the properties of the dot product:
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
 | Commutative  | $\mathbf{u}\cdot\mathbf{v}=\mathbf{v}\cdot\mathbf{u}$                                                                               |
 | Distributive | $(\mathbf{u}+\mathbf{v})\cdot\mathbf{w}=\mathbf{w}\cdot(\mathbf{u}+\mathbf{v})=(\mathbf{w}+\mathbf{u})\cdot(\mathbf{w}+\mathbf{v})$ |
-| -            | $\|\mathbf{v}\|^2=v_x^2+v_y^2+v_z^2=\mathbf{v}\cdot\mathbf{v}$                                                                      |
+|Square of a vector length| $\|\mathbf{v}\|^2=v_x^2+v_y^2+v_z^2=\mathbf{v}\cdot\mathbf{v}$                                                                      |
 
 <br>
 
@@ -327,9 +327,9 @@ To conclude this section we will prove the law of cosines $c^2=a^2+b^2-2ab\cos{\
 >
 >$\|\mathbf{c}\|^2=(\mathbf{a}-\mathbf{b})\cdot (\mathbf{a}-\mathbf{b})\quad\quad\quad\quad\quad\quad\quad\quad$ (square of a vector length)
 >
->$\|\mathbf{c}\|^2=\|\mathbf{a}\|^2+\|\mathbf{b}\|^2-2\ \mathbf{a}\cdot\mathbf{b}\quad\quad\quad\quad\quad\quad$ (distributive law of the dot product)
+>$\|\mathbf{c}\|^2=\|\mathbf{a}\|^2+\|\mathbf{b}\|^2-2\ \mathbf{a}\cdot\mathbf{b}\quad\quad\quad\quad\quad\quad\quad$ (distributive law of the dot product)
 >
->$\|\mathbf{c}\|^2=\|\mathbf{a}\|^2+\|\mathbf{b}\|^2-2\ \|\mathbf{a}\|\ \|\mathbf{b}\| \cos{\theta}\quad\quad\ $ (equation (1))
+>$\|\mathbf{c}\|^2=\|\mathbf{a}\|^2+\|\mathbf{b}\|^2-2\ \|\mathbf{a}\|\ \|\mathbf{b}\| \cos{\theta}\quad\quad\quad\quad$ (equation (1))
 
 <br>
 
