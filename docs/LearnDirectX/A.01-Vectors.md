@@ -266,7 +266,7 @@ Below are some of the properties of the dot product:
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
 | Commutative  | $\mathbf{u}\cdot\mathbf{v}=\mathbf{v}\cdot\mathbf{u}$                                                                               |
 | Distributive | $(\mathbf{u}+\mathbf{v})\cdot\mathbf{w}=\mathbf{w}\cdot(\mathbf{u}+\mathbf{v})=(\mathbf{w}+\mathbf{u})\cdot(\mathbf{w}+\mathbf{v})$ |
-|              | $\|\mathbf{v}\|^2=v_x^2+v_y^2+v_z^2=\mathbf{v}\cdot\mathbf{v}$                                                                      |
+| -            | $\|\mathbf{v}\|^2=v_x^2+v_y^2+v_z^2=\mathbf{v}\cdot\mathbf{v}$                                                                      |
 
 <br>
 
