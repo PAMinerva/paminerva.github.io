@@ -129,13 +129,56 @@ This is an important point because if you define a vector by its coordinates, th
 
 <br>
 
-## 2.2 - Basic operations
+## 2.2 - Length of a vector
+
+We can define the length of a vector $\|v\|$ (or $\|\|v\|\|$) as the scalar that indicates the magnitude of the vector. Consider the following illustration.
+
+<br>
+
+![Image](images/A/01/vector-length.png)
+
+<br>
+
+We have that $a$ is the length of the projection of the vector $\mathbf{v}$ onto the xz-plane. From the Pythagorean theorem, $a=\sqrt{x^2+z^2}$. From the same theorem, again, we have that
+
+<br>
+
+$\|\mathbf{v}\|=\sqrt{y^2+a^2}=\sqrt{y^2+(\sqrt{x^2+z^2})^2}=\sqrt{x^2+y^2+z^2}$
+
+<br>
+
+Sometimes, only the direction of a vector is important. In that case, we can normalize the vector so as to make its length 1. Usually, the symbol $\hat{\mathbf{v}}$ is used to indicate a unit vector (a vector with length 1). To normalize a vector $\mathbf{v}=(x, y, z)$ we can multiply it by the reciprocal of its magnitude.
+
+<br>
+
+$\displaystyle\hat{\mathbf{v}}=\frac{\mathbf{v}}{\|\mathbf{v}\|}=\left(\frac{x}{\|\mathbf{v}\|},\frac{y}{\|\mathbf{v}\|},\frac{z}{\|\mathbf{v}\|}\right)$
+
+<br>
+
+We can verify that $\hat{\mathbf{v}}$ is a unit vector by computing its length.
+
+<br>
+
+$\displaystyle\|\hat{\mathbf{v}}\|=\sqrt{\left(\frac{x}{\|\mathbf{v}\|}\right)^2+\left(\frac{y}{\|\mathbf{v}\|}\right)^2+\left(\frac{z}{\|\mathbf{v}\|}\right)^2}=\frac{\sqrt{x^2+y^2+z^2}}{\sqrt{\|\mathbf{v}\|^2}}=\frac{\|\mathbf{v}\|}{\|\mathbf{v}\|}=1$
+
+
+<br>
+
+Three unit vectors are of particular importance: $\mathbf{i}=(1,0,0)$, $\mathbf{j}=(0,1,0)$ and $\mathbf{k}=(0,0,1)$. These vectors have unit lengths, pointing up the x-, y-, and z-axis of a 3D Cartesian coordinate system, respectively. Often, we refer to these vectors as the standard basis vectors of a frame.
+
+<br>
+
+![Image](images/A/01/basis-vectors.png)
+
+<br>
+
+## 2.3 - Basic operations
 
 We can also define some interesting operations that can be done with vectors. For example, addition, subtraction, and three different types of multiplication.
 
 <br>
 
-### 2.2.1 - Addition
+### 2.3.1 - Addition
 
 Numerically, the sum of two vector $\mathbf{u}=(u_x, u_y, u_z)$ and $\mathbf{v}=(v_x, v_y, v_z)$ is defined as
 
@@ -169,7 +212,7 @@ The subtraction may be represented geometrically by bounding $\mathbf{u}$ and $\
 
 <br>
 
-### 2.2.2 - Scalar multiplication
+### 2.3.2 - Scalar multiplication
 
 We can multiply a vector $\mathbf{v}=(x, y, z)$ with a scalar $k$ (a real number). Numerically, this operation is defined as
 
@@ -187,7 +230,7 @@ Geometrically, this is equivalent to scale a vector (that’s why real numbers a
 
 <br>
 
-### 2.2.3 - Properties of addition and scalar multiplication
+#### 2.3.2.1 - Properties of addition and scalar multiplication
 
 Below are some of the properties of vector addition and scalar multiplication:
 
@@ -205,49 +248,7 @@ Below are some of the properties of vector addition and scalar multiplication:
 
 <br>
 
-### 2.2.4 - Length of a vector
-
-Now we can define the length of a vector $\|v\|$ (or $\|\|v\|\|$) as the scalar that indicates the magnitude of the vector. Consider the following illustration.
-
-<br>
-
-![Image](images/A/01/vector-length.png)
-
-<br>
-
-We have that $a$ is the length of the projection of the vector $\mathbf{v}$ onto the xz-plane. From the Pythagorean theorem, $a=\sqrt{x^2+z^2}$. From the same theorem, again, we have that
-
-<br>
-
-$\|\mathbf{v}\|=\sqrt{y^2+a^2}=\sqrt{y^2+(\sqrt{x^2+z^2})^2}=\sqrt{x^2+y^2+z^2}$
-
-<br>
-
-Sometimes, only the direction of a vector is important. In that case, we can normalize the vector so as to make its length 1. Usually, the symbol $\hat{\mathbf{v}}$ is used to indicate a unit vector (a vector with length 1). To normalize a vector $\mathbf{v}=(x, y, z)$ we can multiply it by the reciprocal of its magnitude.
-
-<br>
-
-$\displaystyle\hat{\mathbf{v}}=\frac{\mathbf{v}}{\|\mathbf{v}\|}=\left(\frac{x}{\|\mathbf{v}\|},\frac{y}{\|\mathbf{v}\|},\frac{z}{\|\mathbf{v}\|}\right)$
-
-<br>
-
-We can verify that v^ is a unit vector by computing its length.
-
-<br>
-
-$\displaystyle\|\hat{\mathbf{v}}\|=\sqrt{\left(\frac{x}{\|\mathbf{v}\|}\right)^2+\left(\frac{y}{\|\mathbf{v}\|}\right)^2+\left(\frac{z}{\|\mathbf{v}\|}\right)^2}=\frac{\sqrt{x^2+y^2+z^2}}{\sqrt{\|\mathbf{v}\|^2}}=\frac{\|\mathbf{v}\|}{\|\mathbf{v}\|}=1$
-
-<br>
-
-Three unit vectors are of particular importance: $\mathbf{i}=(1,0,0)$, $\mathbf{j}=(0,1,0)$ and $\mathbf{k}=(0,0,1)$. These vectors have unit lengths, pointing up the x-, y-, and z-axis of a 3D Cartesian coordinate system, respectively. Often, we refer to these vectors as the standard basis vectors of a frame.
-
-<br>
-
-![Image](images/A/01/basis-vectors.png)
-
-<br>
-
-### 2.2.5 - Dot product
+### 2.3.3 - Dot product
 
 This form of vector multiplication results in a scalar value (that’s why it’s also called scalar product). The dot product of two vector $\mathbf{u}=(u_x, u_y, u_z)$ and $\mathbf{v}=(v_x, v_y, v_z)$ is defined as
 
@@ -298,7 +299,7 @@ $$
 
 From the equation $(1)$ we can derive other properties. For example,
 
-- If $(\mathbf{u}\cdot\mathbf{v}) = 0$ then the angle $\theta$ between $\mathbf{u}$ and $\mathbf{v}$ is $90°$ (that is, they are orthogonal: $\mathbf{u} \bot\ \mathbf{v}$)
+- If $(\mathbf{u}\cdot\mathbf{v}) = 0$ then the angle $\theta$ between $\mathbf{u}$ and $\mathbf{v}$ is $90°$ (that is, they are orthogonal: $\mathbf{u}\ \bot\ \mathbf{v}$)
 - If $(\mathbf{u}\cdot\mathbf{v}) > 0$ then the angle $\theta$ between $\mathbf{u}$ and $\mathbf{v}$ is less than $90°$
 - If $(\mathbf{u}\cdot\mathbf{v}) < 0$ then the angle $\theta$ between $\mathbf{u}$ and $\mathbf{v}$ is greater than $90°$
 
@@ -332,6 +333,6 @@ To conclude this section we will prove the law of cosines $c^2=a^2+b^2-2ab\cos{\
 
 <br>
 
-### 2.2.6 - Orthogonal projection
+### 2.3.4 - Orthogonal projection
 
 work in progress
