@@ -219,7 +219,7 @@ We have that $a$ is the length of the projection of the vector $\mathbf{v}$ onto
 
 <br>
 
-$||\mathbf{v}||=\sqrt{y^2+a^2}=\sqrt{y^2+(\sqrt{x^2+z^2})^2}=\sqrt{x^2+y^2+z^2}$
+$\|\mathbf{v}\|=\sqrt{y^2+a^2}=\sqrt{y^2+(\sqrt{x^2+z^2})^2}=\sqrt{x^2+y^2+z^2}$
 
 <br>
 
@@ -227,7 +227,7 @@ Sometimes, only the direction of a vector is important. In that case, we can nor
 
 <br>
 
-$\displaystyle\hat{\mathbf{v}}=\frac{\mathbf{v}}{||\mathbf{v}||}=\bigg(\frac{x}{||\mathbf{v}||},\frac{y}{||\mathbf{v}||},\frac{z}{||\mathbf{v}||}\bigg)$
+$\displaystyle\hat{\mathbf{v}}=\frac{\mathbf{v}}{\|\mathbf{v}\|}=\bigg(\frac{x}{\|\mathbf{v}\|},\frac{y}{\|\mathbf{v}\|},\frac{z}{\|\mathbf{v}\|}\bigg)$
 
 <br>
 
@@ -235,7 +235,7 @@ We can verify that v^ is a unit vector by computing its length.
 
 <br>
 
-$\displaystyle||\hat{\mathbf{v}}||=\sqrt{\bigg(\frac{x}{||\mathbf{v}||}\bigg)^2+\bigg(\frac{y}{||\mathbf{v}||}\bigg)^2+\bigg(\frac{z}{||\mathbf{v}||}\bigg)^2}=\frac{\sqrt{x^2+y^2+z^2}}{\sqrt{||\mathbf{v}||^2}}=\frac{||\mathbf{v}||}{||\mathbf{v}||}=1$
+$\displaystyle\|\hat{\mathbf{v}}\|=\sqrt{\bigg(\frac{x}{\|\mathbf{v}\|}\bigg)^2+\bigg(\frac{y}{|\\mathbf{v}\|}\bigg)^2+\bigg(\frac{z}{\|\mathbf{v}\|}\bigg)^2}=\frac{\sqrt{x^2+y^2+z^2}}{\sqrt{\|\mathbf{v}\|^2}}=\frac{\|\mathbf{v}\|}{\|\mathbf{v}\|}=1$
 
 <br>
 
