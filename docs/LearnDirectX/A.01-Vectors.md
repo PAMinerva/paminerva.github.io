@@ -333,6 +333,6 @@ To conclude this section we will prove the law of cosines $c^2=a^2+b^2-2ab\cos{\
 
 <br>
 
-### 2.3.4 - Orthogonal projection
+#### 2.3.3.1 - Orthogonal projection
 
 work in progress
