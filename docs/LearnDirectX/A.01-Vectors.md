@@ -317,19 +317,19 @@ To conclude this section we will prove the law of cosines $c^2=a^2+b^2-2ab\cos{\
 >
 ><br>
 >
->From the subtraction of two vectors we have that 
+>We have that 
 >
->$\mathbf{c}=\mathbf{a}-\mathbf{b}$ 
+>$\mathbf{c}=\mathbf{a}-\mathbf{b}\quad$ (subtration of two vectors)
 >
 >Squaring both sides and simplifying
 >
 >$\|\mathbf{c}\|^2=\|\mathbf{a}-\mathbf{b}\|^2$
 >
->$\|\mathbf{c}\|^2=(\mathbf{a}-\mathbf{b})\cdot (\mathbf{a}-\mathbf{b})$
+>$\|\mathbf{c}\|^2=(\mathbf{a}-\mathbf{b})\cdot (\mathbf{a}-\mathbf{b})\quad\quad\quad\quad\quad\quad\quad\quad$ (square of a vector length)
 >
->$\|\mathbf{c}\|^2=\|\mathbf{a}\|^2+\|\mathbf{b}\|^2-2\ \mathbf{a}\cdot\mathbf{b}$
+>$\|\mathbf{c}\|^2=\|\mathbf{a}\|^2+\|\mathbf{b}\|^2-2\ \mathbf{a}\cdot\mathbf{b}\quad\quad\quad\quad\quad\quad$ (distributive law of the dot product)
 >
->$\|\mathbf{c}\|^2=\|\mathbf{a}\|^2+\|\mathbf{b}\|^2-2\ \|\mathbf{a}\|\ \|\mathbf{b}\| \cos{\theta}$
+>$\|\mathbf{c}\|^2=\|\mathbf{a}\|^2+\|\mathbf{b}\|^2-2\ \|\mathbf{a}\|\ \|\mathbf{b}\| \cos{\theta}\quad\quad\ $ (equation (1))
 
 <br>
 
