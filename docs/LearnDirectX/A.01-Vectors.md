@@ -297,7 +297,7 @@ $$
 
 <br>
 
-From the equation $(1)$ we can derive other properties. For example,
+From equation $(1)$ we can derive other properties. For example,
 
 - If $(\mathbf{u}\cdot\mathbf{v}) = 0$ then the angle $\theta$ between $\mathbf{u}$ and $\mathbf{v}$ is $90°$ (that is, they are orthogonal: $\mathbf{u}\ \bot\ \mathbf{v}$)
 - If $(\mathbf{u}\cdot\mathbf{v}) > 0$ then the angle $\theta$ between $\mathbf{u}$ and $\mathbf{v}$ is less than $90°$
