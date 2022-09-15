@@ -27,7 +27,7 @@
 
 ## Appendices
 
-- A.01 - Vectors
+- [A.01 - Vectors](https://paminerva.github.io/docs/LearnDirectX/A.01-Vectors)
 - A.02 - Matrices
 - A.03 - Transformations
 - A.04 - Spaces
