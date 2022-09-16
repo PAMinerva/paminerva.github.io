@@ -79,7 +79,7 @@ Spherical coordinates take this a step further by converting the pair of cylindr
 
 ## 1.5 - Homogeneous coordinate system
 
-A point in the plane may be represented in homogeneous coordinates by a triple $(x, y, z)$, and we can calculate the related Cartesian coordinates by dividing by the z-coordinate: that is, $(x/z,\ y/z,\ z/z)$. This introduces an "extra" coordinate, as only two are commonly used to specify a point on a plane. Note that after the division to get the Cartesian coordinates, the last component will be always 1. This extends to 3D spaces as well, so if we have the 3D Cartesian coordinates $(x, y, z)$, we can also write it as $(x, y, z, 1)$. In general, a homogeneous coordinate system is one where only the ratios of the coordinates are significant, and not the actual values.
+A point in the plane may be represented in homogeneous coordinates by a triple $(x, y, z)$, and we can calculate the related Cartesian coordinates by dividing by the z-coordinate: that is, $(x/z,\ y/z,\ z/z)$. This introduces an "extra" coordinate, as only two are commonly used to specify a point on a plane. Note that after the division to get the Cartesian coordinates, the last coordinate will be always 1. This extends to 3D spaces as well, so if we have the 3D Cartesian coordinates $(x, y, z)$, we can also write it as $(x, y, z, 1)$. In general, a homogeneous coordinate system is one where only the ratios of the coordinates are significant, and not the actual values.
 
 <br>
 
@@ -109,7 +109,7 @@ Since we need to manipulate vectors with a computer, we are not particularly int
 
 <br>
 
-At that point, we can use the coordinates $(x, y, z)$ of the head of a vector $\mathbf{v}$ in a 3D Cartesian system as the numerical representation of the vector in that system. That is, we can write $\mathbf{v}=(x, y, z)$. The same goes for a vector $\mathbf{v}$ in a 2D Cartesian system: the numerical representation is $(x, y)$. Then, we can use $\mathbf{v}$ to specify a point in a frame (maybe to set the position of an object, or the location you want to move it).
+At that point, we can use the coordinates $(x, y, z)$ of the head of a vector $\mathbf{v}$ in a 3D Cartesian system as the numerical representation of the vector in that system. That is, we can write $\mathbf{v}=(x, y, z)$, with x, y and z called components of the vector. The same goes for a vector $\mathbf{v}$ in a 2D Cartesian system: the numerical representation is $(x, y)$. Then, we can use $\mathbf{v}$ to specify a point in a frame (maybe to set the position of an object, or the location you want to move it).
 
 <br>
 
@@ -329,5 +329,71 @@ To conclude this section we will prove the law of cosines $c^2=a^2+b^2-2ab\cos{\
 <br>
 
 #### 2.2.3.1 - Orthogonal projection
+
+We can define the orthogonal projection of a vector $\mathbf{v}$ onto another vector $\mathbf{n}$ as the vector $\text{proj}_\mathbf{n}(\mathbf{v})$. Consider the following illustration.
+
+<br>
+
+![Image](images/A/01/vector-proj.png)
+
+<br>
+
+From trigonometry, we know that the adjacent side can be derived from the hypotenuse, multiplied by the cosine of the angle between adjacent side and hypotenuse. In this case, we have $\text{adj}=\|\text{proj}_\mathbf{n}(\mathbf{v})\|$ and $\text{hyp}=\|v\|$. So, if $\mathbf{n}$ is a unit vector, then we can write
+
+<br>
+
+$\text{proj}_\mathbf{n}(\mathbf{v}) = (\|\mathbf{v}\|\cos{\theta})\ \mathbf{n} = 
+(\|\mathbf{v}\|\ 1 \cos{\theta})\, \mathbf{n} = 
+(\|\mathbf{v}\|\ \|\mathbf{n}\|\cos{\theta})\ \mathbf{n} =
+(\mathbf{v}\cdot \mathbf{n})\ \mathbf{n}$
+
+<br>
+
+with $(\mathbf{v}\cdot\mathbf{n})$ length of the projection, and with $\mathbf{n}$ that indicates its direction. This gives us a geometrical interpretation of the dot product, at least if $\mathbf{n}$ is a unit vector. If that's not the case, we can always normalize $\mathbf{n}$ to make it unit length. Then, we can replace $\mathbf{n}$ with its normalized version $\mathbf{n}/\|\mathbf{n}\|$, giving us the more general formula
+
+<br>
+
+$\text{proj}_\mathbf{n}(\mathbf{v}) = 
+\left(\mathbf{v}\cdot\displaystyle\frac{\mathbf{n}}{\|\mathbf{n}\|}\right)
+\displaystyle\frac{\mathbf{n}}{\|\mathbf{n}\|} = 
+\displaystyle\frac{(\mathbf{v}\cdot\mathbf{n})}{\|\mathbf{n}\|^2}\ \mathbf{n}
+$
+
+<br>
+
+Thanks to the orthogonal projection, we can write a generic bound vector $\mathbf{v}$ as a sum of its projections onto the standard basis vectors.
+
+<br>
+
+$\mathbf{v}=(\mathbf{v}\cdot\mathbf{i})\ \mathbf{i}+(\mathbf{v}\cdot\mathbf{j})\ \mathbf{j}+(\mathbf{v}\cdot\mathbf{k})\ \mathbf{k}=x\ \mathbf{i}+y\ \mathbf{j}+z\ \mathbf{k}=x\ (1, 0, 0)+y\ (0, 1, 0)+z\ (0, 0, 1)=(x, y, z)$
+
+<br>
+
+Indeed, we have
+
+<br>
+
+$(\mathbf{v}\cdot\mathbf{i})=(x, y, z)\cdot(1, 0, 0)=x$ <br>
+$(\mathbf{v}\cdot\mathbf{j})=(x, y, z)\cdot(0, 1, 0)=y$ <br>
+$(\mathbf{v}\cdot\mathbf{k})=(x, y, z)\cdot(0, 0, 1)=z$
+
+<br>
+
+Also, note that $(x\ \mathbf{i}+z\ \mathbf{k})$ is the projection of $\mathbf{v}$ onto the xz-plane, so that we can sum this projection with $(y\ \mathbf{j})$ to get $\mathbf{v}$.
+
+<br>
+
+![Image](images/A/01/vector-proj2.png)
+
+<br>
+
+You can also see it as a sum of scaled vectors: we scale $\mathbf{i}$, $\mathbf{j}$ and $\mathbf{k}$ with the components of $\mathbf{v}$. Indeed, the diagonal of the parallelogram defined by $(x\ \mathbf{i})$ and $(z\ \mathbf{k})$ is $(x\ \mathbf{i}+z\ \mathbf{k})$. Then, $\mathbf{v}$ is the diagonal of the parallelogram defined by $(x\ \mathbf{i}+z\ \mathbf{k})$ and $(y\ \mathbf{j})$, that is $x\ \mathbf{i}+z\ \mathbf{k}+y\ \mathbf{j}$.<br>
+Remember that you can also see it as a sum of three translations: starting from the origin of the frame we move $x$ units along the x-axis. Then, from that position we move $y$ units in the same direction of the y-axis. Finally, we move $z$ units in the same direction of the z-axis.
+That’s the reason we call $\mathbf{i}$, $\mathbf{j}$ and $\mathbf{k}$ basis vectors: we can define every bound vector in a frame as a combination of these three unit vectors, with the components of the vector as coefficients.<br>
+As stated earlier, the components of a bound vector are the coordinates of the arrowhead inside a frame. This implies we can use bound vectors to uniquely identify all the points of a frame. And indeed, we will use vectors to specify points as well. However, we still need a way to differentiate between vectors and points as they are not interchangeable. Indeed, observe that, for vectors, only direction and magnitude are important (the point of application is irrelevant). On the other hand, points uniquely identify a location (so they only make sense if bound to the origin of a frame). Moreover, you can subtract points to get a vector that specifies how to move from a point to another. And you can also add a point and a vector to get a vector that specifies how to move a point to another location. However, unlike vectors, the addition of points doesn’t make any sense: you get the diagonal of a parallelogram, which doesn't mean anything geometrically. In short, think of vectors as free vectors, while considering points as bound vectors. So, if you have a vector $\mathbf{v}=(x, y, z)$, you need to know if it’s a point or a vector before to use it properly. We will return to the difference between points and vectors in a later tutorial.
+
+<br>
+
+#### 2.2.3.2 - Gram-Schmidt Orthogonalization
 
 work in progress
