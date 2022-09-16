@@ -342,9 +342,7 @@ From trigonometry, we know that the adjacent side can be derived from the hypote
 
 <br>
 
-$\text{proj}_\mathbf{n}(\mathbf{v}) = (\|\mathbf{v}\|\cos{\theta})\ \mathbf{n} = 
-(\|\mathbf{v}\|\ 1 \cos{\theta})\, \mathbf{n} = 
-(\|\mathbf{v}\|\ \|\mathbf{n}\|\cos{\theta})\ \mathbf{n} =
+$\text{proj}_\mathbf{n}(\mathbf{v}) = (\|\mathbf{v}\|\cos{\theta})\ \mathbf{n}=(\|\mathbf{v}\|\ 1 \cos{\theta})\, \mathbf{n} = (\|\mathbf{v}\|\ \|\mathbf{n}\|\cos{\theta})\ \mathbf{n} =
 (\mathbf{v}\cdot \mathbf{n})\ \mathbf{n}$
 
 <br>
