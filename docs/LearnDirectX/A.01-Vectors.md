@@ -274,7 +274,7 @@ From the law of cosines $c^2=a^2+b^2-2ab\cos{\theta}$ (a proof is provided at th
 
 <br>
 
-$$\begin{equation}\tag{1}\mathbf{v}\cdot\mathbf{u}=|\mathbf{v}|\ |\mathbf{u}|\cos{\theta}\end{equation}$$
+$$\begin{equation}\tag{1}\mathbf{v}\cdot\mathbf{u}=|\mathbf{v}| |\mathbf{u}|\cos{\theta}\end{equation}$$
 
 <br>
 
@@ -284,10 +284,10 @@ Indeed, if we set $a=\|\mathbf{u}\|$, $b=\|\mathbf{v}\|$ and $c=\|\mathbf{u}-\ma
 
 $$
 \begin{align*} c^2 &= a^2 + b^2 - 2ab \cos{\theta} \\\ 
-|\mathbf{u-v}|^2 &= |\mathbf{u}|^2 + |\mathbf{v}|^2 - 2\ |\mathbf{u}|\ |\mathbf{v}|\cos{\theta} \\\ 
-(\mathbf{u} - \mathbf{v}) \cdot (\mathbf{u} - \mathbf{v}) &= \mathbf{u} \cdot \mathbf{u} + \mathbf{v} \cdot \mathbf{v} - 2\ |\mathbf{u}|\ |\mathbf{v}|\cos{\theta} \\\ 
-\mathbf{u} \cdot\mathbf{u} -2\ (\mathbf{u} \cdot \mathbf{v}) + \mathbf{v} \cdot \mathbf{v} &= \mathbf{u} \cdot \mathbf{u} + \mathbf{v} \cdot \mathbf{v} - 2\ |\mathbf{u}|\ |\mathbf{v}|\cos{\theta} \\\
- \mathbf{u}\cdot \mathbf{v} &= |\mathbf{u}|\ |\mathbf{v}|\cos{\theta} \end{align*}
+|\mathbf{u-v}|^2 &= |\mathbf{u}|^2 + |\mathbf{v}|^2 - 2\ |\mathbf{u}| |\mathbf{v}|\cos{\theta} \\\ 
+(\mathbf{u} - \mathbf{v}) \cdot (\mathbf{u} - \mathbf{v}) &= \mathbf{u} \cdot \mathbf{u} + \mathbf{v} \cdot \mathbf{v} - 2\ |\mathbf{u}| |\mathbf{v}|\cos{\theta} \\\ 
+\mathbf{u} \cdot\mathbf{u} -2\ (\mathbf{u} \cdot \mathbf{v}) + \mathbf{v} \cdot \mathbf{v} &= \mathbf{u} \cdot \mathbf{u} + \mathbf{v} \cdot \mathbf{v} - 2\ |\mathbf{u}| |\mathbf{v}|\cos{\theta} \\\
+ \mathbf{u}\cdot \mathbf{v} &= |\mathbf{u}| |\mathbf{v}|\cos{\theta} \end{align*}
 $$
 
 <br>
@@ -324,7 +324,7 @@ To conclude this section we will prove the law of cosines $c^2=a^2+b^2-2ab\cos{\
 >
 >$\|\mathbf{c}\|^2=\|\mathbf{a}\|^2+\|\mathbf{b}\|^2-2\ \mathbf{a}\cdot\mathbf{b}\quad\quad\quad\quad\quad\quad\quad$ (distributive law of the dot product)
 >
->$\|\mathbf{c}\|^2=\|\mathbf{a}\|^2+\|\mathbf{b}\|^2-2\ \|\mathbf{a}\|\ \|\mathbf{b}\| \cos{\theta}\quad\quad\quad\quad$ (equation (1))
+>$\|\mathbf{c}\|^2=\|\mathbf{a}\|^2+\|\mathbf{b}\|^2-2\ \|\mathbf{a}\|\|\mathbf{b}\| \cos{\theta}\quad\quad\quad\quad$ (equation (1))
 
 <br>
 
@@ -342,7 +342,7 @@ From trigonometry, we know that the adjacent side can be derived from the hypote
 
 <br>
 
-$\text{proj}_\mathbf{n}(\mathbf{v})=(\|\mathbf{v}\|\cos{\theta})\ \mathbf{n}=(\|\mathbf{v}\|\ 1 \cos{\theta})\, \mathbf{n}=(\|\mathbf{v}\|\ \|\mathbf{n}\|\cos{\theta})\ \mathbf{n}=(\mathbf{v}\cdot \mathbf{n})\ \mathbf{n}$
+$\text{proj}_\mathbf{n}(\mathbf{v})=(\|\mathbf{v}\|\cos{\theta})\mathbf{n}=(\|\mathbf{v}\|1\cos{\theta})\mathbf{n}=(\|\mathbf{v}\|\|\mathbf{n}\|\cos{\theta})\mathbf{n}=(\mathbf{v}\cdot\mathbf{n})\mathbf{n}$
 
 <br>
 
@@ -350,7 +350,7 @@ with $(\mathbf{v}\cdot\mathbf{n})$ length of the projection, and with $\mathbf{n
 
 <br>
 
-$\text{proj}_\mathbf{n}(\mathbf{v})=\left(\mathbf{v}\cdot\displaystyle\frac{\mathbf{n}}{\|\mathbf{n}\|}\right)\displaystyle\frac{\mathbf{n}}{\|\mathbf{n}\|}=\displaystyle\frac{(\mathbf{v}\cdot\mathbf{n})}{\|\mathbf{n}\|^2}\ \mathbf{n}$
+$\text{proj}_\mathbf{n}(\mathbf{v})=\left(\mathbf{v}\cdot\displaystyle\frac{\mathbf{n}}{\|\mathbf{n}\|}\right)\displaystyle\frac{\mathbf{n}}{\|\mathbf{n}\|}=\displaystyle\frac{(\mathbf{v}\cdot\mathbf{n})}{\|\mathbf{n}\|^2}\mathbf{n}$
 
 <br>
 
@@ -358,7 +358,7 @@ Thanks to the orthogonal projection, we can write a generic bound vector $\mathb
 
 <br>
 
-$\mathbf{v}=(\mathbf{v}\cdot\mathbf{i})\ \mathbf{i}+(\mathbf{v}\cdot\mathbf{j})\ \mathbf{j}+(\mathbf{v}\cdot\mathbf{k})\ \mathbf{k}=x\ \mathbf{i}+y\ \mathbf{j}+z\ \mathbf{k}=x\ (1, 0, 0)+y\ (0, 1, 0)+z\ (0, 0, 1)=(x, y, z)$
+$\mathbf{v}=(\mathbf{v}\cdot\mathbf{i})\mathbf{i}+(\mathbf{v}\cdot\mathbf{j})\mathbf{j}+(\mathbf{v}\cdot\mathbf{k})\mathbf{k}=x\mathbf{i}+y\mathbf{j}+z\mathbf{k}=x(1, 0, 0)+y(0, 1, 0)+z(0, 0, 1)=(x, y, z)$
 
 <br>
 
@@ -372,7 +372,7 @@ $(\mathbf{v}\cdot\mathbf{k})=(x, y, z)\cdot(0, 0, 1)=z$
 
 <br>
 
-Also, note that $(x\ \mathbf{i}+z\ \mathbf{k})$ is the projection of $\mathbf{v}$ onto the xz-plane, so that we can sum this projection with $(y\ \mathbf{j})$ to get $\mathbf{v}$.
+Also, note that $(x\mathbf{i}+z\mathbf{k})$ is the projection of $\mathbf{v}$ onto the xz-plane, so that we can sum this projection with $y\mathbf{j}$ to get $\mathbf{v}$.
 
 <br>
 
@@ -380,7 +380,7 @@ Also, note that $(x\ \mathbf{i}+z\ \mathbf{k})$ is the projection of $\mathbf{v}
 
 <br>
 
-You can also see it as a sum of scaled vectors: we scale $\mathbf{i}$, $\mathbf{j}$ and $\mathbf{k}$ with the components of $\mathbf{v}$. Indeed, the diagonal of the parallelogram defined by $(x\ \mathbf{i})$ and $(z\ \mathbf{k})$ is $(x\ \mathbf{i}+z\ \mathbf{k})$. Then, $\mathbf{v}$ is the diagonal of the parallelogram defined by $(x\ \mathbf{i}+z\ \mathbf{k})$ and $(y\ \mathbf{j})$, that is $x\ \mathbf{i}+z\ \mathbf{k}+y\ \mathbf{j}$.<br>
+You can also see it as a sum of scaled vectors: we scale $\mathbf{i}$, $\mathbf{j}$ and $\mathbf{k}$ with the components of $\mathbf{v}$. Indeed, the diagonal of the parallelogram defined by $(x\mathbf{i})$ and $(z\mathbf{k})$ is $(x\mathbf{i}+z\mathbf{k})$. Then, $\mathbf{v}$ is the diagonal of the parallelogram defined by $(x\mathbf{i}+z\mathbf{k})$ and $(y\mathbf{j})$, that is $\ x\mathbf{i}+z\mathbf{k}+y\mathbf{j}$.<br>
 Remember that you can also see it as a sequence of three translations: starting from the origin of the frame, we move $x$ units along the x-axis. Then, from that position, we move $y$ units in the same direction of the y-axis. Finally, we move $z$ units in the same direction of the z-axis. That’s the reason we call $\mathbf{i}$, $\mathbf{j}$ and $\mathbf{k}$ basis vectors: we can define every bound vector in a frame as a combination of these three unit vectors, with the components of the vector as coefficients.<br>
 As stated earlier, the components of a bound vector are the coordinates of the arrowhead inside a frame. This implies we can use bound vectors to uniquely identify all the points of a frame. And indeed, we will use vectors to specify points as well. However, we still need a way to differentiate between vectors and points as they are not interchangeable. Observe that, for vectors, only direction and magnitude are important, so the point of application is irrelevant. On the other hand, points uniquely identify a location, so they only make sense if bound to the origin of a frame. Moreover, you can subtract points to get a vector that specifies how to move from a point to another. And you can also add a point and a vector to get a vector that specifies how to move a point to another location. However, unlike vectors, the addition of points doesn’t make any sense: you get the diagonal of a parallelogram, which doesn't mean anything geometrically. In short, think of vectors as free vectors, while considering points as bound vectors. So, if you have a vector $\mathbf{v}=(x, y, z)$, you need to know if it’s a point or a vector before to use it properly. We will return to the difference between points and vectors in a later tutorial.
 
