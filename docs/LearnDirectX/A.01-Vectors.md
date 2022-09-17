@@ -443,6 +443,6 @@ We can also use matrices to calculate the cross product. For example, the cross 
 
 <br>
 
-$\begin{matrix} a & b & c \\ d & e & f \\ g & h & i \end{matrix}$
+$$\begin{matrix} a & b & c \\ d & e & f \\ g & h & i \end{matrix}$$
 
 <br>
