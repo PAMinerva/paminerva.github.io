@@ -338,7 +338,7 @@ We can define the orthogonal projection of a vector $\mathbf{v}$ onto another ve
 
 <br>
 
-From trigonometry, we know that the adjacent side can be derived from the hypotenuse, multiplied by the cosine of the angle between adjacent side and hypotenuse. In this case, we have $\text{adj}=\|\text{proj}_\mathbf{n}(\mathbf{v})\|$ and $\text{hyp}=\|v\|$. So, if $\mathbf{n}$ is a unit vector, then we can write
+From trigonometry, we know that the adjacent side can be derived from the hypotenuse, multiplied by the cosine of the angle between adjacent side and hypotenuse. In this case, we have $\text{adj}=\|\text{proj}_\mathbf{n}(\mathbf{v})\|$ and $\text{hyp}=\|\mathbf{v}\|$. So, if $\mathbf{n}$ is a unit vector, then we can write
 
 <br>
 
@@ -388,17 +388,17 @@ As stated earlier, the components of a bound vector are the coordinates of the a
 
 #### 2.2.3.2 - Gram-Schmidt Orthogonalization
 
-Whenever you perform calculations with a computer, you should remember that you have a finite number of bits to represent integer and floating point values. This means we cannot exactly represent all the values in the infinite set of real numbers, so we have to settle for a good approximation. The downside is that, if you need to perform many calculations with approximate values, the outcome could differ significantly from the exact result. For example, a set of vectors $\\{\mathbf{v_0},\dots,\mathbf{v_{n-1}}\\}$ is called orthonormal if they are all unit vectors and orthogonal to each other. However, due to numerical precision issues, we might start off with an orthonormal set that gradually becomes un-orthonormal after some calculations. Fortunately, we can always orthogonalize the set and make it orthonormal again. We are mainly interested in the 3D case of this problem (sets with three basic vectors). However, it is simpler to examine the 2D case first.
+A computer cannot exactly represent all the elements in the infinite set of real numbers because it uses a finite number of bits to store values in memory. This means we have to settle for a good approximation. The downside is that, if you need to perform many calculations with approximate values, the outcome could differ significantly from the exact result. For example, a set of vectors $\\{\mathbf{v_0},\dots,\mathbf{v_{n-1}}\\}$ is called orthonormal if they are all unit vectors and orthogonal to each other. However, due to numerical precision issues, we might start off with an orthonormal set that gradually becomes un-orthonormal after some calculations. Fortunately, we can always orthogonalize the set and make it orthonormal again. We are mainly interested in the 3D case of this problem (sets with three basic vectors). However, it is simpler to examine the 2D case first.
 
 Suppose we have an un-orthonormal set of vectors $\\{\mathbf{v_0},\mathbf{v_1}\\}$ that we want to orthogonalize into an orthonormal set $\\{\mathbf{w_0},\mathbf{w_1}\\}$. First, we can set $\mathbf{w_0}=\mathbf{v_0}$ since we can always assume one of the vectors is okay. Then we try to change $\mathbf{v_1}$ to make it orthogonal with $\mathbf{w_0}$. To do that, we need to subtract from $\mathbf{v_1}$ its projection onto $\mathbf{w_0}$. Indeed, in the following illustration you can verify that
 
 <br>
 
-![Image](images/A/01/2D-Gram-Schmidt.png)
+$\mathbf{v_1}=\mathbf{w_1}+\text{proj}_{\mathbf{w_0}}(\mathbf{v_1})$
 
 <br>
 
-$\mathbf{v_1}=\mathbf{w_1}+\text{proj}_{\mathbf{w_0}}(\mathbf{v_1})$
+![Image](images/A/01/2D-Gram-Schmidt.png)
 
 <br>
 
@@ -414,9 +414,9 @@ where $\ \text{proj}_{\mathbf{w_0}}(\mathbf{v_1})=\displaystyle\frac{\mathbf{v_1
 
 <br>
 
-To prove that $\mathbf{w_0}$ and $\mathbf{w_1}$ are orthogonal, observe that the projection is orthogonal if the direction of projection forms a right angle $(90°)$ with the vector we project onto (see the dashed line in the illustration above). Also, we know that the sum of two vectors is the diagonal of the parallelogram with sides the two vectors. In this case, we have a rectangle since we just established that an angle of the parallelogram with diagonal $v_1$ is $90°$. So, we verified that $\mathbf{w_0}\ \bot\ \mathbf{w_1}$.
+To prove that $\mathbf{w_0}$ and $\mathbf{w_1}$ are orthogonal we can first observe that a projection is orthogonal if the direction of projection forms a right angle $(90°)$ with the vector we project onto (see the dashed line in the illustration above). Also, we know that the sum of two vectors is the diagonal of the parallelogram with sides the two vectors. In this case we have a rectangle since we just established that an angle of the parallelogram with diagonal $v_1$ is $90°$. So, we verified that $\mathbf{w_0}\ \bot\ \mathbf{w_1}$.
 
-In the 3D case, we have a third vector $\mathbf{v_2}$ we must modify to make it orthogonal to both $\mathbf{w_0}$ and $\mathbf{w_1}$. Once again, we have $\mathbf{w_0}=\mathbf{v_0}$, and to calculate $\mathbf{w_1}$ we can still subtract $\text{proj}\_{\mathbf{w_0}}(\mathbf{v_1})$ from $\mathbf{v_1}$ because we can always consider $\mathbf{w_0}$ and $\mathbf{v_1}$ as in the same plane (that is, we fall back into the 2D case). In a similar way, we can calculate $\mathbf{w_2}$ by subtracting out $\text{proj}\_{\mathbf{w_0}}(\mathbf{v_2})$ and $\text{proj}\_{\mathbf{w_1}}(\mathbf{v_2})$ from $\mathbf{v_2}$, as we want $\mathbf{w_2}$ to be orthogonal to both $\mathbf{w_0}$ and $\mathbf{w_1}$. Consider the following illustration. If we subtract $\text{proj}\_{\mathbf{w_0}}(\mathbf{v_2})$ from $\mathbf{v_2}$ the resultant vector is orthogonal to $\mathbf{w_0}$ and lies in the YZ-plane. Then, if we subtract $\text{proj}\_{\mathbf{w_1}}(\mathbf{v_2})$ from this last vector we get $\mathbf{w_2}$, which is orthogonal to both $\mathbf{w_0}$ and $\mathbf{w_1}$.
+In the 3D case, we have a third vector $\mathbf{v_2}$ we must modify to make it orthogonal to both $\mathbf{w_0}$ and $\mathbf{w_1}$. Once again, we can set $\mathbf{w_0}=\mathbf{v_0}$, and to calculate $\mathbf{w_1}$ we can still subtract $\text{proj}\_{\mathbf{w_0}}(\mathbf{v_1})$ from $\mathbf{v_1}$ because we can always consider $\mathbf{v_0}$ and $\mathbf{v_1}$ as in the same plane (that is, we fall back into the 2D case). In a similar way, we can compute $\mathbf{w_2}$ by subtracting out $\text{proj}\_{\mathbf{w_0}}(\mathbf{v_2})$ from $\mathbf{v_2}$, and then subtracting $\text{proj}\_{\mathbf{w_1}}(\mathbf{v_2})$ from the resultant vector. Consider the following illustration. If we subtract $\text{proj}\_{\mathbf{w_0}}(\mathbf{v_2})$ from $\mathbf{v_2}$ the resultant vector is orthogonal to $\mathbf{w_0}$ and lies in the YZ-plane. Then, if we subtract $\text{proj}\_{\mathbf{w_1}}(\mathbf{v_2})$ from this temporary vector we get $\mathbf{w_2}$, which is orthogonal to both $\mathbf{w_0}$ and $\mathbf{w_1}$.
 
 <br>
 
@@ -438,7 +438,7 @@ $\mathbf{w}=\mathbf{u}\times\mathbf{v}=(u_y v_z-u_z v_y,\ u_z v_x-u_x v_z,\ u_x 
 
 <br>
 
-A way to remember this formula is to notice that the first component of the vector $\mathbf{w}$ is missing the subscript $x$, the second component is missing the subscript $y$, and the third component is missing the subscript $z$. Also, we use the subscripts as a circular sequence of $\\{x,y,z\\}$. For example, in the first component of $\mathbf{w}$ we exclude the subscript $x$, so we start with $y$ and then $z$ in the minuend, inverting the subscripts in the subtrahend. In the second component we exclude the subscript $y$, so we start with $z$ and then $x$ in the minuend, inverting the subscripts in the subtrahend. You can easily conclude that the third component starts with $x$, followed by $y$.<br>
+A way to remember this formula is to notice that the first component of the vector $\mathbf{w}$ is missing the subscript $x$, the second component is missing the subscript $y$, and the third component is missing the subscript $z$. Also, we use the subscripts $\\{x,y,z\\}$ as a circular sequence. For example, in the first component of $\mathbf{w}$ we exclude the subscript $x$, so we start with $y$ and $z$ in the minuend, inverting the subscripts in the subtrahend. In the second component we exclude the subscript $y$, so we start with $z$ and $x$ in the minuend, inverting the subscripts in the subtrahend. You can easily conclude that the third component starts with $x$, followed by $y$.<br>
 We can also use matrices to calculate the cross product. For example, the cross product $\mathbf{u}\times\mathbf{v}$ is equal to the determinant of the $3\times 3$ matrix with $\mathbf{i}$, $\mathbf{j}$ and $\mathbf{k}$ as elements of the first row, and the components of the two vectors $\mathbf{u}$ and $\mathbf{v}$ as elements of the other two rows.
 
 <br>
@@ -466,7 +466,7 @@ $\mathbf{w}=\mathbf{u}\times\mathbf{v}=\mathbf{n}\|\mathbf{u}\|\|\mathbf{v}\|\si
 
 <br>
 
-with $\mathbf{n}$ unit vector indicating the direction of $\mathbf{w}$, and with $\|\mathbf{u}\|\|\mathbf{v}\|\sin{\theta}$ indicating the length of $\mathbf{w}$. We call $\mathbf{n}$ normal, which means it’s orthogonal to the plane it refers to (in this case, the plane defined by $\mathbf{u}$ and $\mathbf{v}$). By looking at the following illustration, we can verify that the above equation is related to the area $A_p$ of the parallelogram with sides $\mathbf{u}$ and $\mathbf{v}$.
+with $\mathbf{n}$ unit vector indicating the direction of $\mathbf{w}$, and with $\|\mathbf{u}\|\|\mathbf{v}\|\sin{\theta}$ indicating the length of $\mathbf{w}$. We call $\mathbf{n}$ normal, which means it’s orthogonal to the plane it refers to (in this case, the plane defined by $\mathbf{u}$ and $\mathbf{v}$). Now, we need to find a connection between the above formula and the area $A_p$ of the parallelogram with sides $\mathbf{u}$ and $\mathbf{v}$. Consider the following illustration.
 
 <br>
 
@@ -474,7 +474,7 @@ with $\mathbf{n}$ unit vector indicating the direction of $\mathbf{w}$, and with
 
 <br>
 
-Indeed, we know that $A_p=b\times h$, so we should have something like
+We know that $A_p=b\times h$, so we should have something like
 
 <br>
 
@@ -484,7 +484,7 @@ $A_p=\|\mathbf{w}\|=\|\mathbf{u}\times\mathbf{v}\|=\|\mathbf{u}\|\|\mathbf{v}\|\
 
 since $\|\mathbf{n}\|=1$, and the area of a parallelogram is a scalar value (then we have to use the length of the cross product). As you can see in the illustration above, we have $\|\mathbf{v}\|=b$ and $\|\mathbf{u}\|\sin{\theta}=h$. So, it’s $A_p=\|\mathbf{w}\|=\|\mathbf{u}\times\mathbf{v}\|$ as expected. Then, we just found a geometric representation of the length of the cross product.
 
-As stated above, the vector $\mathbf{n}$ is orthogonal to the plane defined by $\mathbf{u}$ and $\mathbf{v}$. So, the resultant vector $\mathbf{w}$ of the cross product is orthogonal to both $\mathbf{u}$ and $\mathbf{v}$. Ok, but we have two sides that $\mathbf{w}$ could aim at. Which side is the right one? In left-handed systems, it’s the one that makes $\mathbf{u}$, $\mathbf{v}$ and $\mathbf{w}$ a left-handed system. Alternatively, you can verify that the correct side is the one where $\mathbf{w}$ "sees" the first operand (in this case $\mathbf{u}$) rotates clockwise toward the second operand ($\mathbf{v}$) with an angle of rotation $0≤θ≤\pi$. You can also use your left hand and verify that if you aim the fingers in the same direction of $\mathbf{u}$, and curl your fingers toward $\mathbf{v}$, then your thumb points in the direction of $\mathbf{w}$; this is called the left-hand-thumb rule.<br>
+As stated above, the vector $\mathbf{n}$ is orthogonal to the plane defined by $\mathbf{u}$ and $\mathbf{v}$. So, the resultant vector $\mathbf{w}$ of the cross product is orthogonal to both $\mathbf{u}$ and $\mathbf{v}$. Ok, but we have two sides that $\mathbf{w}$ could aim at. Which side is the right one? In left-handed systems, it’s the one that makes $\mathbf{u}$, $\mathbf{v}$ and $\mathbf{w}$ a left-handed system. Alternatively, you can verify that the correct side is the one where $\mathbf{w}$ "sees" the first operand (in this case $\mathbf{u}$) rotates clockwise toward the second operand $(\mathbf{v})$ with an angle of rotation $0≤θ≤\pi$. You can also use your left hand: aim the fingers in the same direction of $\mathbf{u}$, and curl your fingers toward $\mathbf{v}$, then your thumb points in the direction of $\mathbf{w}$; this is called the left-hand-thumb rule.<br>
 In right-handed systems, the correct side is the one that makes $\mathbf{u}$, $\mathbf{v}$ and $\mathbf{w}$ a right-handed system.
 
 <br>
