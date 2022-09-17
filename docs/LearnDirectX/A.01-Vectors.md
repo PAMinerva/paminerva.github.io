@@ -434,8 +434,7 @@ This type of multiplication is also called vector product as the result is a vec
 
 <br>
 
-$\mathbf{w}=\mathbf{u}\times\mathbf{v}=(u_yv_z-u_zv_y,\ u_zv_x-u_xv_z,\ u_xv_y-u_yv_x)
-$
+$\mathbf{w}=\mathbf{u}\times\mathbf{v}=(u_y v_z-u_z v_y,\ u_z v_x-u_x v_z,\ u_x v_y-u_y v_x)$
 
 <br>
 
