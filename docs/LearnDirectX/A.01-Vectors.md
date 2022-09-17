@@ -443,8 +443,18 @@ We can also use matrices to calculate the cross product. For example, the cross 
 
 <br>
 
-$\mathbf{w}=\mathbf{u}\times\mathbf{v}=\left\lbrack \matrix{\mathbf{i} & \mathbf{j} & \mathbf{k} \cr u_x & u_y & u_z \cr v_x & v_y & v_z} \right\rbrack=$<br><br>
+$\mathbf{w}=\mathbf{u}\times\mathbf{v}=\left\lvert\matrix{\mathbf{i} & \mathbf{j} & \mathbf{k} \cr u_x & u_y & u_z \cr v_x & v_y & v_z}\right\rvert=$<br><br>
 $(u_y v_z-u_z v_y)\mathbf{i}-(u_x v_z-u_z v_x)\mathbf{j}+(u_x v_y-u_y v_x)\mathbf{k}=$<br><br>
 $(u_y v_z-u_z v_y,\ u_z v_x-u_x v_z,\ u_x v_y-u_y v_x)$
 
 <br>
+
+Also, the cross product can be computed multiplying a row by a matrix.
+
+<br>
+
+$\mathbf{w}=\mathbf{u}\times\mathbf{v}=\left\lbrack\matrix{v_x&v_y&v_z}\right\rbrack\left\rbrack\matrix{0&u_z&-u_y \cr -u_z&0&u_x \cr u_y&-u_x&0}\right\rbrack=(u_yv_z-u_zv_y,\ u_zv_x-u_xv_z,\ u_xv_y-u_yv_x)$
+
+<br>
+
+asdasd
