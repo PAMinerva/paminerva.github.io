@@ -523,6 +523,6 @@ A way to remember the above equivalences is to consider the unit vectors $\\{\ma
 
 <br>
 
-## 2.2.5 - Scalar triple product
+### 2.2.5 - Scalar triple product
 
 work in progress
