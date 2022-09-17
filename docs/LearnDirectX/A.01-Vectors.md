@@ -428,7 +428,7 @@ The last step is to normalize $\\{\mathbf{w_0},\mathbf{w_1},\mathbf{w_2}\\}$ to 
 
 <br>
 
-### 2.2.3 - Dot product
+### 2.2.3 - Cross product
 
 This type of multiplication is also called vector product as the result is a vector (unlike the dot product which evaluates to a scalar). The cross product is defined as
 
