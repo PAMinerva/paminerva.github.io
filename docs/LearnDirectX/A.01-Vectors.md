@@ -390,5 +390,61 @@ As stated earlier, the components of a bound vector are the coordinates of the a
 
 Whenever you perform calculations with a computer, you should remember that you have a finite number of bits to represent integer and floating point values. This means we cannot exactly represent all the values in the infinite set of real numbers, so we have to settle for a good approximation. The downside is that, if you need to perform many calculations with approximate values, the outcome could differ significantly from the exact result. For example, a set of vectors $\\{v_0,\dots,v_{n−1}\\}$ is called orthonormal if they are all unit vectors and orthogonal to each other. However, due to numerical precision issues, we might start off with an orthonormal set that gradually becomes un-orthonormal after some calculations. Fortunately, we can always orthogonalize the set and make it orthonormal again. We are mainly interested in the 3D case of this problem (sets with three basic vectors). However, it is simpler to examine the 2D case first.
 
-Suppose we have an un-orthonormal set of vectors $\\{v_0,v_1\\}$ that we want to orthogonalize into an orthonormal set $\\{w_0,w_1\\}$. First, we can set $w_0=v_0$ and then change $v_1$ to make it orthogonal with $w_0$. To do that, we need to subtract the projection of $v_1$ onto $w_0$. Indeed, in the following illustration you can verify that
+Suppose we have an un-orthonormal set of vectors $\\{v_0,v_1\\}$ that we want to orthogonalize into an orthonormal set $\\{w_0,w_1\\}$. First, we can set $w_0=v_0$ since we can always assume one of the vectors is okay. Then we try to change $v_1$ to make it orthogonal with $w_0$. To do that, we need to subtract from $v_1$ its projection onto $w_0$. Indeed, in the following illustration you can verify that
 
+<br>
+
+![Image](images/A/01/2D-Gram-Schmidt.png)
+
+<br>
+
+$\mathbf{v}_1=\mathbf{w}_1+\text{proj}_{\mathbf{w}_0}(\mathbf{v}_1)$
+
+<br>
+
+So, we have that
+
+<br>
+
+$\mathbf{w}_1=\mathbf{v}_1-\text{proj}_{\mathbf{w}_0}(\mathbf{v}_1)$
+
+<br>
+
+where $\ \text{proj}_{\mathbf{w}_\mathbf{0}}(\mathbf{v}_1)=\displaystyle\frac{\mathbf{v}_1\cdot\mathbf{w}_0}{\\|\mathbf{w}_0\\|^2}\mathbf{w}_0$
+
+<br>
+
+To prove that $w_0$ and $w_1$ are orthogonal, observe that the projection is orthogonal if the direction of projection forms a right angle $(90°)$ with the vector we project onto (see the dashed line in the illustration above). Also, we know that the sum of two vectors is the diagonal of the parallelogram with sides the two vectors. In this case, we have a rectangle since we just established that an angle of the parallelogram with diagonal $v_1$ is $90°$. So, we verified that $w_0\ \bot\ w_1$.
+
+In the 3D case, we have a third vector $v_2$ we must modify to make it orthogonal to both $w_0$ and $w_1$. Once again, we have $v_0=w_0$, and to calculate $w_1$ we can still subtract $\text{proj}_{\mathbf{w}_0}(\mathbf{v}_1)$ from $v_1$ because we can always consider $v_0$ and $v_1$ as in the same plane (that is, we fall back into the 2D case). In a similar way, we can calculate $w_2$ by subtracting out $\text{proj}_{\mathbf{w}_0}(\mathbf{v}_2)$ and $\text{proj}_{\mathbf{w}_1}(\mathbf{v}_2)$ from v2, as we want $w_2$ to be orthogonal to both $w_0$ and $w_1$.
+Consider the following illustration. If we subtract $\text{proj}_{\mathbf{w}_0}(\mathbf{v}_2)$ from $v_2$ the resultant vector is orthogonal to $w_0$ and lies in the YZ-plane. Then, if we subtract $\text{proj}_{\mathbf{w}_1}(\mathbf{v}_2)$ from this last vector we get $w_2$, which is orthogonal to both $w_0$ and $w_1$.
+
+<br>
+
+![Image](images/A/01/3D-Gram-Schmidt.png)
+
+<br>
+
+The last step is to normalize $\\{w_0,w_1,w_2\\}$ to get an orthonormal set.
+
+<br>
+
+### 2.2.3 - Dot product
+
+This type of multiplication is also called vector product as the result is a vector (unlike the dot product which evaluates to a scalar). The cross product is defined as
+
+<br>
+
+$\mathbf{w}=\mathbf{u}\times\mathbf{v}=(u_yv_z-u_zv_y,\ u_zv_x-u_xv_z,\ u_xv_y-u_yv_x)
+$
+
+<br>
+
+A way to remember this formula is to notice that the first component of the vector $\mathbf{w}$ is missing the subscript $x$, the second component is missing the subscript $y$, and the third component is missing the subscript $z$. Also, we use the subscripts as a circular sequence of $\\{x,y,z\\}$. For example, in the first component of $\mathbf{w}$ we exclude the subscript $x$, so we start with $y$ and then $z$ in the minuend, inverting the subscripts in the subtrahend. In the second component we exclude the subscript $y$, so we start with $z$ and then $x$ in the minuend, inverting the subscripts in the subtrahend. You can easily conclude that the third component starts with $x$, followed by $y$.<br>
+We can also use matrices to calculate the cross product. For example, the cross product $\mathbf{u}\times\mathbf{v}$ is equal to the determinant of the $3\times 3$ matrix with $\mathbf{i}$, $\mathbf{j}$ and $\mathbf{k}$ as elements of the first row, and the components of the two vectors $\mathbf{u}$ and $\mathbf{v}$ as elements of the other two rows.
+
+<br>
+
+$\begin{align*}\mathbf{w}&=\mathbf{u}\times\mathbf{v}=\begin{vmatrix}\mathbf{i}&\mathbf{j}&\mathbf{k}\\u_x&u_y&u_z\\v_x&v_y&v_z\\\end{vmatrix} \\ &=(u_yv_z-u_zv_y)\mathbf{i}-(u_xv_z-u_zv_x)\mathbf{j}+(u_xv_y-u_yv_x)\mathbf{k} \\ &=(u_yv_z-u_zv_y,\; u_zv_x-u_xv_z,\; u_xv_y-u_yv_x)\end{align*}$
+
+<br>
