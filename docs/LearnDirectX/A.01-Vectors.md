@@ -443,8 +443,8 @@ We can also use matrices to calculate the cross product. For example, the cross 
 
 <br>
 
-$\mathbf{w}=\mathbf{u}\times\mathbf{v}=\left\lbrack \matrix{\mathbf{i} & \mathbf{j} & \mathbf{k} \cr u_x & u_y & u_z \cr v_x & v_y & v_z} \right\rbrack=\newline$<br>
-$(u_y v_z-u_z v_y)\mathbf{i}-(u_x v_z-u_z v_x)\mathbf{j}+(u_x v_y-u_y v_x)\mathbf{k}=$<br>
+$\mathbf{w}=\mathbf{u}\times\mathbf{v}=\left\lbrack \matrix{\mathbf{i} & \mathbf{j} & \mathbf{k} \cr u_x & u_y & u_z \cr v_x & v_y & v_z} \right\rbrack=$<br><br>
+$(u_y v_z-u_z v_y)\mathbf{i}-(u_x v_z-u_z v_x)\mathbf{j}+(u_x v_y-u_y v_x)\mathbf{k}=$<br><br>
 $(u_y v_z-u_z v_y,\ u_z v_x-u_x v_z,\ u_x v_y-u_y v_x)$
 
 <br>
