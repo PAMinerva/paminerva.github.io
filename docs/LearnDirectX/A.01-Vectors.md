@@ -398,7 +398,7 @@ Suppose we have an un-orthonormal set of vectors $\\{v_0,v_1\\}$ that we want to
 
 <br>
 
-$\mathbf{v}=\mathbf{w}+\text{proj}_{\mathbf{w}}(\mathbf{v})$
+$\mathbf{v}_1=\mathbf{w}_1+\text{proj}_{\mathbf{w}_0}(\mathbf{v}_1)$
 
 <br>
 
