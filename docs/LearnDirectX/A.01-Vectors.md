@@ -445,4 +445,8 @@ We can also use matrices to calculate the cross product. For example, the cross 
 
 $\begin{vmatrix}a&b&c \\\ d&e&f \\\ g&h&i \\\ \end{vmatrix}$
 
+$\begin{bmatrix} u\\e \end{bmatrix}  \sim 
+N (\begin{bmatrix}0\\0\end{bmatrix},
+\begin{bmatrix} G(\sigma_g) &0\\ 0 &R(\sigma_{\gamma})\end{bmatrix})$
+
 <br>
