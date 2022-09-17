@@ -443,10 +443,10 @@ We can also use matrices to calculate the cross product. For example, the cross 
 
 <br>
 
-${\left\lbrack \matrix{2 & 3 \cr 4 & 5} \right\rbrack} * \left\lbrack \matrix{1 & 0 \cr 0 & 1}\right\rbrack = \left\lbrack \matrix{2 & 3 \cr 4 & 5} \right\rbrack$
+$\begin{align*}
+\mathbf{w}&=\mathbf{u}\times\mathbf{v}=\left\lbrack \matrix{mathbf{i}&\mathbf{j}&\mathbf{k} \cr u_x & u_y & u_z} \cr v_x & v_y & v_z \right\rbrack
+\end{align*}$
 
-$\begin{bmatrix} u\\e \end{bmatrix}  \sim 
-N (\begin{bmatrix}0\\0\end{bmatrix},
-\begin{bmatrix} G(\sigma_g) &0\\ 0 &R(\sigma_{\gamma})\end{bmatrix})$
+${\left\lbrack \matrix{2 & 3 \cr 4 & 5} \right\rbrack} * \left\lbrack \matrix{1 & 0 \cr 0 & 1}\right\rbrack = \left\lbrack \matrix{2 & 3 \cr 4 & 5} \right\rbrack$
 
 <br>
