@@ -388,9 +388,9 @@ As stated earlier, the components of a bound vector are the coordinates of the a
 
 #### 2.2.3.2 - Gram-Schmidt Orthogonalization
 
-Whenever you perform calculations with a computer, you should remember that you have a finite number of bits to represent integer and floating point values. This means we cannot exactly represent all the values in the infinite set of real numbers, so we have to settle for a good approximation. The downside is that, if you need to perform many calculations with approximate values, the outcome could differ significantly from the exact result. For example, a set of vectors $\\{v_0,\dots,v_{n−1}\\}$ is called orthonormal if they are all unit vectors and orthogonal to each other. However, due to numerical precision issues, we might start off with an orthonormal set that gradually becomes un-orthonormal after some calculations. Fortunately, we can always orthogonalize the set and make it orthonormal again. We are mainly interested in the 3D case of this problem (sets with three basic vectors). However, it is simpler to examine the 2D case first.
+Whenever you perform calculations with a computer, you should remember that you have a finite number of bits to represent integer and floating point values. This means we cannot exactly represent all the values in the infinite set of real numbers, so we have to settle for a good approximation. The downside is that, if you need to perform many calculations with approximate values, the outcome could differ significantly from the exact result. For example, a set of vectors $\\{\mathbf{v_0},\dots,\mathbf{v_{n-1}}\\}$ is called orthonormal if they are all unit vectors and orthogonal to each other. However, due to numerical precision issues, we might start off with an orthonormal set that gradually becomes un-orthonormal after some calculations. Fortunately, we can always orthogonalize the set and make it orthonormal again. We are mainly interested in the 3D case of this problem (sets with three basic vectors). However, it is simpler to examine the 2D case first.
 
-Suppose we have an un-orthonormal set of vectors $\\{v_0,v_1\\}$ that we want to orthogonalize into an orthonormal set $\\{w_0,w_1\\}$. First, we can set $w_0=v_0$ since we can always assume one of the vectors is okay. Then we try to change $v_1$ to make it orthogonal with $w_0$. To do that, we need to subtract from $v_1$ its projection onto $w_0$. Indeed, in the following illustration you can verify that
+Suppose we have an un-orthonormal set of vectors $\\{\mathbf{v_0},\mathbf{v_1}\\}$ that we want to orthogonalize into an orthonormal set $\\{\mathbf{w_0},\mathbf{w_1}\\}$. First, we can set $\mathbf{w_0}=\mathbf{v_0}$ since we can always assume one of the vectors is okay. Then we try to change $\mathbf{v_1}$ to make it orthogonal with $\mathbf{w_0}$. To do that, we need to subtract from $\mathbf{v_1}$ its projection onto $\mathbf{w_0}$. Indeed, in the following illustration you can verify that
 
 <br>
 
@@ -398,7 +398,7 @@ Suppose we have an un-orthonormal set of vectors $\\{v_0,v_1\\}$ that we want to
 
 <br>
 
-$\mathbf{v}_1=\mathbf{w}_1+\text{proj}_{\mathbf{w}_0}(\mathbf{v}_1)$
+$\mathbf{v_1}=\mathbf{w_1}+\text{proj}_{\mathbf{w_0}}(\mathbf{v_1})$
 
 <br>
 
@@ -406,18 +406,18 @@ So, we have that
 
 <br>
 
-$\mathbf{w}_1=\mathbf{v}_1-\text{proj}_{\mathbf{w}_0}(\mathbf{v}_1)$
+$\mathbf{w_1}=\mathbf{v_1}-\text{proj}_{\mathbf{w_0}}(\mathbf{v_1})$
 
 <br>
 
-where $\ \text{proj}_{\mathbf{w}_\mathbf{0}}(\mathbf{v}_1)=\displaystyle\frac{\mathbf{v}_1\cdot\mathbf{w}_0}{\\|\mathbf{w}_0\\|^2}\mathbf{w}_0$
+where $\ \text{proj}_{\mathbf{w_0}}(\mathbf{v_1})=\displaystyle\frac{\mathbf{v_1}\cdot\mathbf{w_0}}{\\|\mathbf{w_0}\\|^2}\mathbf{w_0}$
 
 <br>
 
-To prove that $w_0$ and $w_1$ are orthogonal, observe that the projection is orthogonal if the direction of projection forms a right angle $(90°)$ with the vector we project onto (see the dashed line in the illustration above). Also, we know that the sum of two vectors is the diagonal of the parallelogram with sides the two vectors. In this case, we have a rectangle since we just established that an angle of the parallelogram with diagonal $v_1$ is $90°$. So, we verified that $w_0\ \bot\ w_1$.
+To prove that $\mathbf{w_0}$ and $\mathbf{w_1}$ are orthogonal, observe that the projection is orthogonal if the direction of projection forms a right angle $(90°)$ with the vector we project onto (see the dashed line in the illustration above). Also, we know that the sum of two vectors is the diagonal of the parallelogram with sides the two vectors. In this case, we have a rectangle since we just established that an angle of the parallelogram with diagonal $v_1$ is $90°$. So, we verified that $\mathbf{w_0}\ \bot\ \mathbf{w_1}$.
 
-In the 3D case, we have a third vector $v_2$ we must modify to make it orthogonal to both $w_0$ and $w_1$. Once again, we have $v_0=w_0$, and to calculate $w_1$ we can still subtract $\text{proj}_{\mathbf{w}_0}(\mathbf{v}_1)$ from $v_1$ because we can always consider $v_0$ and $v_1$ as in the same plane (that is, we fall back into the 2D case). In a similar way, we can calculate $w_2$ by subtracting out $\text{proj}_{\mathbf{w}_0}(\mathbf{v}_2)$ and $\text{proj}_{\mathbf{w}_1}(\mathbf{v}_2)$ from v2, as we want $w_2$ to be orthogonal to both $w_0$ and $w_1$.
-Consider the following illustration. If we subtract $\text{proj}_{\mathbf{w}_0}(\mathbf{v}_2)$ from $v_2$ the resultant vector is orthogonal to $w_0$ and lies in the YZ-plane. Then, if we subtract $\text{proj}_{\mathbf{w}_1}(\mathbf{v}_2)$ from this last vector we get $w_2$, which is orthogonal to both $w_0$ and $w_1$.
+In the 3D case, we have a third vector $\mathbf{v_2}$ we must modify to make it orthogonal to both $\mathbf{w_0}$ and $\mathbf{w_1}$. Once again, we have $\mathbf{w_0}=\mathbf{v_0}$, and to calculate $\mathbf{w_1}$ we can still subtract $\text{proj}_{\mathbf{w_0}}(\mathbf{v_1})$ from $\mathbf{v_1}$ because we can always consider $\mathbf{w_0}$ and $\mathbf{v_1}$ as in the same plane (that is, we fall back into the 2D case). In a similar way, we can calculate $\mathbf{w_2}$ by subtracting out $\text{proj}_{\mathbf{w_0}}(\mathbf{v_2})$ and $\text{proj}_{\mathbf{w_1}}(\mathbf{v_2})$ from $\mathbf{v_2}$, as we want $\mathbf{w_2}$ to be orthogonal to both $\mathbf{w_0}$ and $\mathbf{w_1}$.
+Consider the following illustration. If we subtract $\text{proj}_{\mathbf{w_0}}(\mathbf{v_2})$ from $\mathbf{v_2}$ the resultant vector is orthogonal to $\mathbf{w_0}$ and lies in the YZ-plane. Then, if we subtract $\text{proj}_{\mathbf{w_1}}(\mathbf{v_2})$ from this last vector we get $\mathbf{w_2}$, which is orthogonal to both $\mathbf{w_0}$ and $\mathbf{w_1}$.
 
 <br>
 
@@ -425,7 +425,7 @@ Consider the following illustration. If we subtract $\text{proj}_{\mathbf{w}_0}(
 
 <br>
 
-The last step is to normalize $\\{w_0,w_1,w_2\\}$ to get an orthonormal set.
+The last step is to normalize $\\{\mathbf{w_0},\mathbf{w_1},\mathbf{w_2}\\}$ to get an orthonormal set.
 
 <br>
 
