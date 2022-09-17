@@ -443,6 +443,6 @@ We can also use matrices to calculate the cross product. For example, the cross 
 
 <br>
 
-$\begin{align*}\mathbf{w}&=\mathbf{u}\times\mathbf{v}=\begin{vmatrix}\mathbf{i}&\mathbf{j}&\mathbf{k} \\\\ u_x & u_y & u_z \\\\ v_x & v_y & v_z \end{vmatrix}\end{align*}$
+$\begin{vmatrix}\mathbf{i}&\mathbf{j}&\mathbf{k} \\\\ u_x & u_y & u_z \\\\ v_x & v_y & v_z \end{vmatrix}$
 
 <br>
