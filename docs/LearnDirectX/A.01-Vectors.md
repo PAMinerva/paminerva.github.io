@@ -453,9 +453,76 @@ Also, the cross product can be computed multiplying a row by a matrix.
 
 <br>
 
-$\mathbf{w}=\mathbf{u}\times\mathbf{v}=\left\lbrack\matrix{v_x&v_y&v_z}\right\rbrack\left\rbrack\matrix{0&u_z&-u_y \cr -u_z&0&u_x \cr u_y&-u_x&0}\right\rbrack=$<br><br>
+$\mathbf{w}=\mathbf{u}\times\mathbf{v}=\left\lbrack\matrix{v_x&v_y&v_z}\right\rbrack\left\lbrack\matrix{0&u_z&-u_y \cr -u_z&0&u_x \cr u_y&-u_x&0}\right\rbrack=$<br><br>
 $(u_yv_z-u_zv_y,\ u_zv_x-u_xv_z,\ u_xv_y-u_yv_x)$
 
 <br>
 
-asdasd
+We will cover matrices in the next appendix, where we will show that the determinant of a matrix is related to the concept of hypervolume (that is, length in 1D, area in 2D, and volume in 3D). In this section we can use this information to find something interesting. We know that two vectors always lie in a plane (that is, we are in 2D), and that to calculate the area of a parallelogram we multiply its base times the height. Then, we are supposed to find a similar formula for the cross product because, to compute it, we can use the determinant of a matrix, which is related to the concept of hypervolume. Indeed, we can also write the cross product as
+
+<br>
+
+$\mathbf{w}=\mathbf{u}\times\mathbf{v}=\mathbf{n}\|\mathbf{u}\|\|\mathbf{v}\|\sin{\theta}$
+
+<br>
+
+with $\mathbf{n}$ unit vector indicating the direction of $\mathbf{w}$, and with $\|\mathbf{u}\|\|\mathbf{v}\|\sin{\theta}$ indicating the length of $\mathbf{w}$. We call $\mathbf{n}$ normal, which means it’s orthogonal to the plane it refers to (in this case, the plane defined by $\mathbf{u}$ and $\mathbf{v}$). By looking at the following illustration, we can verify that the above equation is related to the area $A_p$ of the parallelogram with sides $\mathbf{u}$ and $\mathbf{v}$.
+
+<br>
+
+![Image](images/A/01/cross-product.png)
+
+<br>
+
+Indeed, we know that $A_p=b\times h$, so we should have something like
+
+<br>
+
+$A_p=\|\mathbf{w}\|=\|\mathbf{u}\times\mathbf{v}\|=\|\mathbf{u}\|\|\mathbf{v}\|\sin{\theta}$
+
+<br>
+
+since $\|\mathbf{n}\|=1$, and the area of a parallelogram is a scalar value (then we have to use the length of the cross product). As you can see in the illustration above, we have $\|\mathbf{v}\|=b$ and $\|\mathbf{u}\|\sin{\theta}=h$. So, it’s $A_p=\|\mathbf{w}\|=\|\mathbf{u}\times\mathbf{v}\|$ as expected. Then, we just found a geometric representation of the length of the cross product.
+
+As stated above, the vector $\mathbf{n}$ is orthogonal to the plane defined by $\mathbf{u}$ and $\mathbf{v}$. So, the resultant vector $\mathbf{w}$ of the cross product is orthogonal to both $\mathbf{u}$ and $\mathbf{v}$. Ok, but we have two sides that $\mathbf{w}$ could aim at. Which side is the right one? In left-handed systems, it’s the one that makes $\mathbf{u}$, $\mathbf{v}$ and $\mathbf{w}$ a left-handed system. Alternatively, you can verify that the correct side is the one where $\mathbf{w}$ "sees" the first operand (in this case $\mathbf{u}$) rotates clockwise toward the second operand ($\mathbf{v}$) with an angle of rotation $0≤θ≤\pi$. You can also use your left hand and verify that if you aim the fingers in the same direction of $\mathbf{u}$, and curl your fingers toward $\mathbf{v}$, then your thumb points in the direction of $\mathbf{w}$; this is called the left-hand-thumb rule.<br>
+In right-handed systems, the correct side is the one that makes $\mathbf{u}$, $\mathbf{v}$ and $\mathbf{w}$ a right-handed system.
+
+<br>
+
+![Image](images/A/01/cross-product2.png)
+
+<br>
+
+The commutative property doesn’t apply $(\mathbf{u}\times\mathbf{v}\ne\mathbf{v}\times\mathbf{u})$ as if you swap the vectors $\mathbf{u}$ and $\mathbf{v}$ the direction of $\mathbf{w}$ changes as well (you can check it with the left-hand-thumb rule). However, you can easily verify that the following equivalence is true.
+
+<br>
+
+$\mathbf{u}\times\mathbf{v}=-(\mathbf{v}\times\mathbf{u})$
+
+<br>
+
+And we also have that
+
+<br>
+
+$\mathbf{i}\times\mathbf{j}=\mathbf{k}$<br>
+$\mathbf{j}\times\mathbf{k}=\mathbf{i}$<br>
+$\mathbf{k}\times\mathbf{i}=\mathbf{j}$<br>
+
+$\mathbf{j}\times\mathbf{i}=\mathbf{-k}$<br>
+$\mathbf{k}\times\mathbf{j}=\mathbf{-i}$<br>
+$\mathbf{i}\times\mathbf{k}=\mathbf{-j}$<br>
+
+$\mathbf{i}\times\mathbf{i}=\mathbf{0}$<br>
+$\mathbf{j}\times\mathbf{j}=\mathbf{0}$<br>
+$\mathbf{k}\times\mathbf{k}=\mathbf{0}$<br>
+
+<br>
+
+A way to remember the above equivalences is to consider the unit vectors $\\{\mathbf{i},\mathbf{j},\mathbf{k}\\}$ as a circular sequence. If you cross multiply a vector by the next one, you get the third vector with a positive sign. Otherwise, you get a negative sign. Observe that if you cross multiply a vector by itself the result is the zero vector as you can’t build a parallelogram with two equal vectors: you get a segment, so the area is zero.
+
+<br>
+
+## 2.2.5 - Scalar triple product
+
+work in progress
