@@ -570,7 +570,7 @@ which is the scalar triple product. If you expand it you have
 
 <br>
 
-\begin{align}\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})\end{align}
+$$ $\begin{align*}\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})\end{align*}$ $$
 
 <br>
 
