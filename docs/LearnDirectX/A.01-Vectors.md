@@ -608,3 +608,11 @@ $\mathbf{a}\times(\mathbf{b}\times\mathbf{c})=\mathbf{b}(\mathbf{a}\cdot\mathbf{
 ><br>
 >
 >The same applies to the other two components.
+
+<br>
+
+<br>
+
+# 3 - Vectors in DirectX
+
+work in progress
