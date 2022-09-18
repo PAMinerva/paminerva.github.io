@@ -801,9 +801,9 @@ static const XMVECTORF32 vZero = { 0.0f, 0.0f, 0.0f, 0.0f };
 <br>
 
 # References
-
-[1] [DirectX graphics and gaming (Microsoft Docs)](https://docs.microsoft.com/en-us/windows/win32/directx)<br>
-[2] [DirectX-Specs (Microsoft Docs)](https://microsoft.github.io/DirectX-Specs/)
+[1] Practical Linear Algebra: A Geometry Toolbox (Farin, Hansford)<br>
+[2] [Library Internals (Microsoft Docs)](https://docs.microsoft.com/en-us/windows/win32/dxmath/pg-xnamath-internals)<br>
+[3] [__vectorcall (Microsoft Docs)](https://docs.microsoft.com/en-us/cpp/cpp/vectorcall?view=msvc-170)
 
 <br>
 
