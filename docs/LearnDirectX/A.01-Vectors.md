@@ -660,7 +660,7 @@ typedef __m128 XMVECTOR;
 ```
 <br>
 
-That is, a variable of type __**m128** is backed by a memory region of 128 bits that the compiler can use as a source\destination to load\store data in\from XMM[0-7] registers, which are used in SIMD instructions. SIMD (single instruction multiple data) allows us to perform more operations with a single instruction. To better understand how SIMD works, it’s useful to consider a practical example. First, it is worth noting that in DirectX it is common to use vectors of four components, where each of them is a 4-byte floating point or integer value. 
+That is, a variable of type **__m128** is backed by a memory region of 128 bits that the compiler can use as a source\destination to load\store data in\from XMM[0-7] registers, which are used in SIMD instructions. SIMD (single instruction multiple data) allows us to perform more operations with a single instruction. To better understand how SIMD works, it’s useful to consider a practical example. First, it is worth noting that in DirectX it is common to use vectors of four components, where each of them is a 4-byte floating point or integer value. 
 
 >You may wonder why we have vectors of four components if we mostly work in 3D space (where only 3 coordinates are needed). Well, as we will see in a later tutorial, at some point we will introduce an extra coordinate to distinguish between free vectors and bound vectors. That is, we will work in a special homogeneous coordinate system to use both points and vectors.
 
@@ -680,7 +680,7 @@ With SIMD we can perform the four sums in a single instruction. In general, the 
 
 <br>
 
-The only problem is that __**m128** variables need to be aligned on 16-byte boundaries in memory. That’s not really an issue if you declare a global or local variable of this type because the compiler will automatically align them. Problems arise when you use a **XMVECTOR** (which is an alias for_**m128**) as a member of a structure or a class, where the C++ packing rules can misalign it. For this purpose, DirectXMath provides the following types, which allow us to use integer or floating-point vectors as class members.
+The only problem is that **__m128** variables need to be aligned on 16-byte boundaries in memory. That’s not really an issue if you declare a global or local variable of this type because the compiler will automatically align them. Problems arise when you use a **XMVECTOR** (which is an alias for **__m128**) as a member of a structure or a class, where the C++ packing rules can misalign it. For this purpose, DirectXMath provides the following types, which allow us to use integer or floating-point vectors as class members.
 
 <br>
 
@@ -774,7 +774,7 @@ If a function takes one or more **XMVECTOR**s as parameters then:
 
 This allows to use the appropriate calling conventions for each platform supported by the DirectXMath Library. To learn more about calling convections you can refer to the official documentation (see [3] and [4] in the reference list at the end of the tutorial). 
 
-As stated above, **XMVECTOR** is just an alias for __**m128**, which identify a type mapped to XMM registers. This means we can't simply use **XMVECTOR** to operate with vectors without using SIMD instructions. For this reason, DirectXMath provides many helper functions that take advantage of SIMD to initialize **XMVECTOR**s and operate with them. We will examine most of these functions in the upcoming tutorials.
+As stated above, **XMVECTOR** is just an alias for **__m128**, which identify a type mapped to XMM registers. This means we can't simply use **XMVECTOR** to operate with vectors without using SIMD instructions. For this reason, DirectXMath provides many helper functions that take advantage of SIMD to initialize **XMVECTOR**s and operate with them. We will examine most of these functions in the upcoming tutorials.
 
 If you want to declare a vectorized-constant (const **XMVECTOR**) then it is recommended to use **XMVECTORF32** for floating-point values, and **XMVECTORU32** (or **XMVECTORI32**) for integer values. That’s because these types are defined as the union of a **XMVECTOR** and an array. This allows us to use the initialization syntax, and allows the compiler to optimize the load of constant data into XMM registers by using SIMD instructions.
 
