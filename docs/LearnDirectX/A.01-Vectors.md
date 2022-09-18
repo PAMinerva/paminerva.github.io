@@ -570,10 +570,7 @@ which is the scalar triple product. If you expand it you have
 
 <br>
 $
-$$
-\begin{align*}\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})&=\mathbf{u}\cdot(v_yw_z-v_zw_y, u_yv_zw_x-v_xw_z, v_xw_y-v_yw_x) \\\\
-    &=u_xv_yw_z-u_xv_zw_y+u_yv_zw_x-u_yv_xw_z+u_zv_xw_y-u_zv_yw_x\end{align*}
-$$
+\begin{align*}\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})&=\mathbf{u}\cdot(v_yw_z-v_zw_y, u_yv_zw_x-v_xw_z, v_xw_y-v_yw_x) \\\\ &= u_xv_yw_z-u_xv_zw_y+u_yv_zw_x-u_yv_xw_z+u_zv_xw_y-u_zv_yw_x\end{align*}
 $
 
 <br>
