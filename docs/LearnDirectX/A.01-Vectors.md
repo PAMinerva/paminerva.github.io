@@ -591,6 +591,6 @@ $\mathbf{a}\times (\mathbf{b}\times\mathbf{c})=(a_x, a_y, a_z)\times [(b_x, b_y,
 
 $(a_x,\, a_y,\, a_z)\times (b_yc_z-b_zc_y,\; b_zc_x-b_xc_z,\; b_xc_y-b_yc_x)=$
 
-$\big(\color{red}{a_y (b_xc_y-b_yc_x)-a_z (b_zc_x-b_xc_z)},\ \color{green}{a_z (b_yc_z-b_zc_y)-a_x\ (b_xc_y-b_yc_x)},\ \color{blue}{a_x (b_zc_x-b_xc_z)-a_y(b_yc_z-b_zc_y)}\big)\end{align*}$
+$\big(\color{red}{a_y (b_xc_y-b_yc_x)-a_z (b_zc_x-b_xc_z)},\ \color{green}{a_z (b_yc_z-b_zc_y)-a_x\ (b_xc_y-b_yc_x)},\ \color{blue}{a_x (b_zc_x-b_xc_z)-a_y(b_yc_z-b_zc_y)}\big)$
 
 <br>
