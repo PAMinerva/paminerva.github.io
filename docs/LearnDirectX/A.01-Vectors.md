@@ -531,6 +531,50 @@ A way to remember the above equivalences is to consider the unit vectors $\\{\ma
 
 <br>
 
-### 2.2.5 - Scalar triple product
+### 2.2.5 - Scalar and vector triple product
 
-work in progress
+The scalar triple product is nothing really new, as it’s just a mix of the dot and cross products. It’s defined as
+
+<br>
+
+$V=\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})$
+
+<br>
+
+where $V$ is the volume of the parallelepiped made up of the bound vectors $\mathbf{u}$, $\mathbf{v}$ and $\mathbf{w}$. Consider the following illustration.
+
+<br>
+
+![Image](images/A/01/triple-product.png)
+
+<br>
+
+As you know, the length of the cross product is the area of a parallelogram. Also, the volume of a parallelepiped is $V=b\times h$. So, in order to compute the volume of the parallelepiped illustrated above, we need to write
+
+<br>
+
+$V=\|\mathbf{u}\| \|\mathbf{v}\times\mathbf{w}\|\cos{\theta}$
+
+<br>
+
+with $\|\mathbf{v}\times\mathbf{w}\|=b$ and $\|\mathbf{u}\|\cos{\theta}=h$.<br>
+From equation $(1)$ we can also write it as
+
+<br>
+
+$V=\mathbf{u}\cdot (\mathbf{v}\times\mathbf{w})$
+
+<br>
+
+which is the scalar triple product. If you expand it you have
+
+<br>
+
+$
+\begin{align*}\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})&=\mathbf{u}\cdot(v_yw_z-v_zw_y, u_yv_zw_x-v_xw_z, v_xw_y-v_yw_x) \\\\
+    &=u_xv_yw_z-u_xv_zw_y+u_yv_zw_x-u_yv_xw_z+u_zv_xw_y-u_zv_yw_x\end{align*}
+$
+
+<br>
+
+asdsa
