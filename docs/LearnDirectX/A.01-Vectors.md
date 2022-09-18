@@ -420,7 +420,7 @@ In the 3D case, we have a third vector $\mathbf{v_2}$ we must modify to make it 
 
 <br>
 
-$\mathbf{w_2}=\mathbf{v_2}-\text{proj}_{\mathbf{w_0}}(\mathbf{v_2})-\text{proj}_0$
+$\mathbf{w_2}=\mathbf{v_2}-\text{proj}_{\mathbf{w_0}}(\mathbf{v_2})-\text{proj}_\mathbf{0}$
 
 <br>
 
