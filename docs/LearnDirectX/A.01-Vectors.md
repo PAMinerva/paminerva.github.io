@@ -570,7 +570,7 @@ which is the scalar triple product. If you expand it you have
 
 <br>
 
-$\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})=\mathbf{u}\cdot(v_yw_z-v_zw_y, u_yv_zw_x-v_xw_z, v_xw_y-v_yw_x)=$
+$\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w})=\mathbf{u}\cdot(v_yw_z-v_zw_y, v_zw_x-v_xw_z, v_xw_y-v_yw_x)=$
 
 
 $u_x v_y w_z - u_x v_z w_y + u_y v_z w_x - u_y v_x w_z + u_z v_x w_y - u_z v_y w_x$
@@ -579,7 +579,7 @@ $u_x v_y w_z - u_x v_z w_y + u_y v_z w_x - u_y v_x w_z + u_z v_x w_y - u_z v_y w
 
 which is exactly the determinant of the $3\times 3$ matrix with $\mathbf{u}$, $\mathbf{v}$ and $\mathbf{w}$ as rows. We will prove this result in the next appendix, where we will cover matrices.
 
-We conclude this section pointing out that there is also a vector triple product $\mathbf{a}\times(\mathbf{b}\times \mathbf{c})$. However, we will only demonstrate the following identity, called the BAC-CAB identity.
+We conclude this section pointing out that a vector triple product $\mathbf{a}\times(\mathbf{b}\times \mathbf{c})$ also exists. However, we will only demonstrate the following identity, called the BAC-CAB identity.
 
 <br>
 
