@@ -577,4 +577,20 @@ $u_x v_y w_z - u_x v_z w_y + u_y v_z w_x - u_y v_x w_z + u_z v_x w_y - u_z v_y w
 
 <br>
 
-asdsa
+which is exactly the determinant of the $3\times 3$ matrix with $\mathbf{u}$, $\mathbf{v}$ and $\mathbf{w}$ as rows. We will prove this result in the next appendix, where we will cover matrices.
+
+We conclude this section pointing out that there is also a vector triple product $\mathbf{a}\times(\mathbf{b}\times \mathbf{c})$. However, we will only demonstrate the following identity, called the BAC-CAB identity.
+
+<br>
+
+$\mathbf{a}\times(\mathbf{b}\times\mathbf{c})=\mathbf{b}(\mathbf{a}\cdot\mathbf{c})-\mathbf{c}(\mathbf{a}\cdot\mathbf{b})$
+
+<br>
+
+$\mathbf{a}\times (\mathbf{b}\times\mathbf{c})=(a_x, a_y, a_z)\times [(b_x, b_y, b_z)\times (c_x, c_y, c_z)]=$
+
+$(a_x,\, a_y,\, a_z)\times (b_yc_z-b_zc_y,\; b_zc_x-b_xc_z,\; b_xc_y-b_yc_x)=$
+
+$ \big(\color{red}{a_y (b_xc_y-b_yc_x)-a_z (b_zc_x-b_xc_z)},\ \color{green}{a_z (b_yc_z-b_zc_y)-a_x\ (b_xc_y-b_yc_x)},\ \color{blue}{a_x (b_zc_x-b_xc_z)-a_y(b_yc_z-b_zc_y)}\big)\end{align*}$
+
+<br>
