@@ -92,7 +92,7 @@ Since addition and scalar multiplications are done element-wise, matrices inheri
 
 ## 3.4 - Matrix multiplication
 
-We can multiply two matrices $\mathbf{A}$ and $\mathbf{B}$ only if the number of columns in $\mathbf{A}$ equals the number of rows in $\mathbf{B}$. That’s because each element $C_{ij}$ of the resultant matrix $\mathbf{C}$ is the dot product of the i-th row of $\mathbf{A}$ and the j-th column of $\mathbf{B}$. This means that, if the $\mathbf{A}$ is an $m\times n$ matrix and $\mathbf{B}$ is an $n\times p$ matrix, we can multiply them and the resultant matrix $\mathbf{C}$ will have dimension $m\times p$ since we have to multiply each of the $m$ rows of $\mathbf{A}$ by each of the $p$ columns of $\mathbf{B}$ to get all the elements of $\mathbf{C}$. That is,
+We can multiply two matrices $\mathbf{A}$ and $\mathbf{B}$ only if the number of columns in $\mathbf{A}$ equals the number of rows in $\mathbf{B}$. That’s because each element $C_{ij}$ of the resultant matrix $\mathbf{C}$ is the dot product of the i-th row of $\mathbf{A}$ and the j-th column of $\mathbf{B}$. This means that, if $\mathbf{A}$ is an $m\times n$ matrix and $\mathbf{B}$ is an $n\times p$ matrix, we can multiply them and the resultant matrix $\mathbf{C}$ will have dimension $m\times p$ since we have to multiply each of the $m$ rows of $\mathbf{A}$ by each of the $p$ columns of $\mathbf{B}$ to get all the elements of $\mathbf{C}$. That is,
 
 <br>
 
