@@ -246,8 +246,8 @@ Below are the properties of the matrix transpose.
 
 >The first three properties are quite trivial to prove. The last one can be proven computing the ji-th entry of both $(\mathbf{AB})^T$ and $\mathbf{B}^T\mathbf{A}^T$, and showing they are equal. Indeed, we have
 >
->$\lparen\mathbf{AB}\rparen_{ij}^T=\lparen\mathbf{AB}\rparen_{ji}=\mathbf{A}_ {j\ast}\cdot\mathbf{B}_ {\ast i}$<br>
-$\lparen\mathbf{B}^T\mathbf{A}^T\rparen_{ij}=\mathbf{B}_ {i\ast}^T\cdot\mathbf{A}_ {\ast j}^T=\mathbf{B}_ {\ast i}\cdot\mathbf{A}_ {j\ast}$
+>$(\mathbf{AB}) _{ij}^T=\lparen\mathbf{AB}\rparen_{ji}=\mathbf{A}_ {j\ast}\cdot\mathbf{B}_ {\ast i}$<br>
+$(\mathbf{B}^T\mathbf{A}^T) _{ij}=\mathbf{B}_ {i\ast}^T\cdot\mathbf{A}_ {\ast j}^T=\mathbf{B}_ {\ast i}\cdot\mathbf{A}_ {j\ast}$
 >
 >The two expressions are the same since the dot product is commutative. Also, observe how we flipped the subscripts to refer to the same entry in the transpose.
 
