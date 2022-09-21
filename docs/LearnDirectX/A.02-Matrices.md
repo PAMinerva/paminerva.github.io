@@ -527,7 +527,7 @@ Of course, the elements of matrices used in shader code are stored contiguously 
 
 <br>
 
-$\left\lbrack\matrix{A_{00}&A_{01}&A_{02}&A_{03}\cr A_{10}&A_{11}&A_{12}&A_{13}\cr A_{20}&A_{21}&A_{22}&A_{23}\cr A_{30}&A_{31}&A_{32}&A_{33}}\right\rbrack\quad\longrightarrow\quad \vert A_{00}\vert A_{10}\vert A_{20}\vert A_{30}\vert A_{01}\vert A_{11}\vert A_{21}\vert A_{31}\vert A_{02}\vert A_{12}\vert A_{22}\vert A_{32}\vert A_{03}\vert A_{13}\vert A_{23}\vert A_{33}|$
+$\left\lbrack\matrix{A_{00}&A_{01}&A_{02}&A_{03}\cr A_{10}&A_{11}&A_{12}&A_{13}\cr A_{20}&A_{21}&A_{22}&A_{23}\cr A_{30}&A_{31}&A_{32}&A_{33}}\right\rbrack\quad\longrightarrow\quad \vert A_{00}\vert A_{10}\vert A_{20}\vert A_{30}\vert A_{01}\vert A_{11}\vert A_{21}\vert A_{31}\vert A_{02}\vert A_{12}\vert A_{22}\vert A_{32}\vert A_{03}\vert A_{13}\vert A_{23}\vert A_{33}\vert$
 
 <br>
 
@@ -535,7 +535,7 @@ Now, a problem arises whenever we have to pass matrix data from our C++ applicat
 
 <br>
 
-$\vert A_{00}\vert A_{01}\vert A_{02}\vert A_{03}\vert A_{10}\vert A_{11}\vert A_{12}\vert A_{13}\vert A_{20}\vert A_{21}\vert A_{22}\vert A_{23}\vert A_{30}\vert A_{31}\vert A_{32}\vert A_{33}\quad\longrightarrow\quad\left\lbrack\matrix{A_{00}&A_{10}&A_{20}&A_{30}\cr A_{01}&A_{11}&A_{21}&A_{31}\cr A_{02}&A_{12}&A_{22}&A_{32}\cr A_{03}&A_{13}&A_{23}&A_{33}}\right\rbrack$
+$\vert A_{00}\vert A_{01}\vert A_{02}\vert A_{03}\vert A_{10}\vert A_{11}\vert A_{12}\vert A_{13}\vert A_{20}\vert A_{21}\vert A_{22}\vert A_{23}\vert A_{30}\vert A_{31}\vert A_{32}\vert A_{33}\vert\quad\longrightarrow\quad\left\lbrack\matrix{A_{00}&A_{10}&A_{20}&A_{30}\cr A_{01}&A_{11}&A_{21}&A_{31}\cr A_{02}&A_{12}&A_{22}&A_{32}\cr A_{03}&A_{13}&A_{23}&A_{33}}\right\rbrack$
 
 <br>
 
