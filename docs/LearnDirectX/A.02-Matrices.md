@@ -518,7 +518,7 @@ The elements of matrices used in C++ applications are stored contiguously row by
 
 <br>
 
-$\left\lbrack\matrix{A_{00}&A_{01}&A_{02}&A_{03}\cr A_{10}&A_{11}&A_{12}&A_{13}\cr A_{20}&A_{21}&A_{22}&A_{23}\cr A_{30}&A_{31}&A_{32}&A_{33}}\right\rbrack\quad\quad |A_{00}|A_{01}|A_{02}|A_{03}|A_{10}|A_{11}|A_{12}|A_{13}|A_{20}|A_{21}|A_{22}|A_{23}|A_{30}|A_{31}|A_{32}|A_{33}|$
+$\left\lbrack\matrix{A_{00}&A_{01}&A_{02}&A_{03}\cr A_{10}&A_{11}&A_{12}&A_{13}\cr A_{20}&A_{21}&A_{22}&A_{23}\cr A_{30}&A_{31}&A_{32}&A_{33}}\right\rbrack\quad\longrightarrow\quad \lvert A_{00}\lvert A_{01}\lvert A_{02}\lvert A_{03}\lvert A_{10}\lvert A_{11}\lvert A_{12}\lvert A_{13}\lvert A_{20}\lvert A_{21}\lvert A_{22}\lvert A_{23}\lvert A_{30}\lvert A_{31}\lvert A_{32}\lvert A_{33}\lvert$
 
 <br>
 
@@ -527,7 +527,7 @@ Of course, the elements of matrices used in shader code are stored contiguously 
 
 <br>
 
-$\left\lbrack\matrix{A_{00}&A_{01}&A_{02}&A_{03}\cr A_{10}&A_{11}&A_{12}&A_{13}\cr A_{20}&A_{21}&A_{22}&A_{23}\cr A_{30}&A_{31}&A_{32}&A_{33}}\right\rbrack\quad\longrightarrow\quad |A_{00}|A_{10}|A_{20}|A_{30}|A_{01}|A_{11}|A_{21}|A_{31}|A_{02}|A_{12}|A_{22}|A_{32}|A_{03}|A_{13}|A_{23}|A_{33}|$
+$\left\lbrack\matrix{A_{00}&A_{01}&A_{02}&A_{03}\cr A_{10}&A_{11}&A_{12}&A_{13}\cr A_{20}&A_{21}&A_{22}&A_{23}\cr A_{30}&A_{31}&A_{32}&A_{33}}\right\rbrack\quad\longrightarrow\quad \lvert A_{00}\lvert A_{10}\lvert A_{20}\lvert A_{30}\lvert A_{01}\lvert A_{11}\lvert A_{21}\lvert A_{31}\lvert A_{02}\lvert A_{12}\lvert A_{22}\lvert A_{32}\lvert A_{03}\lvert A_{13}\lvert A_{23}\lvert A_{33}|$
 
 <br>
 
@@ -535,7 +535,7 @@ Now, a problem arises whenever we have to pass matrix data from our C++ applicat
 
 <br>
 
-$|A_{00}|A_{01}|A_{02}|A_{03}|A_{10}|A_{11}|A_{12}|A_{13}|A_{20}|A_{21}|A_{22}|A_{23}|A_{30}|A_{31}|A_{32}|A_{33}\quad\longrightarrow\quad\left\lbrack\matrix{A_{00}&A_{10}&A_{20}&A_{30}\cr A_{01}&A_{11}&A_{21}&A_{31}\cr A_{02}&A_{12}&A_{22}&A_{32}\cr A_{03}&A_{13}&A_{23}&A_{33}}\right\rbrack$
+$\lvert A_{00}\lvert A_{01}\lvert A_{02}\lvert A_{03}\lvert A_{10}\lvert A_{11}\lvert A_{12}\lvert A_{13}\lvert A_{20}\lvert A_{21}\lvert A_{22}\lvert A_{23}\lvert A_{30}\lvert A_{31}\lvert A_{32}\lvert A_{33}\quad\longrightarrow\quad\left\lbrack\matrix{A_{00}&A_{10}&A_{20}&A_{30}\cr A_{01}&A_{11}&A_{21}&A_{31}\cr A_{02}&A_{12}&A_{22}&A_{32}\cr A_{03}&A_{13}&A_{23}&A_{33}}\right\rbrack$
 
 <br>
 
@@ -562,7 +562,7 @@ On the other hand, what happens if you want to multiply a vector and a matrix? W
 
 <br>
 
-$|A_{00}|A_{10}|A_{20}|A_{30}|A_{01}|A_{11}|A_{21}|A_{31}|A_{02}|A_{12}|A_{22}|A_{32}|A_{03}|A_{13}|A_{23}|A_{33}|$
+$\lvert A_{00}\lvert A_{10}\lvert A_{20}\lvert A_{30}\lvert A_{01}\lvert A_{11}\lvert A_{21}\lvert A_{31}\lvert A_{02}\lvert A_{12}\lvert A_{22}\lvert A_{32}\lvert A_{03}\lvert A_{13}\lvert A_{23}\lvert A_{33}|$
 
 <br>
 
@@ -570,10 +570,10 @@ Then, the columns can be easily loaded into shader core registers since their en
 
 <br>
 
-$reg_1: |A_{00}|A_{10}|A_{20}|A_{30}|$<br>
-$reg_2: |A_{01}|A_{11}|A_{21}|A_{31}|$<br>
-$reg_3: |A_{02}|A_{12}|A_{22}|A_{32}|$<br>
-$reg_4: |A_{03}|A_{13}|A_{23}|A_{33}|$
+$reg_1: \lvert A_{00}\lvert A_{10}\lvert A_{20}\lvert A_{30}|$<br>
+$reg_2: \lvert A_{01}\lvert A_{11}\lvert A_{21}\lvert A_{31}|$<br>
+$reg_3: \lvert A_{02}\lvert A_{12}\lvert A_{22}\lvert A_{32}|$<br>
+$reg_4: \lvert A_{03}\lvert A_{13}\lvert A_{23}\lvert A_{33}|$
 
 <br>
 
