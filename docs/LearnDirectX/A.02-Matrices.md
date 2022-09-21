@@ -104,7 +104,7 @@ $$\tag{1}C_{ij}=\mathbf{A}_{i*}\cdot\mathbf{B}_{*j}$$
 
 <br>
 
-where $\mathbf{A}_{i*}$ is the i-th row of $\mathbf{A}$, and $\mathbf{B}_{*j}$ is the j-th column of $\mathbf{B}$.<br>
+where $\mathbf{A}\_{i*}$ is the i-th row of $\mathbf{A}$, and $\mathbf{B}_{*j}$ is the j-th column of $\mathbf{B}$.<br>
 For example, the following illustration shows that if we multiply a $2\times 3$ matrix $\mathbf{A}$ and a $3\times 2$ matrix $\mathbf{B}$, we get a $2\times 2$ matric $\mathbf{C}$ where the top-left element $C_{00}$ is computed with the dot product of the 0-th row of $\mathbf{A}$ and the 0th column of $\mathbf{B}$.
 
 <br>
