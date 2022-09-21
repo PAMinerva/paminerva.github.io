@@ -123,7 +123,7 @@ A row vector is a $1\times n$ matrix, so we can multiply it by a generic $n\time
 
 <br>
 
-$\mathbf{uA}=\left\lbrack\matrix{x&y&z}\right\rbrack\left\lbrack\matrix{A_{00}&A_{01}&A_{02}\cr A_{10}&A_{11}&A_{12}\cr A_{20}&A_{21}&A_{22}}\right\rbrack=\left\lbrack\matrix{\mathbf{u}\cdot\mathbf{A}\_{\ast 0}&\mathbf{u}\cdot\mathbf{A}\_{\ast 1}&\mathbf{u}\cdot\mathbf{A}\_{\ast 2}}\right\rbrack$
+$\mathbf{uA}=\left\lbrack\matrix{x&y&z}\right\rbrack\left\lbrack\matrix{A_{00}&A_{01}&A_{02}\cr A_{10}&A_{11}&A_{12}\cr A_{20}&A_{21}&A_{22}}\right\rbrack=\left\lbrack\matrix{\mathbf{u}\cdot\mathbf{A}_ {\ast 0}&\mathbf{u}\cdot\mathbf{A}_ {\ast 1}&\mathbf{u}\cdot\mathbf{A}_ {\ast 2}}\right\rbrack$
 
 <br>
 
@@ -131,13 +131,13 @@ The result is a row vector of three elements (just like $\mathbf{u}$) where each
 
 <br>
 
-$\mathbf{uA}=\left\lbrack\matrix{\mathbf{u}\cdot\mathbf{A}\_{\ast 0}&\mathbf{u}\cdot\mathbf{A}\_{\ast 1}&\mathbf{u}\cdot\mathbf{A}\_{\ast 2}}\right\rbrack=$ 
+$\mathbf{uA}=\left\lbrack\matrix{\mathbf{u}\cdot\mathbf{A}_ {\ast 0}&\mathbf{u}\cdot\mathbf{A}_ {\ast 1}&\mathbf{u}\cdot\mathbf{A}_ {\ast 2}}\right\rbrack=$ 
 
 $\left\lbrack\matrix{xA_{00}+yA_{10}+zA_{20}&\quad xA_{01}+yA_{11}+zA_{21}&\quad xA_{02}+yA_{12}+zA_{22}}\right\rbrack=$
 
 $\left\lbrack\matrix{xA_{00}&xA_{01}&xA_{02}}\right\rbrack+\left\lbrack\matrix{yA_{10}&yA_{11}&yA_{12}}\right\rbrack+\left\lbrack\matrix{zA_{20}&zA_{21}&zA_{22}}\right\rbrack=$
 
-$x\mathbf{A}\_{0\ast}+y\mathbf{A}\_{1\ast}+z\mathbf{A}\_{2\ast}$
+$x\mathbf{A}_ {0\ast}+y\mathbf{A}_ {1\ast}+z\mathbf{A}_ {2\ast}$
 
 <br>
 
@@ -145,7 +145,7 @@ So, the vector-matrix multiplication can be seen as a sum of the rows of the mat
 
 <br>
 
-$\mathbf{uA}=x\mathbf{A}\_{0\ast}+y\mathbf{A}\_{1\ast}+z\mathbf{A}\_{2\ast}=\left\lbrack\matrix{x&y&z}\right\rbrack\left\lbrack\matrix{\mathbf{A}\_{0\ast}\cr \mathbf{A}\_{1\ast}\cr \mathbf{A}\_{2\ast}}\right\rbrack$
+$\mathbf{uA}=x\mathbf{A}_ {0\ast}+y\mathbf{A}_ {1\ast}+z\mathbf{A}_ {2\ast}=\left\lbrack\matrix{x&y&z}\right\rbrack\left\lbrack\matrix{\mathbf{A}_ {0\ast}\cr \mathbf{A}_ {1\ast}\cr \mathbf{A}_ {2\ast}}\right\rbrack$
 
 <br>
 
@@ -162,7 +162,7 @@ What we’ve covered so far in this section is true in general. That is, with a 
 
 <br>
 
-$\mathbf{uA}=\left\lbrack\matrix{u_0&u_1&\cdots&u_{n-1}}\right\rbrack\left\lbrack\matrix{A_{00}&\cdots&A_{0(n-1)}\cr \vdots&\ddots&\cdots\cr A_{(n-1)0}&\cdots&A_{(n-1)(n-1)}}\right\rbrack=u_0\mathbf{A}\_{0\ast}+u_1\mathbf{A}\_{1\ast}+\cdots+u_{n-1}\mathbf{A}\_{(n-1)\ast}$
+$\mathbf{uA}=\left\lbrack\matrix{u_0&u_1&\cdots&u_{n-1}}\right\rbrack\left\lbrack\matrix{A_{00}&\cdots&A_{0(n-1)}\cr \vdots&\ddots&\cdots\cr A_{(n-1)0}&\cdots&A_{(n-1)(n-1)}}\right\rbrack=u_0\mathbf{A}_ {0\ast}+u_1\mathbf{A}_ {1\ast}+\cdots+u_{n-1}\mathbf{A}_ {(n-1)\ast}$
 
 <br>
 
@@ -170,7 +170,7 @@ We can also multiply an $m\times n$ matrix by an $n\times 1$ column vector. For 
 
 <br>
 
-$\mathbf{Au}=\left\lbrack\matrix{A_{00}&A_{01}&A_{02}\cr A_{10}&A_{11}&A_{12}\cr A_{20}&A_{21}&A_{22}}\right\rbrack\left\lbrack\matrix{x\cr y\cr z}\right\rbrack=\left\lbrack\matrix{\mathbf{u}\cdot\mathbf{A}\_{1\ast}\cr \mathbf{u}\cdot\mathbf{A}\_{2\ast}\cr \mathbf{u}\cdot\mathbf{A}\_{3\ast}}\right\rbrack$
+$\mathbf{Au}=\left\lbrack\matrix{A_{00}&A_{01}&A_{02}\cr A_{10}&A_{11}&A_{12}\cr A_{20}&A_{21}&A_{22}}\right\rbrack\left\lbrack\matrix{x\cr y\cr z}\right\rbrack=\left\lbrack\matrix{\mathbf{u}\cdot\mathbf{A}_ {1\ast}\cr \mathbf{u}\cdot\mathbf{A}_ {2\ast}\cr \mathbf{u}\cdot\mathbf{A}_ {3\ast}}\right\rbrack$
 
 <br>
 
@@ -178,7 +178,7 @@ The result is a column vector of three elements where each entry is the dot prod
 
 <br>
 
-$\mathbf{Au}=x\mathbf{A}\_{\ast 0}+y\mathbf{A}\_{\ast 1}+z\mathbf{A}\_{\ast 2}=\left\lbrack\matrix{\mathbf{A}\_{\ast 0}&\mathbf{A}\_{\ast 1}&\mathbf{A}\_{\ast 2}}\right\rbrack\left\lbrack\matrix{x\cr y\cr z}\right\rbrack$
+$\mathbf{Au}=x\mathbf{A}_ {\ast 0}+y\mathbf{A}_ {\ast 1}+z\mathbf{A}_ {\ast 2}=\left\lbrack\matrix{\mathbf{A}_ {\ast 0}&\mathbf{A}_ {\ast 1}&\mathbf{A}_ {\ast 2}}\right\rbrack\left\lbrack\matrix{x\cr y\cr z}\right\rbrack$
 
 <br>
 
@@ -246,8 +246,8 @@ Below are the properties of the matrix transpose.
 
 >The first three properties are quite trivial to prove. The last one can be proven computing the ji-th entry of both $(\mathbf{AB})^T$ and $\mathbf{B}^T\mathbf{A}^T$, and showing they are equal. Indeed, we have
 >
->$\lparen\mathbf{AB}\rparen_{ij}^T=\lparen\mathbf{AB}\rparen_{ji}=\mathbf{A}\_{j\ast}\cdot\mathbf{B}\_{\ast i}$<br>
-$\lparen\mathbf{B}^T\mathbf{A}^T\rparen_{ij}=\mathbf{B}\_{i\ast}^T\cdot\mathbf{A}\_{\ast j}^T=\mathbf{B}\_{\ast i}\cdot\mathbf{A}\_{j\ast}$
+>$\lparen\mathbf{AB}\rparen_{ij}^T=\lparen\mathbf{AB}\rparen_{ji}=\mathbf{A}_ {j\ast}\cdot\mathbf{B}_ {\ast i}$<br>
+$\lparen\mathbf{B}^T\mathbf{A}^T\rparen_{ij}=\mathbf{B}_ {i\ast}^T\cdot\mathbf{A}_ {\ast j}^T=\mathbf{B}_ {\ast i}\cdot\mathbf{A}_ {j\ast}$
 >
 >The two expressions are the same since the dot product is commutative. Also, observe how we flipped the subscripts to refer to the same entry in the transpose.
 
@@ -287,9 +287,9 @@ $\mathbf{A}=\left\lbrack\matrix{A_{00}&A_{01}&A_{02}\cr A_{10}&A_{11}&A_{12}\cr 
 
 <br>
 
-${\bar{\mathbf{A}}}\_{00}=\left\lbrack\matrix{A_{11}&A_{12}\cr A_{21}&A_{22}}\right\rbrack$
+${\bar{\mathbf{A}}}_ {00}=\left\lbrack\matrix{A_{11}&A_{12}\cr A_{21}&A_{22}}\right\rbrack$
 
-${\bar{\mathbf{A}}}\_{01}=\left\lbrack\matrix{A_{10}&A_{12}\cr A_{20}&A_{22}}\right\rbrack$
+${\bar{\mathbf{A}}}_ {01}=\left\lbrack\matrix{A_{10}&A_{12}\cr A_{20}&A_{22}}\right\rbrack$
 
 <br>
 
@@ -297,7 +297,7 @@ Now we can see how to calculate the determinant $\lvert\mathbf{A}\rvert$ (or $de
 
 <br>
 
-$$\begin{equation}\tag{2}det\mathbf{A}=\sum_{j=0}^{n-1}\ [(-1)^{i+j}\cdot A_{ij}\cdot det{\bar{\mathbf{A}}}\_{ij}]\end{equation}
+$$\begin{equation}\tag{2}det\mathbf{A}=\sum_{j=0}^{n-1}\ [(-1)^{i+j}\cdot A_{ij}\cdot det{\bar{\mathbf{A}}}_ {ij}]\end{equation}
 $$
 
 <br>
@@ -324,9 +324,9 @@ $A_{00}A_{11}A_{22}-A_{00}A_{12}A_{21}-A_{01}A_{10}A_{22}+A_{01}A_{12}A_{20}+A_{
 
 <br>
 
-As you can check, we get a result similar to the one we got for the scalar triple product in appendix 01. This means the determinant of a $3\times 3$ matrix $\mathbf{A}$ is the signed volume of the parallelepiped made up of its three row vectors. In particular, if the row vectors are $\mathbf{A}\_{0*}$, $\mathbf{A}\_{1*}$ and $\mathbf{A}\_{2*}$, the sign of the determinant is positive if the vectors $\mathbf{A}\_{0*}$ and $(\mathbf{A}\_{1*}\times\mathbf{A}\_{2*})$ are on the same side (half-space) with respect to the plane defined by $\mathbf{A}\_{1*}$ and $\mathbf{A}\_{2*}$. As we will see in a later tutorial, this ensures that handedness of the frame doesn’t change if you use $\mathbf{A}$ to transform the standard basis vectors.
+As you can check, we get a result similar to the one we got for the scalar triple product in appendix 01. This means the determinant of a $3\times 3$ matrix $\mathbf{A}$ is the signed volume of the parallelepiped made up of its three row vectors. In particular, if the row vectors are $\mathbf{A}_ {0*}$, $\mathbf{A}_ {1*}$ and $\mathbf{A}_ {2*}$, the sign of the determinant is positive if the vectors $\mathbf{A}_ {0*}$ and $(\mathbf{A}_ {1*}\times\mathbf{A}_ {2*})$ are on the same side (half-space) with respect to the plane defined by $\mathbf{A}_ {1*}$ and $\mathbf{A}_ {2*}$. As we will see in a later tutorial, this ensures that handedness of the frame doesn’t change if you use $\mathbf{A}$ to transform the standard basis vectors.
 
-On the other hand, it’s much easier to prove that the determinant of a $2\times 2$ matrix $\mathbf{A}$ is the signed area of the parallelogram made up of its two row vectors $\mathbf{A}\_{0*}$ and $\mathbf{A}\_{1*}$.
+On the other hand, it’s much easier to prove that the determinant of a $2\times 2$ matrix $\mathbf{A}$ is the signed area of the parallelogram made up of its two row vectors $\mathbf{A}_ {0*}$ and $\mathbf{A}_ {1*}$.
 
 <br>
 
@@ -334,7 +334,7 @@ On the other hand, it’s much easier to prove that the determinant of a $2\time
 
 <br>
 
-In the illustration above, we have that the area $T$ of the triangle formed by $\mathbf{A}\_{0*}$ and $\mathbf{A}\_{1*}$ is
+In the illustration above, we have that the area $T$ of the triangle formed by $\mathbf{A}_ {0*}$ and $\mathbf{A}_ {1*}$ is
 
 <br>
 
@@ -446,7 +446,7 @@ $$
 >
 ><br>
 >
->$\mathbf{A}=\left\lbrack\matrix{a&b\cr c&d}\right\rbrack\quad\quad\quad\quad\mathbf{A}^{-1}=\left\lbrack\matrix{v_ {00}&v_ {01}\cr v_ {10}&v_ {11}}\right\rbrack$
+>$\mathbf{A}=\left\lbrack\matrix{a&b\cr c&d}\right\rbrack\quad\quad\quad\quad\mathbf{A}^{-1}=\left\lbrack\matrix{v_{00}&v_{01}\cr v_{10}&v_{11}}\right\rbrack$
 >
 ><br>
 >
