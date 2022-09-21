@@ -562,7 +562,7 @@ On the other hand, what happens if you want to multiply a vector and a matrix? W
 
 <br>
 
-$\vert A_{00}\vert A_{10}\vert A_{20}\vert A_{30}\vert A_{01}\vert A_{11}\vert A_{21}\vert A_{31}\vert A_{02}\vert A_{12}\vert A_{22}\vert A_{32}\vert A_{03}\vert A_{13}\vert A_{23}\vert A_{33}|$
+$\vert A_{00}\vert A_{10}\vert A_{20}\vert A_{30}\vert A_{01}\vert A_{11}\vert A_{21}\vert A_{31}\vert A_{02}\vert A_{12}\vert A_{22}\vert A_{32}\vert A_{03}\vert A_{13}\vert A_{23}\vert A_{33}\vert$
 
 <br>
 
@@ -570,10 +570,10 @@ Then, the columns can be easily loaded into shader core registers since their en
 
 <br>
 
-$reg_1: \vert A_{00}\vert A_{10}\vert A_{20}\vert A_{30}|$<br>
-$reg_2: \vert A_{01}\vert A_{11}\vert A_{21}\vert A_{31}|$<br>
-$reg_3: \vert A_{02}\vert A_{12}\vert A_{22}\vert A_{32}|$<br>
-$reg_4: \vert A_{03}\vert A_{13}\vert A_{23}\vert A_{33}|$
+$reg_1: \vert A_{00}\vert A_{10}\vert A_{20}\vert A_{30}\vert$<br>
+$reg_2: \vert A_{01}\vert A_{11}\vert A_{21}\vert A_{31}\vert$<br>
+$reg_3: \vert A_{02}\vert A_{12}\vert A_{22}\vert A_{32}\vert$<br>
+$reg_4: \vert A_{03}\vert A_{13}\vert A_{23}\vert A_{33}\vert$
 
 <br>
 
@@ -581,7 +581,7 @@ The row vector is loaded in a register as well.
 
 <br>
 
-$reg_0: |x|y|z|w|$
+$reg_0: \vert x\vert y\vert z\vert w\vert$
 
 <br>
 
