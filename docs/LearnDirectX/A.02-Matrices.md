@@ -518,7 +518,7 @@ The elements of matrices used in C++ applications are stored contiguously row by
 
 <br>
 
-$\left\lbrack\matrix{A_{00}&A_{01}&A_{02}&A_{03}\cr A_{10}&A_{11}&A_{12}&A_{13}\cr A_{20}&A_{21}&A_{22}&A_{23}\cr A_{30}&A_{31}&A_{32}&A_{33}}\right\rbrack\quad\longrightarrow\quad |A_{00}|A_{01}|A_{02}|A_{03}|A_{10}|A_{11}|A_{12}|A_{13}|A_{20}|A_{21}|A_{22}|A_{23}|A_{30}|A_{31}|A_{32}|A_{33}|$
+$\left\lbrack\matrix{A_{00}&A_{01}&A_{02}&A_{03}\cr A_{10}&A_{11}&A_{12}&A_{13}\cr A_{20}&A_{21}&A_{22}&A_{23}\cr A_{30}&A_{31}&A_{32}&A_{33}}\right\rbrack\quad\quad |A_{00}|A_{01}|A_{02}|A_{03}|A_{10}|A_{11}|A_{12}|A_{13}|A_{20}|A_{21}|A_{22}|A_{23}|A_{30}|A_{31}|A_{32}|A_{33}|$
 
 <br>
 
