@@ -100,7 +100,9 @@ We can multiply two matrices $\mathbf{A}$ and $\mathbf{B}$ only if the number of
 
 <br>
 
-$$\tag{1}C_{ij}=\mathbf{A}_{i*}\cdot\mathbf{B}_{*j}$$
+$$\tag{1}C_{ij}=\mathbf{A}\raisebox{-.4ex}{\scriptsize i*}\cdot\mathbf{B}\raisebox{-.4ex}{\scriptsize *j}$$
+
+$$\tag{1}C_{ij}=\mathbf{A}\textsubscript{i*}\cdot\mathbf{B}\textsubscript{*j}$$
 
 <br>
 
