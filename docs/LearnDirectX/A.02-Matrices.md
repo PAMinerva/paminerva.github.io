@@ -2,10 +2,6 @@
 
 <br>
 
-# A.02 - Matrices
-
-<br>
-
 # 1 - Introduction
 
 A matrix is a mathematical object associated with a function. This means a matrix can represent a transformation we can use to change the coordinates of points and vectors to go from a frame to another. Common transformations are scaling, rotation, translation, or any composition of them.
