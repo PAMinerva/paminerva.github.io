@@ -324,9 +324,9 @@ $A_{00}A_{11}A_{22}-A_{00}A_{12}A_{21}-A_{01}A_{10}A_{22}+A_{01}A_{12}A_{20}+A_{
 
 <br>
 
-As you can check, we get a result similar to the one we got for the scalar triple product in appendix 01. This means the determinant of a $3\times 3$ matrix $\mathbf{A}$ is the signed volume of the parallelepiped made up of its three row vectors. In particular, if the row vectors are $\mathbf{A}_ {0*}$, $\mathbf{A}_ {1*}$ and $\mathbf{A}_ {2*}$, the sign of the determinant is positive if the vectors $\mathbf{A}_ {0*}$ and $(\mathbf{A}_ {1*}\times\mathbf{A}_ {2*})$ are on the same side (half-space) with respect to the plane defined by $\mathbf{A}_ {1*}$ and $\mathbf{A}_ {2*}$. As we will see in a later tutorial, this ensures that handedness of the frame doesn’t change if you use $\mathbf{A}$ to transform the standard basis vectors.
+As you can check, we get a result similar to the one we got for the scalar triple product in appendix 01. This means the determinant of a $3\times 3$ matrix $\mathbf{A}$ is the signed volume of the parallelepiped made up of its three row vectors. In particular, if the row vectors are $\mathbf{A}_ {0\ast}$, $\mathbf{A}_ {1\ast}$ and $\mathbf{A}_ {2\ast}$, the sign of the determinant is positive if the vectors $\mathbf{A}_ {0\ast}$ and $(\mathbf{A}_ {1\ast}\times\mathbf{A}_ {2\ast})$ are on the same side (half-space) with respect to the plane defined by $\mathbf{A}_ {1\ast}$ and $\mathbf{A}_ {2\ast}$. As we will see in a later tutorial, this ensures that handedness of the frame doesn’t change if you use $\mathbf{A}$ to transform the standard basis vectors.
 
-On the other hand, it’s much easier to prove that the determinant of a $2\times 2$ matrix $\mathbf{A}$ is the signed area of the parallelogram made up of its two row vectors $\mathbf{A}_ {0*}$ and $\mathbf{A}_ {1*}$.
+On the other hand, it’s much easier to prove that the determinant of a $2\times 2$ matrix $\mathbf{A}$ is the signed area of the parallelogram made up of its two row vectors $\mathbf{A}_ {0\ast}$ and $\mathbf{A}_ {1\ast}$.
 
 <br>
 
@@ -334,7 +334,7 @@ On the other hand, it’s much easier to prove that the determinant of a $2\time
 
 <br>
 
-In the illustration above, we have that the area $T$ of the triangle formed by $\mathbf{A}_ {0*}$ and $\mathbf{A}_ {1*}$ is
+In the illustration above, we have that the area $T$ of the triangle formed by $\mathbf{A}_ {0\ast}$ and $\mathbf{A}_ {1\ast}$ is
 
 <br>
 
@@ -362,7 +362,7 @@ $T=\frac{1}{2}A_{00}A_{11}-\frac{1}{2}A_{01}A_{10}$
 
 <br>
 
-However, we want to calculate the area of the parallelogram $A_p$, formed by $\mathbf{A}_ {0*}$ and $\mathbf{A}_ {1*}$. We know that $A_p=2T$, so we have that $A_p$ is equal to the equation $(3)$, the determinant of the $2\times 2$ matrix whose rows are $\mathbf{A}_ {0*}$ and $\mathbf{A}_ {1*}$. If you can rotate $\mathbf{A}_ {0*}$ toward $\mathbf{A}_ {1*}$ in the same way as $\mathbf{i}$ rotate towards $\mathbf{j}$ then the area is positive, otherwise is negative.
+However, we want to calculate the area of the parallelogram $A_p$, formed by $\mathbf{A}_ {0\ast}$ and $\mathbf{A}_ {1\ast}$. We know that $A_p=2T$, so we have that $A_p$ is equal to the equation $(3)$, the determinant of the $2\times 2$ matrix whose rows are $\mathbf{A}_ {0\ast}$ and $\mathbf{A}_ {1\ast}$. If you can rotate $\mathbf{A}_ {0\ast}$ toward $\mathbf{A}_ {1\ast}$ in the same way as $\mathbf{i}$ rotate towards $\mathbf{j}$ then the area is positive, otherwise is negative.
 
 At this point, you may have already guessed how to compute the determinant of a $4\times 4$ matrix.
 
