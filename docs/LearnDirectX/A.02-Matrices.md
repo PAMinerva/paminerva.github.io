@@ -104,7 +104,7 @@ $$\tag{1}C_{ij}=\mathbf{A}_ {i*}\cdot\mathbf{B}_ {*j}$$
 
 <br>
 
-where $\mathbb{A}_ {i*}$ is the i-th row of $\mathbf{A}$, and $\mathbf{B}_ {*j}$ is the j-th column of $\mathbf{B}$.<br>
+where $\mathbf{A}_ {i*}$ is the i-th row of $\mathbf{A}$, and $\mathbf{B}_ {*j}$ is the j-th column of $\mathbf{B}$.<br>
 For example, the following illustration shows that if we multiply a $2\times 3$ matrix $\mathbf{A}$ and a $3\times 2$ matrix $\mathbf{B}$, we get a $2\times 2$ matric $\mathbf{C}$ where the top-left element $C_{00}$ is computed with the dot product of the 0-th row of $\mathbf{A}$ and the 0th column of $\mathbf{B}$.
 
 <br>
@@ -362,7 +362,7 @@ $T=\frac{1}{2}A_{00}A_{11}-\frac{1}{2}A_{01}A_{10}$
 
 <br>
 
-However, we want to calculate the area of the parallelogram $A_p$, formed by $\mathbf{A}\_{0*}$ and $\mathbf{A}\_{1*}$. We know that $A_p=2T$, so we have that $A_p$ is equal to the equation $(3)$, the determinant of the $2\times 2$ matrix whose rows are $\mathbf{A}\_{0*}$ and $\mathbf{A}\_{1*}$. If you can rotate $\mathbf{A}\_{0*}$ toward $\mathbf{A}\_{1*}$ in the same way as $\mathbf{i}$ rotate towards $\mathbf{j}$ then the area is positive, otherwise is negative.
+However, we want to calculate the area of the parallelogram $A_p$, formed by $\mathbf{A}_ {0*}$ and $\mathbf{A}_ {1*}$. We know that $A_p=2T$, so we have that $A_p$ is equal to the equation $(3)$, the determinant of the $2\times 2$ matrix whose rows are $\mathbf{A}_ {0*}$ and $\mathbf{A}_ {1*}$. If you can rotate $\mathbf{A}_ {0*}$ toward $\mathbf{A}_ {1*}$ in the same way as $\mathbf{i}$ rotate towards $\mathbf{j}$ then the area is positive, otherwise is negative.
 
 At this point, you may have already guessed how to compute the determinant of a $4\times 4$ matrix.
 
@@ -410,7 +410,7 @@ So, we have that the ij-th element of $\mathbf{A}^\ast$ is
 <br>
 
 $$\tag{4}
-C_{ij}^T=(-1)^{i+j}\ det\bar{\mathbf{A}}\_{ji}
+C_{ij}^T=(-1)^{i+j}\ det\bar{\mathbf{A}}_ {ji}
 $$
 
 <br>
@@ -446,7 +446,7 @@ $$
 >
 ><br>
 >
->$\mathbf{A}=\left\lbrack\matrix{a&b\cr c&d}\right\rbrack\quad\quad\quad\quad\mathbf{A}^{-1}=\left\lbrack\matrix{v\_{00}&v_{01}\cr v_{10}&v_{11}}\right\rbrack$
+>$\mathbf{A}=\left\lbrack\matrix{a&b\cr c&d}\right\rbrack\quad\quad\quad\quad\mathbf{A}^{-1}=\left\lbrack\matrix{v_ {00}&v_ {01}\cr v_ {10}&v_ {11}}\right\rbrack$
 >
 ><br>
 >
