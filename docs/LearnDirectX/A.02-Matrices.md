@@ -554,7 +554,7 @@ The number of columns of **x** and the number of rows of **y** must be equal.<br
 The result **ret** has the dimension (**x**-rows $\times$ **y**-columns).
 
 Now, if we want to multiply two matrices, or a vector and a matrix, what’s the best way to do that with **mul**? Let’s assume we are using a column-major order in the shader code. <br>
-If you want to multiply two $n\times n$ matrices $\mathbf{A}$ and $\mathbf{B}$ then we transpose them in the C++ code before passing the matrix data to the GPU. At that point, we simply pass $\mathbf{A}$ to the first parameter, and $\mathbf{B}$ to the second parameter of **mul**, which will return a matrix where each element is the dot product of a row of $\mathbf{A}$ with a column of $\mathbf{B}$.<br>
+If you want to multiply two $n\times n$ matrices $\mathbf{A}$ and $\mathbf{B}$ then we transpose them in the C++ code before passing the matrix data to the GPU. At that point, in the HLSL code we simply pass $\mathbf{A}$ to the first parameter, and $\mathbf{B}$ to the second parameter of **mul**, which will return a matrix where each element is the dot product of a row of $\mathbf{A}$ with a column of $\mathbf{B}$.<br>
 On the other hand, what happens if you want to multiply a vector and a matrix? Well, it depends on how you want to perform that operation. If you want to multiply the row vector by each column of the matrix, then you should pass the row vector to the first parameter, and the transpose of the matrix to the second parameter of **mul**. That’s because, after copying the transpose of the matrix in a GPU heap, the layout of its elements in memory will be 
 
 <br>
