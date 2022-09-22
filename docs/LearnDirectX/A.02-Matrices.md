@@ -480,7 +480,7 @@ $$
 >
 ><br>
 >
->That’s exactly the ratio between the cofactor of the 00-th element of $\mathbf{A}$ and the its >determinant. The same applies to the other unknowns, and to matrices of higher dimensions as well, >since it always ends up with a system of $n$ equations with $n$ unknowns.
+>That’s exactly the ratio between the cofactor of the 00-th element of $\mathbf{A}$ and the its determinant. The same applies to the other unknowns, and to matrices of higher dimensions as well, since it always ends up with a system of $n$ equations with $n$ unknowns.
 
 <br>
 
@@ -488,7 +488,7 @@ As you may have noticed, in $(5)$ we have a determinant in the denominator, whic
 
 <br>
 
-Below are the properties of the matrix transpose.
+Below are the properties of the matrix inverse.
 
 - $(\mathbf{A}^{-1})^T=(\mathbf{A}^T)^{-1}$
 - $(\mathbf{AB})^{-1}=\mathbf{B}^{-1}\mathbf{A}^{-1}$
@@ -503,7 +503,7 @@ Below are the properties of the matrix transpose.
 >
 >$(\mathbf{AB})(\mathbf{B}^{-1}\mathbf{A}^{-1})=\mathbf{A}(\mathbf{B}\mathbf{B}^{-1})\mathbf{A}^{-1}=\mathbf{AI}\mathbf{A}^{-1}=\mathbf{A}\mathbf{A}^{-1}=\mathbf{I}$
 >
->$\mathbf{B}^{-1}\mathbf{A}^{-1})(\mathbf{AB})=\mathbf{B}^{-1}(\mathbf{A}\mathbf{A}^{-1})\mathbf{B}=\mathbf{B}^{-1}\mathbf{IB}=\mathbf{B}^{-1}\mathbf{B}=\mathbf{I}$
+>$(\mathbf{B}^{-1}\mathbf{A}^{-1})(\mathbf{AB})=\mathbf{B}^{-1}(\mathbf{A}\mathbf{A}^{-1})\mathbf{B}=\mathbf{B}^{-1}\mathbf{IB}=\mathbf{B}^{-1}\mathbf{B}=\mathbf{I}$
 
 <br>
 
