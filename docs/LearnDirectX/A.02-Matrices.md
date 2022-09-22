@@ -520,7 +520,7 @@ $\left\lbrack\matrix{A_{00}&A_{01}&A_{02}&A_{03}\cr A_{10}&A_{11}&A_{12}&A_{13}\
 <br>
 
 We refer to this arrangement of elements as row-major order. <br>
-Of course, the elements of matrices used in shader code are stored contiguously as well. However, by default, they are considered as stored column by column. We refer to this arrangement as column-major order. Then, to represent the same matrix in shader code, its elements should have the following layout when stored in GPU heaps.
+Of course, the elements of matrices used in shader code are stored contiguously in GPU memory as well. However, by default, they are considered as stored column by column. We refer to this arrangement as column-major order. Then, to represent the same matrix in shader code, its elements should have the following layout when stored in GPU heaps.
 
 <br>
 
