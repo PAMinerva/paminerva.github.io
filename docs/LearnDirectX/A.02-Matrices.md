@@ -12,7 +12,7 @@ A matrix is a mathematical object associated with a function. This means a matri
 
 # 2 - Definition
 
-Basically, a matrix is just a rectangular table of numbers arranged in rows and columns.<br>
+Basically, a matrix is just a rectangular table of real numbers arranged in rows and columns.<br>
 The product of rows and columns gives the dimension of the matrix. For example, an $m\times n$ matrix has $m$ rows and $n$ columns. The numbers in a matrix are called elements or entries. To refer to a particular entry of a matrix $\mathbf{M}$, a double subscript notation $M_{ij}$ is often used to indicate the element in the i-th row and j-th column. Matrices are commonly written in square brackets.
 
 <br>
@@ -21,7 +21,7 @@ $\mathbf{M}=\left\lbrack\matrix{M_{00}&M_{01}&\cdots&M_{0(n-1)} \cr M_{10}&M_{11
 
 <br>
 
-In computer graphics, we usually deal with square matrices $n\times n$, where the numbers of rows and columns are the same. Also, we’ll widely use row vectors and the column vectors, which are matrices of dimensions $1\times n$ and $n\times 1$, respectively. Lowercase letters are normally used to identify row and vector matrices because they can be used as operands in some vector operation (more on this shortly).
+In computer graphics, we usually deal with square matrices $n\times n$, where the numbers of rows and columns are the same. Also, we’ll widely use row vectors and the column vectors, which are matrices of dimensions $1\times n$ and $n\times 1$, respectively. Lowercase letters are normally used to identify row and column vector because they can be used as operands in some vector operation (more on this shortly).
 
 <br>
 
@@ -33,7 +33,7 @@ We can also use them to specify the rows or columns of a matrix. For example, we
 
 <br>
 
-$\mathbf{A}=\left\lbrack\matrix{M_{00}&M_{01}&M_{02}\cr M_{10}&M_{11}&M_{12}\cr M_{20}&M_{21}&M_{22}}\right\rbrack=\left\lbrack\matrix{\gets&\mathbf{u}_0&\rightarrow\cr \gets&\mathbf{u}_1&\rightarrow\cr \gets&\mathbf{u}_2&\rightarrow}\right\rbrack=\left\lbrack\matrix{\uparrow&\uparrow&\uparrow\cr \mathbf{v}_0&\mathbf{v}_1&\mathbf{v}_2\cr \downarrow&\downarrow&\downarrow}\right\rbrack$
+$\mathbf{M}=\left\lbrack\matrix{M_{00}&M_{01}&M_{02}\cr M_{10}&M_{11}&M_{12}\cr M_{20}&M_{21}&M_{22}}\right\rbrack=\left\lbrack\matrix{\gets&\mathbf{u}_0&\rightarrow\cr \gets&\mathbf{u}_1&\rightarrow\cr \gets&\mathbf{u}_2&\rightarrow}\right\rbrack=\left\lbrack\matrix{\uparrow&\uparrow&\uparrow\cr \mathbf{v}_0&\mathbf{v}_1&\mathbf{v}_2\cr \downarrow&\downarrow&\downarrow}\right\rbrack$
 
 <br>
 
@@ -101,7 +101,7 @@ $$\tag{1}C_{ij}=\mathbf{A}_ {i\ast}\cdot\mathbf{B}_ {\ast j}$$
 <br>
 
 where $\mathbf{A}_ {i\ast}$ is the i-th row of $\mathbf{A}$, and $\mathbf{B}_ {\ast j}$ is the j-th column of $\mathbf{B}$.<br>
-For example, the following illustration shows that if we multiply a $2\times 3$ matrix $\mathbf{A}$ and a $3\times 2$ matrix $\mathbf{B}$, we get a $2\times 2$ matric $\mathbf{C}$ where the top-left element $C_{00}$ is computed with the dot product of the 0-th row of $\mathbf{A}$ and the 0th column of $\mathbf{B}$.
+For example, the following illustration shows that if we multiply a $2\times 3$ matrix $\mathbf{A}$ and a $3\times 2$ matrix $\mathbf{B}$, we get a $2\times 2$ matric $\mathbf{C}$ where the top-left element $C_{00}$ is computed with the dot product of the 0-th row of $\mathbf{A}$ and the 0-th column of $\mathbf{B}$.
 
 <br>
 
@@ -137,7 +137,7 @@ $x\mathbf{A}_ {0\ast}+y\mathbf{A}_ {1\ast}+z\mathbf{A}_ {2\ast}$
 
 <br>
 
-So, the vector-matrix multiplication can be seen as a sum of the rows of the matrix, scaled by the elements of the row vector. This is an example of linear combination: a sum of vectors multiplied (scaled) by scalar coefficients. In this case the vectors are the row vectors of the matrix while the scalar coefficients are the elements of the row vector. We can also write this linear combination as the product of a row vector and a column vector.
+So, the vector-matrix multiplication can be seen as a sum of the rows of the matrix, scaled by the elements of the row vector. This is an example of linear combination: a sum of vectors multiplied (scaled) by scalar coefficients. In this case the vectors are the row vectors of the matrix, while the scalar coefficients are the elements of the row vector. We can also write this linear combination as the product of a row vector and a column vector.
 
 <br>
 
@@ -153,7 +153,8 @@ $\mathbf{u}\cdot\mathbf{v}=\left\lbrack\matrix{u_x&u_y&u_z}\right\rbrack\left\lb
 
 <br>
 
-That is, we can consider the operands of a dot product as row and column vectors instead of simple vectors. <br>
+That is, we can consider the operands of a dot product as row and column vectors instead of simple vectors.
+
 What we’ve covered so far in this section is true in general. That is, with a $1\times n$ row vector $\mathbf{u}$ and an $n\times p$ matrix $\mathbf{A}$, we have that $\mathbf{uA}$ is a linear combination of the row vectors of $\mathbf{A}$ with scalar coefficients given by the components of $\mathbf{u}$.
 
 <br>
@@ -166,7 +167,7 @@ We can also multiply an $m\times n$ matrix by an $n\times 1$ column vector. For 
 
 <br>
 
-$\mathbf{Au}=\left\lbrack\matrix{A_{00}&A_{01}&A_{02}\cr A_{10}&A_{11}&A_{12}\cr A_{20}&A_{21}&A_{22}}\right\rbrack\left\lbrack\matrix{x\cr y\cr z}\right\rbrack=\left\lbrack\matrix{\mathbf{u}\cdot\mathbf{A}_ {1\ast}\cr \mathbf{u}\cdot\mathbf{A}_ {2\ast}\cr \mathbf{u}\cdot\mathbf{A}_ {3\ast}}\right\rbrack$
+$\mathbf{Au}=\left\lbrack\matrix{A_{00}&A_{01}&A_{02}\cr A_{10}&A_{11}&A_{12}\cr A_{20}&A_{21}&A_{22}}\right\rbrack\left\lbrack\matrix{x\cr y\cr z}\right\rbrack=\left\lbrack\matrix{\mathbf{u}\cdot\mathbf{A}_ {0\ast}\cr \mathbf{u}\cdot\mathbf{A}_ {1\ast}\cr \mathbf{u}\cdot\mathbf{A}_ {2\ast}}\right\rbrack$
 
 <br>
 
@@ -193,9 +194,9 @@ Since matrix multiplication is performed element-wise, matrices inherit the foll
 
 <br>
 
-The commutative property doesn’t apply for two reasons. First, as stated earlier, the matrix multiplication is defined only if the number of columns in the left matrix equals the number of rows in the right matrix. Also, even with square matrices (that is, when the matrix multiplication is always defined) if you swap the operands the resultant matrix can change; see the equation $(1)$.
+The commutative property doesn’t apply for two reasons. First, as stated earlier, the matrix multiplication is defined only if the number of columns in the left matrix equals the number of rows in the right matrix. Also, even with square matrices (that is, when the matrix multiplication is always defined) if you swap the operands the resultant matrix can change; see equation $(1)$ and observe how each element of the resultant matrix is computed.
 
-To conclude this section, in appendix 01 we stated that the cross product can be computed multiplying a row by matrix. Now, we can verify it with the following equation.
+To conclude this section, in appendix 01 we stated that the cross product can be computed multiplying a row by a matrix. Now, we can verify it with the following equation.
 
 <br>
 
@@ -203,7 +204,7 @@ $\mathbf{w}=\mathbf{u}\times\mathbf{v}=\left\lbrack\matrix{v_x&v_y&v_z}\right\rb
 
 <br>
 
-Also, it’s interesting to note that we can compute the orthogonal projection of a vector $\mathbf{v}$ onto a unit vector $\mathbf{n}$ by multiplying a row by matrix.
+Also, it’s interesting to note that we can compute the orthogonal projection of a vector $\mathbf{v}$ onto a unit vector $\mathbf{n}$ by multiplying a row by a matrix.
 
 <br>
 
@@ -261,7 +262,7 @@ $\left\lbrack\matrix{1&0\cr 0&1}\right\rbrack\quad\quad\quad\quad\left\lbrack\ma
 
 <br>
 
-It’s called identity matrix since it is used as multiplicative identity. That is, with an $n\times n$ matrix $\mathbf{M}$ and an identity matrix $\mathbf{I}$ of the same dimension, you have that
+It’s called identity matrix since it is used as multiplicative identity. That is, with an $n\times n$ matrix $\mathbf{M}$ and an identity matrix $\mathbf{I}$ of the same dimension, we have that
 
 $\mathbf{MI} = \mathbf{IM} = \mathbf{M}$
 
@@ -273,7 +274,7 @@ Observe that the multiplication with the identity matrix is commutative by defin
 
 # 6 - The determinant of a matrix
 
-The determinant of a matrix is related to the concept of hypervolume (length in 1D, area in 2D and volume in 3D). Also, the determinant is a signed value that is only defined for square matrices. Now, you may wonder what does it mean a length, an area, or a volume with a sign? Well, as already stated at the beginning of this tutorial (and as we will formally prove in a later appendix), matrices are associated with transformations, so the sign simply shows whether a transformation preserves or reverses the orientation of the standard basis vectors. In other words, if you multiply (transform) $\mathbf{i}$, $\mathbf{j}$ and $\mathbf{k}$ by a square matrix with a positive determinant, the handedness of the resultant frame won't change. Before discussing how to calculate the determinant of a matrix, we first need to introduce the concept of matrix minors.
+The determinant of a matrix is related to the concept of hypervolume (length in 1D, area in 2D, and volume in 3D). Also, the determinant is a signed value that is only defined for square matrices. Now, you may wonder what does it mean a signed length, area, or volume? Well, as already stated at the beginning of this tutorial (and as we will formally prove in a later appendix), matrices are associated with transformations, so the sign simply shows whether a transformation preserves or reverses the orientation of the standard basis vectors. In other words, if you multiply (transform) $\mathbf{i}$, $\mathbf{j}$ and $\mathbf{k}$ by a square matrix with a positive determinant, the handedness of the resultant frame won't change. Before discussing how to calculate the determinant of a matrix, we first need to introduce the concept of matrix minor.
 
 By matrix minor of an $n\times n$ matrix $\mathbf{A}$ we mean the $(n−1)\times(n−1)$ matrix $\bar{\mathbf{A}}_{ij}$ derived from $\mathbf{A}$ by deleting the i-th row and j-th column. For example,
 
@@ -298,9 +299,9 @@ $$
 
 <br>
 
-Observe that the dot in the above equation means a multiplication between scalars, not a dot product. The only variable is $j$, so you can choose whatever i-th row of the matrix A and apply the equation $(2)$. In a similar way, you can choose whatever j-th column of the matrix and apply the $(2)$ provided that you change the variable under the summation symbol to $i$ instead of $j$.
+Observe that the dot in the above equation means a multiplication between scalars, not a dot product. The only variable is $j$, so you can choose whatever i-th row of the matrix $\mathbf{A}$ and apply the equation $(2)$. In a similar way, you can choose whatever j-th column of the matrix and apply the equation $(2)$, provided that you change the variable under the summation symbol to $i$ instead of $j$.
 
-The equation $(2)$ specifies we can calculate the determinant of a matrix recursively, computing the determinants of the matrix minors, and using them in a linear combination where the coefficients are the elements of the i-th row. For example, we know by definition how to calculate the determinants of $1\times 1$ matrices, so we can calculate the determinants of $2\times 2$ matrices as well by applying the formula above (we will use the elements of the first row of A as coefficients; that is, we set $i=0$).
+The equation $(2)$ specifies we can calculate the determinant of a matrix recursively, computing the determinants of the matrix minors, and using them in a linear combination where the coefficients are the elements of the i-th row. For example, we know by definition how to calculate the determinants of $1\times 1$ matrices, so we can calculate the determinants of $2\times 2$ matrices as well by applying the formula above (we will use the elements of the first row of $\mathbf{A}$ as coefficients; that is, we set $i=0$).
 
 <br>
 
@@ -320,7 +321,7 @@ $A_{00}A_{11}A_{22}-A_{00}A_{12}A_{21}-A_{01}A_{10}A_{22}+A_{01}A_{12}A_{20}+A_{
 
 <br>
 
-As you can check, we get a result similar to the one we got for the scalar triple product in appendix 01. This means the determinant of a $3\times 3$ matrix $\mathbf{A}$ is the signed volume of the parallelepiped made up of its three row vectors. In particular, if the row vectors are $\mathbf{A}_ {0\ast}$, $\mathbf{A}_ {1\ast}$ and $\mathbf{A}_ {2\ast}$, the sign of the determinant is positive if the vectors $\mathbf{A}_ {0\ast}$ and $(\mathbf{A}_ {1\ast}\times\mathbf{A}_ {2\ast})$ are on the same side (half-space) with respect to the plane defined by $\mathbf{A}_ {1\ast}$ and $\mathbf{A}_ {2\ast}$. As we will see in a later tutorial, this ensures that handedness of the frame doesn’t change if you use $\mathbf{A}$ to transform the standard basis vectors.
+As you can check, we get a result similar to the one we got for the scalar triple product in appendix 01. This means the determinant of a $3\times 3$ matrix $\mathbf{A}$ is the signed volume of the parallelepiped made up of its three row vectors. In particular, if the row vectors are $\mathbf{A}_ {0\ast}$, $\mathbf{A}_ {1\ast}$ and $\mathbf{A}_ {2\ast}$, the sign of the determinant is positive if the vectors $\mathbf{A}_ {0\ast}$ and $(\mathbf{A}_ {1\ast}\times\mathbf{A}_ {2\ast})$ are on the same side (half-space) with respect to the plane defined by $\mathbf{A}_ {1\ast}$ and $\mathbf{A}_ {2\ast}$. As we will see in a later tutorial, this ensures that the handedness of the frame doesn’t change if you use $\mathbf{A}$ to transform the standard basis vectors.
 
 On the other hand, it’s much easier to prove that the determinant of a $2\times 2$ matrix $\mathbf{A}$ is the signed area of the parallelogram made up of its two row vectors $\mathbf{A}_ {0\ast}$ and $\mathbf{A}_ {1\ast}$.
 
@@ -358,7 +359,7 @@ $T=\frac{1}{2}A_{00}A_{11}-\frac{1}{2}A_{01}A_{10}$
 
 <br>
 
-However, we want to calculate the area of the parallelogram $A_p$, formed by $\mathbf{A}_ {0\ast}$ and $\mathbf{A}_ {1\ast}$. We know that $A_p=2T$, so we have that $A_p$ is equal to the equation $(3)$, the determinant of the $2\times 2$ matrix whose rows are $\mathbf{A}_ {0\ast}$ and $\mathbf{A}_ {1\ast}$. If you can rotate $\mathbf{A}_ {0\ast}$ toward $\mathbf{A}_ {1\ast}$ in the same way as $\mathbf{i}$ rotate towards $\mathbf{j}$ then the area is positive, otherwise is negative.
+However, we want to calculate the area of the parallelogram $A_p$ formed by $\mathbf{A}_ {0\ast}$ and $\mathbf{A}_ {1\ast}$. We know that $A_p=2T$, so we have that $A_p$ is equal to the equation $(3)$, the determinant of a $2\times 2$ matrix whose rows are $\mathbf{A}_ {0\ast}$ and $\mathbf{A}_ {1\ast}$. If you can rotate $\mathbf{A}_ {0\ast}$ toward $\mathbf{A}_ {1\ast}$ in the same way as $\mathbf{i}$ rotate towards $\mathbf{j}$ then the area is positive, otherwise is negative.
 
 At this point, you may have already guessed how to compute the determinant of a $4\times 4$ matrix.
 
