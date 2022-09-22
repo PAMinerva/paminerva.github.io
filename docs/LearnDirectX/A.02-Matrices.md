@@ -528,7 +528,7 @@ $\left\lbrack\matrix{A_{00}&A_{01}&A_{02}&A_{03}\cr A_{10}&A_{11}&A_{12}&A_{13}\
 
 <br>
 
-Now, a problem arises whenever we have to pass matrix data from our C++ applications to shader programs. As stated in a previous tutorial, data transfer from CPU to GPU is just a bit stream. Then, if you just copy the matrix data from CPU memory to a GPU heap, you actually get the transpose of the matrix because the contiguous elements of the rows in CPU memory will be considered columns in GPU memory by the shader code.
+Now, a problem arises whenever we have to pass matrix data from our C++ applications to shader programs. As stated in a previous tutorial, the transfer of data from CPU to GPU is just a bit stream. Then, if you just copy the matrix data from CPU memory to a GPU heap, you actually get the transpose of the matrix because the contiguous elements of the rows in CPU memory will be considered columns in GPU memory by the shader code.
 
 <br>
 
