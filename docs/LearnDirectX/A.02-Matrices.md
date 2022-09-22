@@ -678,7 +678,7 @@ $\mathbf{Au}=\left\lbrack\matrix{a&b&c&d\cr e&f&g&h\cr i&j&k&l\cr m&n&o&p}\right
 
 <br>
 
-In matrix by column vector multiplication, the first column is scaled by $x$, the second by $y$, the third by $z$ and the fourth by $w$. Then, the sum of corresponding components in scaled columns gives us the components of the resultant vector. 
+In the latter case the first column is scaled by $x$, the second by $y$, the third by $z$ and the fourth by $w$. Then, the sum of corresponding components in scaled columns gives us the components of the resultant vector. 
 
 <br>
 
