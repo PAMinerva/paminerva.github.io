@@ -321,7 +321,7 @@ $A_{00}A_{11}A_{22}-A_{00}A_{12}A_{21}-A_{01}A_{10}A_{22}+A_{01}A_{12}A_{20}+A_{
 
 <br>
 
-As you can check, we get a result similar to the one we got for the scalar triple product in appendix 01. This means the determinant of a $3\times 3$ matrix $\mathbf{A}$ is the signed volume of the parallelepiped made up of its three row vectors. In particular, if the row vectors are $\mathbf{A}_ {0\ast}$, $\mathbf{A}_ {1\ast}$ and $\mathbf{A}_ {2\ast}$, the sign of the determinant is positive if the vectors $\mathbf{A}_ {0\ast}$ and $(\mathbf{A}_ {1\ast}\times\mathbf{A}_ {2\ast})$ are on the same side (half-space) with respect to the plane defined by $\mathbf{A}_ {1\ast}$ and $\mathbf{A}_ {2\ast}$. As we will see in a later tutorial, this ensures that the handedness of the frame doesn’t change if you use $\mathbf{A}$ to transform the standard basis vectors.
+As you can check, we get a result similar to the one we got for the scalar triple product in appendix 01. This means the determinant of a $3\times 3$ matrix $\mathbf{A}$ is the signed volume of the parallelepiped made up of its three row vectors. In particular, if the row vectors are $\mathbf{A}_ {0\ast}$, $\mathbf{A}_ {1\ast}$ and $\mathbf{A}_ {2\ast}$, the sign of the determinant is positive if the vectors $\mathbf{A}_ {0\ast}$ and $(\mathbf{A}_ {1\ast}\times\mathbf{A}_ {2\ast})$ are on the same side (half-space) with respect to the plane defined by $\mathbf{A}_ {1\ast}$ and $\mathbf{A}_ {2\ast}$. As we will see in a later tutorial, this ensures that the handedness of a frame doesn’t change if you use $\mathbf{A}$ to transform the standard basis vectors.
 
 On the other hand, it’s much easier to prove that the determinant of a $2\times 2$ matrix $\mathbf{A}$ is the signed area of the parallelogram made up of its two row vectors $\mathbf{A}_ {0\ast}$ and $\mathbf{A}_ {1\ast}$.
 
@@ -385,7 +385,7 @@ $det\left\lbrack\matrix{(1+3(2))&2\cr (3+3(4))&4}\right\rbrack=(7)(4)-(2)(15)=28
 
 # 7 - The adjoint of a matrix
 
-Given an $n\times n$ matrix $\mathbf{A}$ we can define the cofactor $C_{ij}$ of the entry $A_{ij}$ in the matrix $\mathbf{A}$
+We can define the cofactor $C_{ij}$ of the entry $A_{ij}$ in an $n\times n$ matrix $\mathbf{A}$ as follows
 
 <br>
 
@@ -393,7 +393,7 @@ $C_{ij}=(-1)^{i+j}\ det{\bar{\mathbf{A}}}_{ij}$
 
 <br>
 
-If you compute the cofactor of every element of $\mathbf{A}$ then we can create the cofactor matrix $\mathbf{C}\_\mathbf{A}$ of $\mathbf{A}$, where $C_{ij}$ is the element of $\mathbf{C}\_\mathbf{A}$ at the ij-th position.
+If we compute the cofactor of every element of $\mathbf{A}$ then we can create the cofactor matrix $\mathbf{C}\_\mathbf{A}$ of $\mathbf{A}$, where $C_{ij}$ is the element of $\mathbf{C}\_\mathbf{A}$ at the ij-th position.
 
 <br>
 
@@ -429,7 +429,7 @@ $\mathbf{M}\mathbf{M}^{-1}=\mathbf{M}^{-1}\mathbf{M}=\mathbf{I}$
 
 <br>
 
-That is, similar to real numbers, if we multiply a matrix by its inverse we get the identity matrix (the multiplicative identity). Observe that the inverse of $\mathbf{M}^{-1}$ is $\mathbf{M}$, so the commutative property applies by definition (this is the second exception to matrix multiplication).<br> A relevant difference from real numbers is that not every square matrix has an inverse. If the inverse $\mathbf{M}^{-1}$ exists, it is unique and we say that $\mathbf{M}$ is invertible, otherwise we call it singular. It can be proven that we can use the equations $(2)$ and $(4)$ to compute the ij-th entry of the inverse $\mathbf{A}^{-1}$ of a matrix $\mathbf{A}$.
+That is, similar to real numbers, if we multiply a matrix by its inverse we get the the multiplicative identity (in this case, the identity matrix). Observe that the inverse of $\mathbf{M}^{-1}$ is $\mathbf{M}$, so the commutative property applies by definition (this is the second exception to the matrix multiplication). A relevant difference from real numbers is that not every square matrix has an inverse. If the inverse $\mathbf{M}^{-1}$ exists, it is unique and we say that $\mathbf{M}$ is invertible, otherwise we call it singular. It can be proven that we can use the equations $(2)$ and $(4)$ to compute the ij-th entry of the inverse $\mathbf{A}^{-1}$ of a matrix $\mathbf{A}$.
 
 <br>
 
@@ -439,7 +439,7 @@ $$
 
 <br>
 
->Given a $2\times 2$ matrix $\mathbf{A}$ and its inverse $\mathbf{A}^{-1}$, defined as
+>Given a $2\times 2$ matrix $\mathbf{A}$ and its inverse $\mathbf{A}^{-1}$
 >
 ><br>
 >
@@ -456,17 +456,17 @@ $$
 >
 ><br>
 >
->From these two expressions, we can derive the following system of four equations with four unknowns >$v_{ij}$.
+>From these two expressions, we can derive the following system of four equations with four unknowns >$v_ {ij}$.
 >
 ><br>
 >
 >$$
 >\begin{flalign}
 >& \begin{cases}
->a\ v_{00}+b\ v_{01} &=1 \cr 
->a\ v_{10}+b\ v_{11} &=0 \cr 
->c\ v_{00}+d\ v_{01} &=0 \cr 
->c\ v_{10}+d\ v_{11} &=1\end{cases} &
+>a\ v _{00}+b\ v_{01} &=1 \cr 
+>a\ v _{10}+b\ v_{11} &=0 \cr 
+>c\ v _{00}+d\ v_{01} &=0 \cr 
+>c\ v _{10}+d\ v_{11} &=1\end{cases} &
 >\end{flalign}
 >$$
 >
