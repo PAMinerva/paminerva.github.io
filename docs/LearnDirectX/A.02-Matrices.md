@@ -536,9 +536,9 @@ $\vert A_{00}\vert A_{01}\vert A_{02}\vert A_{03}\vert A_{10}\vert A_{11}\vert A
 
 <br>
 
-Fortunately, we showed that $(\mathbf{A}^T)^T=\mathbf{A}$, so we only need to transpose a matrix before passing it to the GPU in order to fix the problem. Alternatively, we can point out to the shader code that the elements are stored row by row with **#pragma pack_matrix(row_major)** at the start of your shader program (we can also specify a row-major order for a single matrix by prefixing its declaration with the keyword **row_major**). We will simply transpose the matrices in our C++ applications just before passing them to the GPU. That way, we can work with matrices by using the default orders in both C++ and HLSL.
+Fortunately, we showed that $(\mathbf{A}^T)^T=\mathbf{A}$, so we only need to transpose a matrix before passing it to the GPU in order to fix the problem. Alternatively, we can point out to the shader code that the elements are stored row by row with **#pragma pack_matrix(row_major)** at the start of a shader program (we can also specify a row-major order for a single matrix by prefixing its declaration with the keyword **row_major**). In the upcoming tutorials we will simply transpose the matrices in our C++ applications just before passing them to the GPU. That way, we can work with matrices by using the default orders both in C++ and HLSL.
 
-To conclude this section, it’s interesting to see how we can use the intrinsic function mul (available in HLSL), which multiplies two operands using matrix math.
+To conclude this section, it’s interesting to see how we can use the intrinsic function **mul** (available in HLSL), which multiplies two operands using matrix math.
 
 <br>
 
