@@ -584,7 +584,7 @@ $reg_0: \vert x\vert y\vert z\vert w\vert$
 
 At that point, the GPU can simply compute the dot product of $reg_0$ with the other registers to compute the four elements of the resultant vector.
 
-Under the same conditions, if you want to multiply a column vector by each row of the matrix, then you can pass the transpose of the matrix to the first parameter, and the vector to the second parameter of **mul**. At that point, the GPU could execute more instructions to execute the dot product of the vector with the rows of the matrix since the elements of the matrix are ordered column by column. The conditional is used because the real GPU instructions (not the bytecode) could be similar in both cases. The following listings show both the bytecode and a possible translation in machine code of the multiplication between a vector (**vpos**) and a matrix (**World**), passed as arguments to **mul**.
+Under the same conditions, if you want to multiply a column vector by each row of the matrix, then you can pass the transpose of the matrix to the first parameter, and the vector to the second parameter of **mul**. At that point, the GPU could execute more instructions to execute the dot product of the vector with the rows of the matrix since the elements of the matrix are ordered column by column. The conditional is used because the real GPU instructions (not the bytecode) could be similar in both cases. The following listings show both the bytecode and a possible translation in GPU machine code of the multiplication between a vector (**vpos**) and a matrix (**World**), passed as arguments to **mul**.
 
 <br>
 
@@ -662,7 +662,7 @@ exp pos0, v0, v1, v2, v3 done   // 000000000058: C40008CF 03020100    output.pos
 ```
 <br>
 
-To understand the listings above, observe how we compute the multiplication of a row vector by a matrix.
+Aside from the registers used, the GPU machine code (ISA disassembly) is the same for both vector by matrix and matrix by vector multiplications. To understand the listings above, observe how we compute the multiplication of a row vector by a matrix.
 
 <br>
 
@@ -678,7 +678,7 @@ $\mathbf{Au}=\left\lbrack\matrix{a&b&c&d\cr e&f&g&h\cr i&j&k&l\cr m&n&o&p}\right
 
 <br>
 
-In the latter case the first column is scaled by $x$, the second by $y$, the third by $z$ and the fourth by $w$. Then, the sum of corresponding components in scaled columns gives us the components of the resultant vector. 
+In the latter case the first column is scaled by $x$, the second by $y$, the third by $z$ and the fourth by $w$. Then, the sum of corresponding components in the scaled columns gives us the components of the resultant vector.
 
 <br>
 
