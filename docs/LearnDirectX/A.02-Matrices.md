@@ -808,7 +808,7 @@ __declspec(align(16)) struct XMMATRIX
 ```
 <br>
 
-As you can see, **XMMATRIX** includes an **XMVECTOR** field, so we can’t use it as a class member. Fortunately, DirectXMath provides the following types which allow us to use matrices as class members.
+As you can see, **XMMATRIX** includes an **XMVECTOR** array, so we can’t use it as a class member. Fortunately, DirectXMath provides the following types which allow us to use matrices as class members.
 
 <br>
 
