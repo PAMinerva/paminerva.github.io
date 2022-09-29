@@ -776,7 +776,7 @@ This allows to use the appropriate calling conventions for each platform support
 
 As stated above, **XMVECTOR** is just an alias for **__m128**, which identify a type mapped to XMM registers. This means we can't simply use **XMVECTOR** to operate with vectors without using SIMD instructions. For this reason, DirectXMath provides many helper functions that take advantage of SIMD to initialize **XMVECTOR**s and operate with them. We will examine most of these functions in the upcoming tutorials.
 
-If you want to declare a vectorized-constant (const **XMVECTOR**) then it is recommended to use **XMVECTORF32** for floating-point values, and **XMVECTORU32** (or **XMVECTORI32**) for integer values. That’s because these types are defined as the union of a **XMVECTOR** and an array. This allows us to use the initialization syntax, and allows the compiler to optimize the load of constant data into XMM registers by using SIMD instructions.
+If you want to declare a vectorized-constant (const **XMVECTOR**) then it is recommended to use **XMVECTORF32** for floating-point values, and **XMVECTORU32** (or **XMVECTORI32**) for integer values. That’s because these types are defined as the union of a **XMVECTOR** and an array. This allows us to use the initialization syntax, and allows the compiler to use SIMD instructions for other operations.
 
 <br>
 
