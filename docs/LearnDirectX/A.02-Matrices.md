@@ -461,14 +461,13 @@ $$
 ><br>
 >
 >$$
-\begin{flalign}
- & \begin{cases} 
+ \begin{cases} 
  a\ v_{00}+b\ v_{01} &=1 \cr 
  a\ v_{10}+b\ v_{11} &=0 \cr 
  c\ v_{00}+d\ v_{01} &=0 \cr 
  c\ v_{10}+d\ v_{11} &=1
- \end{cases} &
- \end{flalign} $$
+ \end{cases}$$
+>
 >
 ><br>
 >
