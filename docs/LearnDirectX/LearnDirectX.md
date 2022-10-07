@@ -30,7 +30,7 @@
 - [A.01 - Vectors](https://paminerva.github.io/docs/LearnDirectX/A.01-Vectors)
 - [A.02 - Matrices](https://paminerva.github.io/docs/LearnDirectX/A.02-Matrices)
 - [A.03 - Transformations](https://paminerva.github.io/docs/LearnDirectX/A.03-Transformations)
-- A.04 - Spaces
+- [A.04 - Spaces](https://paminerva.github.io/docs/LearnDirectX/A.04-Spaces)
 - A.05 - Analytic Geometry
 - A.06 -  (Yet to be determined)
 - A.0X - (Bézier curves and surfaces, Quaternions, Image processing, Bounding volumes, Spatial data structures, Monte Carlo integration, Physics of light, Animations, etc.)
