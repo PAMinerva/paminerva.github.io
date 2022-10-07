@@ -103,11 +103,11 @@ However, unlike the world transformation, we will use the same view matrix to tr
 
 <br>
 
-$\mathbf{W}_c=\left\lbrack\matrix{f_x&f_y&f_z&0\cr g_x&g_y&g_z&0\cr h_x&h_y&h_z&0\cr t_x&t_y&t_z&1}\right\rbrack$
+$\mathbf{W}_ c=\left\lbrack\matrix{f_x&f_y&f_z&0\cr g_x&g_y&g_z&0\cr h_x&h_y&h_z&0\cr t_x&t_y&t_z&1}\right\rbrack$
 
 <br>
 
-$\mathbf{W}_c$ is the matrix to go from the local space of the camera to the world space. However, the local space of the camera is exactly the view space with respect to which we want to look at the scene. This means $\mathbf{W}_ c$ is the matrix to go from view space to world space. Therefore, we can compute the inverse $\mathbf{W}_ c^{-1}$ to get the view matrix, which allows to go from world space to view space. It’s not too difficult to compute the inverse of $\mathbf{W}_ c$ because it’s the composition of a rotation and a translation: $\mathbf{W}_ c=\mathbf{RT}$. Indeed, it doesn’t make any sense to scale the camera since it’s a dummy object (we are only interested in the position and orientation of the view space). We don’t need a scaling in the inverse transformation as well because we’ve already scaled the meshes during the world transformations (that is, we wish to keep the size of the meshes in world space). Then, the first three rows of $\mathbf{W}_ c$ are the rotations of the standard basis vectors of the view space with respect to the world space (that is, in world coordinates), while the last row is the position of (the origin of) the view space (in world coordinates as well). So, we have
+$\mathbf{W}_ c$ is the matrix to go from the local space of the camera to the world space. However, the local space of the camera is exactly the view space with respect to which we want to look at the scene. This means $\mathbf{W}_ c$ is the matrix to go from view space to world space. Therefore, we can compute the inverse $\mathbf{W}_ c^{-1}$ to get the view matrix, which allows to go from world space to view space. It’s not too difficult to compute the inverse of $\mathbf{W}_ c$ because it’s the composition of a rotation and a translation: $\mathbf{W}_ c=\mathbf{RT}$. Indeed, it doesn’t make any sense to scale the camera since it’s a dummy object (we are only interested in the position and orientation of the view space). We don’t need a scaling in the inverse transformation as well because we’ve already scaled the meshes during the world transformations (that is, we wish to keep the size of the meshes in world space). Then, the first three rows of $\mathbf{W}_ c$ are the rotations of the standard basis vectors of the view space with respect to the world space (that is, in world coordinates), while the last row is the position of (the origin of) the view space (in world coordinates as well). So, we have
 
 <br>
 
@@ -153,7 +153,7 @@ Then, we can calculate $\mathbf{f}$ with the following cross product.
 
 <br>
 
-$\mathbf{f}=\displaystyle\frac{\mathbf{j}\times\mathbf{h}}{\left|\mathbf{j}\times\mathbf{h}\right|}$
+$\mathbf{f}=\displaystyle\frac{\mathbf{j}\times\mathbf{h}}{\vert\mathbf{j}\times\mathbf{h}\vert}$
 
 <br>
 
