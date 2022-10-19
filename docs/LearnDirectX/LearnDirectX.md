@@ -7,7 +7,7 @@
     - [D - Hello Constant Buffers](https://paminerva.github.io/docs/LearnDirectX/01.D-Hello-Constant-Buffers)
     - [E - Hello Texture](https://paminerva.github.io/docs/LearnDirectX/01.E-Hello-Texture)
     - [F - Hello Frame Buffering](https://paminerva.github.io/docs/LearnDirectX/01.F-Hello-Frame-Buffering)
-    - G - Hello Transformations
+    - [G - Hello Transformations](https://paminerva.github.io/docs/LearnDirectX/01.G-Hello-Transformations)
     - H - Hello Lighting <br><br>
 - 02 - Intermediate Topics
     - A - Blending
