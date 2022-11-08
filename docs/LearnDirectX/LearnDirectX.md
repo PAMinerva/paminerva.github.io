@@ -10,7 +10,7 @@
     - [G - Hello Transformations](https://paminerva.github.io/docs/LearnDirectX/01.G-Hello-Transformations)
     - [H - Hello Lighting](https://paminerva.github.io/docs/LearnDirectX/01.H-Hello-Lighting) <br><br>
 - 02 - Intermediate Topics
-    - A - Blending
+    - [A - Blending](https://paminerva.github.io/docs/LearnDirectX/02.A-Blending)
     - B - Mirror
     - C - Billboarding
     - D - Particle effect
