@@ -543,15 +543,15 @@ Assuming the matrix $\mathbf{A}$ has a non-zero determinant $(det(\mathbf{A})\ne
 
 <br>
 
-$det(\mathbf{A} _1)=\left\lbrack\matrix{d_1 & b_1 & c_1 \cr d_2 & b_2 & c_2 \cr d_3 & b_3 & c_3 }\right\rbrack$
+$det(\mathbf{A} _1)=det\left\lbrack\matrix{d_1 & b_1 & c_1 \cr d_2 & b_2 & c_2 \cr d_3 & b_3 & c_3 }\right\rbrack$
 
-$=\left\lbrack\matrix{ (a_1x+b_1y+c_1z) & b_1 & c_1 \cr (a_2x+b_2y+c_2z) & b_2 & c_2 \cr (a_3x+b_3y+c_3z) & b_3 & c_3 }\right\rbrack$
+$=det\left\lbrack\matrix{ (a_1x+b_1y+c_1z) & b_1 & c_1 \cr (a_2x+b_2y+c_2z) & b_2 & c_2 \cr (a_3x+b_3y+c_3z) & b_3 & c_3 }\right\rbrack$
 
-$=\left\lbrack\matrix{ (a_1x+b_1y+c_1z)-(b_1y+c_1z) & b_1 & c_1 \cr (a_2x+b_2y+c_2z)-(b_2y+c_2z) & b_2 & c_2 \cr (a_3x+b_3y+c_3z)-(b_3y+c_3z) & b_3 & c_3 }\right\rbrack$
+$=det\left\lbrack\matrix{ (a_1x+b_1y+c_1z)-(b_1y+c_1z) & b_1 & c_1 \cr (a_2x+b_2y+c_2z)-(b_2y+c_2z) & b_2 & c_2 \cr (a_3x+b_3y+c_3z)-(b_3y+c_3z) & b_3 & c_3 }\right\rbrack$
 
-$=\left\lbrack\matrix{ a_1x & b_1 & c_1 \cr a_2x & b_2 & c_2 \cr a_3x & b_3 & c_3 }\right\rbrack$
+$=det\left\lbrack\matrix{ a_1x & b_1 & c_1 \cr a_2x & b_2 & c_2 \cr a_3x & b_3 & c_3 }\right\rbrack$
 
-$=x\left\lbrack\matrix{ a_1 & b_1 & c_1 \cr a_2 & b_2 & c_2 \cr a_3 & b_3 & c_3 }\right\rbrack$
+$=x\ det\left\lbrack\matrix{ a_1 & b_1 & c_1 \cr a_2 & b_2 & c_2 \cr a_3 & b_3 & c_3 }\right\rbrack$
 
 $=x\ det(\mathbf{A})$
 
