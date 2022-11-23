@@ -495,7 +495,7 @@ A general system of $m$ linear equations with $n$ unknowns and coefficients can 
 
 $$\begin{flalign}
 & \begin{cases}
-a_{11}x_1 + a_{12}x_2 + a_{13}x_3 + \cdots + a_{1n}x_n = b_1 \cr a_{20}x_1 + a_{21}x_2 + a_{22}x_3 + \cdots + a_{2n}x_n = b_2 \cr a_{30}x_1 + a_{31}x_2 + a_{32}x_3 + \cdots + a_{3n}x_n = b_3 \cr \cdots \cr a_{n0}x_1 + a_{n1}x_2 + a_{n2}x_3 + \cdots + a_{nn}x_n = b_n
+a_{11}x_1 + a_{12}x_2 + a_{13}x_3 + \cdots + a_{1n}x_n = b_1 \cr a_{21}x_1 + a_{22}x_2 + a_{23}x_3 + \cdots + a_{2n}x_n = b_2 \cr a_{31}x_1 + a_{32}x_2 + a_{33}x_3 + \cdots + a_{3n}x_n = b_3 \cr \cdots \cr a_{n1}x_1 + a_{n2}x_2 + a_{n3}x_3 + \cdots + a_{nn}x_n = b_n
 \end{cases} &
 \end{flalign}$$
 
@@ -506,7 +506,7 @@ We can also write it in matrix form as follows
 
 <br>
 
-$\left\lbrack\matrix{ a_{11} & a_{12} & a_{13} & \cdots & a_{1n} \cr a_{20} & a_{21} & a_{23} & \cdots & a_{2n} \cr a_{30} & a_{31} & a_{33} & \cdots & a_{3n} \cr \vdots & \vdots & \ddots & \vdots \cr a_{n1} & a_{n2} & a_{n3} & \cdots & a_{nn} }\right\rbrack \left\lbrack\matrix{ x_{1}\cr x_{2} \cr \vdots \cr x_{n} }\right\rbrack = \left\lbrack\matrix{ b_{1}\cr b_{2} \cr \vdots \cr b_{n} }\right\rbrack$
+$\left\lbrack\matrix{ a_{11} & a_{12} & a_{13} & \cdots & a_{1n} \cr a_{21} & a_{22} & a_{23} & \cdots & a_{2n} \cr a_{31} & a_{32} & a_{33} & \cdots & a_{3n} \cr \vdots & \vdots & \ddots & \vdots \cr a_{n1} & a_{n2} & a_{n3} & \cdots & a_{nn} }\right\rbrack \left\lbrack\matrix{ x_{1}\cr x_{2} \cr \vdots \cr x_{n} }\right\rbrack = \left\lbrack\matrix{ b_{1}\cr b_{2} \cr \vdots \cr b_{n} }\right\rbrack$
 
 <br>
 
