@@ -4,7 +4,7 @@
 
 # 1 - Introduction
 
-New graphics APIs, like DirectX 12 and Vulkan, have a reputation of being difficult to learn for beginners. The main reason is that modern APIs hide less to the programmer than the old ones (DirectX 11 and OpenGL) so you just end up studying low-level details even to draw a single triangle. However, learning DirectX 12 also has some advantages as it designed to make full use of multi-threading, and to get a finer control on resource management and CPU/GPU synchronization. Thanks to a better support for multi-threading, the CPU workload is more evenly distributed across all cores. Also, if you understand the use and re-use of resources, then you can take advantage of that by minimizing uploading and copying. That way you can free up CPU time to increase the number of draw calls (and consequently the GPU workload), to enhance performance of your graphics applications.
+New graphics APIs, like DirectX 12 and Vulkan, have a reputation of being difficult to learn for beginners. The main reason is that modern APIs hide less to the programmer than the old ones (DirectX 11 and OpenGL) so you just end up studying low-level details even to draw a single triangle. However, learning DirectX 12 also has some advantages as it designed to make full use of multi-threading, and to get a finer control on resource management and CPU/GPU synchronization. Thanks to a better support for multi-threading, the CPU workload is more evenly distributed across all cores. Also, if you understand the use and re-use of resources, then you can take advantage of that by minimizing uploading and copying. That way you can free up CPU time to increase the number of draw calls (and consequently the GPU workload) to enhance performance of your graphics applications.
 
 Currently, you have three ways to learn DirectX 12 from scratch, each with its advantages and disadvantages.
 
@@ -59,7 +59,7 @@ If you need an introductory textbook on C++ you can take a look at [6] and [7], 
 
 ## 2.2 - Hardware
 
-Obviously, you need a DirectX 12-capable graphics card if you want to run the samples examined in this tutorial series. In particular, a GPU that fully supports DirectX 12 Ultimate is required to execute some of the demos and compile the related source code. To verify if that's the case, press Win + G to open the Xbox Game Bar and select Gaming features from Settings.
+Obviously, you need a DirectX 12-capable graphics card if you want to run the samples examined in this tutorial series. In particular, a GPU that fully supports DirectX 12 Ultimate is required to execute some of the demos and compile the related source code. To verify if that's the case, press <kbd>Win</kbd> + <kbd>G</kbd> to open the Xbox Game Bar and select Gaming features from Settings.
 
 <br>
 
@@ -74,7 +74,7 @@ If your graphics card supports DirectX 12 Ultimate then you should see something
 ## 2.3 - Software
 
 The complete set of DirectX 12 Ultimate features is available starting from Windows 10, version 2004, so you need to upgrade your OS at least to this version, if necessary.<br>
-Visual Studio is required to open the projects and compile the samples (and, of course, to create new ones). Make sure to install the latest Windows 10 SDK (10.0.19041.0 or higher) and update the drivers of your graphics card to the latest version.
+Visual Studio is required to open the projects and compile the samples presented in this tutorial series (of course, you also need Visual Studio to create new DirectX applications). Make sure to install the latest Windows 10 SDK (10.0.19041.0 or higher) and update the drivers of your graphics card to the latest version.
 
 <br>
 
