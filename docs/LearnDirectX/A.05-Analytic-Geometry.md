@@ -286,7 +286,7 @@ Observe that the reflection $\mathbf{q}$ can be considered as a translation of $
 
 $\mathbf{q}=\mathbf{p}-2\ \text{proj} _{\mathbf{n}}(\mathbf{p}-\mathbf{p} _0)$
 
-$=\color{#FF6666}\mathbf{p}-2[\mathbf{n}\cdot (\mathbf{p}-\mathbf{p0} _0)]\mathbf{n}$
+$=\color{#FF6666}\mathbf{p}-2[\mathbf{n}\cdot (\mathbf{p}-\mathbf{p} _0)]\mathbf{n}$
 
 $=\mathbf{p}-2(\mathbf{n}\cdot\mathbf{p}-\mathbf{n}\cdot\mathbf{p} _0)\mathbf{n}$
 
