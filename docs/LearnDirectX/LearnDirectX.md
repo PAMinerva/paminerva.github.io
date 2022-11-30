@@ -11,7 +11,7 @@
     - [H - Hello Lighting](https://paminerva.github.io/docs/LearnDirectX/01.H-Hello-Lighting) <br><br>
 - 02 - Intermediate Topics
     - [A - Blending](https://paminerva.github.io/docs/LearnDirectX/02.A-Blending)
-    - B - Stenciling
+    - [B - Stenciling](https://paminerva.github.io/docs/LearnDirectX/02.B-Stenciling)
     - C - Drawing normals
     - D - Particle effect
     - E - Simple Bézier surface
