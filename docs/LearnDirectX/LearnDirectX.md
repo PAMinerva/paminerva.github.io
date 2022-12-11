@@ -12,7 +12,7 @@
 - 02 - Intermediate Topics
     - [A - Blending](https://paminerva.github.io/docs/LearnDirectX/02.A-Blending)
     - [B - Stenciling](https://paminerva.github.io/docs/LearnDirectX/02.B-Stenciling)
-    - C - Drawing normals
+    - [C - Drawing normals](https://paminerva.github.io/docs/LearnDirectX/02.C-Drawing-Normals)
     - D - Particle effect
     - E - Simple Bézier surface
     - F - Dynamic LOD
