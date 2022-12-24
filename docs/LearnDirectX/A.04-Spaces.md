@@ -187,7 +187,7 @@ XMMATRIX V = XMMatrixLookAtLH(pos, target, up);
 ```
 <br>
 
-**XMVectorSet** and **XMVectorZero** are also helper functions which allow us to initialize an **XMVECTOR** variable. As explained in appendix 01, **XMVECTOR** is an alias for **__m128**, so we can’t initialize it with a simple assignment, or the usual array initialization, because it would require multiple instructions. On the other hand, **XMVectorSet** and **XMVectorZero** use a single SIMD instruction to load four values in a 16-byte aligned **__m128** variable.
+**XMVectorSet** and **XMVectorZero** are also helper functions which allow us to initialize an **XMVECTOR** variable. As explained in appendix 01, **XMVECTOR** is an alias for **__m128**, so we should not initialize it with a simple assignment, or the usual array initialization, because it would require multiple instructions. On the other hand, **XMVectorSet** and **XMVectorZero** use a single SIMD instruction to load four values in a 16-byte aligned **__m128** variable.
 
 <br>
 
