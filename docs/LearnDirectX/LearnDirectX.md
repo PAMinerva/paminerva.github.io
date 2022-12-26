@@ -13,7 +13,7 @@
     - [A - Blending](https://paminerva.github.io/docs/LearnDirectX/02.A-Blending)
     - [B - Stenciling](https://paminerva.github.io/docs/LearnDirectX/02.B-Stenciling)
     - [C - Drawing normals](https://paminerva.github.io/docs/LearnDirectX/02.C-Drawing-Normals)
-    - D - Particle effect
+    - [D - Simple rain effect](https://paminerva.github.io/docs/LearnDirectX/02.D-Simple-Rain-Effect)
     - E - Simple Bézier surface
     - F - Dynamic LOD
     - G - Simple compute
