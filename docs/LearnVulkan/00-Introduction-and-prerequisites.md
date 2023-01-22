@@ -88,17 +88,15 @@ However, you still need the Vulkan Loader to execute Vulkan applications. On Win
 
 <br>
 
-I recommend installing the Vulkan SDK on both Windows and Linux anyway, since it includes the Loader, and others interesting tools, already compiled (included the **vkcube** program test). Alternatively, you can refer to the Khronos Group repositories to get updated header files, and build the Loader and tools directly from the source code.
+I recommend installing the Vulkan SDK on both Windows and Linux anyway, since it includes the Loader, and others interesting tools, already compiled (included the **vkcube** program test). 
 
-><br>
->
-> ![Image](images/00/vkcube.gif)
->
-> <br>
-> 
->Alternatively, you can install the Vulkan SDK, which includes both the header files and binaries already compiled (included the **vkcube** program test), from the following link.
->
-> https://vulkan.lunarg.com/sdk/home
+<br>
+
+ ![Image](images/00/vkcube.gif)
+
+<br>
+
+Alternatively, you can refer to the Khronos Group repositories to get updated header files, and build the Loader and tools directly from the source code.
 
 <br>
 
