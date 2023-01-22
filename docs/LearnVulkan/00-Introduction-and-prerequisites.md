@@ -127,6 +127,7 @@ If you have a recent version of Visual Studio, open the Visual Studio Installer 
 >
 >![Image](images/00/build-tools-for-vs.png)
 >
+
 <br>
 
 On linux you need to check if GCC and GDB are already installed. To verify whether they are, open a Terminal window and enter the following commands:
