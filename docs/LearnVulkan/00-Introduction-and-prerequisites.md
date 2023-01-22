@@ -126,7 +126,6 @@ If you have a recent version of Visual Studio, open the Visual Studio Installer 
 ><br>
 >
 >![Image](images/00/build-tools-for-vs.png)
->
 
 <br>
 
