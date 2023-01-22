@@ -80,8 +80,16 @@ git clone https://github.com/PAMinerva/LearnVulkan
 
 <br>
 
->However, you can always refer to the Khronos Group repositories to get updated header files, and directly build libraries and tools from the source code (included the **vkcube** program test). 
->
+However, you also need the Vulkan Loader to execute Vulkan applications. On Windows, the Vulkan Loader is delivered with the hardware vendor driver update packages. On Linux, it should be the same if hardware vendor drivers are installed. Otherwise, you need to explicitly install it. For this purpose, you can download the Vulkan SDK from the following link.
+
+<br>
+
+https://vulkan.lunarg.com/sdk/home
+
+<br>
+
+Personally, I still recommend installing the Vulkan SDK on both Windows and Linux because it includes the Loader, and others interesting tools, already compiled (included the **vkcube** program test). Alternatively, you can refer to the Khronos Group repositories to get updated header files, and build the Loader and tools directly from the source code.
+
 ><br>
 >
 > ![Image](images/00/vkcube.gif)
