@@ -51,7 +51,7 @@ If you need an introductory textbook on C++ you can take a look at [6] and [7], 
 
 ## 2.1 - Hardware
 
-Obviously, you need a Vulkan-capable graphics card if you want to run the samples examined in this tutorial series. Actually, most of the GPUs produced in the last decade should be compatible. However, you can directly verify it by running **vkcube**, a simple Vulkan test program you can find in the Vulkan-Tools repo, or in the Vulkan SDK (more on this shortly). <br>
+Obviously, you need system with a Vulkan-capable graphics card if you want to run the samples examined in this tutorial series. Actually, most of the GPUs produced in the last decade should be compatible. However, you can directly verify it by running **vkcube**, a simple Vulkan test program you can find in the Vulkan-Tools repo, or in the Vulkan SDK (more on this shortly). <br>
 Also, make sure to update the drivers for your graphics card to the latest version.
 
 <br>
