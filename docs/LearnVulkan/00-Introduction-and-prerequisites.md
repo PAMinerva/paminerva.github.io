@@ -80,7 +80,7 @@ git clone https://github.com/PAMinerva/LearnVulkan
 
 <br>
 
->However, you can always refer to the KhronosGroup repositories to get updated headers, and directly build libraries and tools from the source code (included the **vkcube** program test). 
+>However, you can always refer to the Khronos Group repositories to get updated headers, and directly build libraries and tools from the source code (included the **vkcube** program test). 
 >
 ><br>
 >
