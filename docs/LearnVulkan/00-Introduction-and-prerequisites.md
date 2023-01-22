@@ -2,7 +2,7 @@
 
 <br>
 
-![Image](images/vk/00/learn-vulkan.png)
+![Image](images/00/learn-vulkan.png)
 
 <br>
 
@@ -84,7 +84,7 @@ git clone https://github.com/PAMinerva/LearnVulkan
 >
 ><br>
 >
-> ![Image](images/vk/00/vkcube.gif)
+> ![Image](images/00/vkcube.gif)
 >
 > <br>
 > 
@@ -100,7 +100,7 @@ I will use Visual Studio Code to create the samples presented in this tutorial s
 
 <br>
 
-![Image](images/vk/00/vs-setup.png)
+![Image](images/00/vs-setup.png)
 
 <br>
 
@@ -108,7 +108,7 @@ You need to install the C/C++ extension for VS Code. You can install it by searc
 
 <br>
 
-![Image](images/vk/00/cpp-extension.png)
+![Image](images/00/cpp-extension.png)
 
 <br>
 
@@ -117,7 +117,7 @@ If you have a recent version of Visual Studio, open the Visual Studio Installer 
 
 <br>
 
-![Image](images/vk/00/vs2022-installer-workloads.png)
+![Image](images/00/vs2022-installer-workloads.png)
 
 <br>
 
@@ -125,7 +125,7 @@ If you have a recent version of Visual Studio, open the Visual Studio Installer 
 >
 ><br>
 >
->![Image](images/vk/00/build-tools-for-vs.png)
+>![Image](images/00/build-tools-for-vs.png)
 >
 <br>
 
@@ -146,7 +146,7 @@ To open a sample, right-click on the related folder and select "Open with Code" 
 
 <br>
 
-![Image](images/vk/00/vs-context-menu.png)
+![Image](images/00/vs-context-menu.png)
 
 <br>
 
@@ -154,7 +154,7 @@ If the option to "Open with Code" is not present in the context menu, you can al
 
 <br>
 
-![Image](images/vk/00/vs-open-folder.png)
+![Image](images/00/vs-open-folder.png)
 
 <br>
 
@@ -170,7 +170,7 @@ In addition to an application debugger, such as GDB or the one included in the M
 
 <br>
 
-![Image](images/vk/00/graphics-debuggers.png)
+![Image](images/00/graphics-debuggers.png)
 
 <br>
 
