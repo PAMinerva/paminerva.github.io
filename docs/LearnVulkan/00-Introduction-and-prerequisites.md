@@ -70,7 +70,7 @@ Windows, Linux and Android provide native support for Vulkan. This means that an
 
 ### 2.2.2 - Headers, libraries and tools
 
-The repository that hosts the code of this tutorial series also includes the headers, libraries and tools needed to write and build Vulkan applications. Therefore, you don't need anything else except cloning the repo locally on your PC using the following command:
+The repository that hosts the code of this tutorial series also includes the header files, libraries and tools needed to write and build Vulkan applications. Therefore, you don't need anything else except cloning the repo locally on your PC using the following command:
 
 <br>
 
@@ -80,7 +80,7 @@ git clone https://github.com/PAMinerva/LearnVulkan
 
 <br>
 
->However, you can always refer to the Khronos Group repositories to get updated headers, and directly build libraries and tools from the source code (included the **vkcube** program test). 
+>However, you can always refer to the Khronos Group repositories to get updated header files, and directly build libraries and tools from the source code (included the **vkcube** program test). 
 >
 ><br>
 >
@@ -88,7 +88,7 @@ git clone https://github.com/PAMinerva/LearnVulkan
 >
 > <br>
 > 
->Alternatively, you can install the Vulkan SDK, which includes the binaries already compiled (included the **vkcube** program test), from the following link.
+>Alternatively, you can install the Vulkan SDK, which includes both the header files and binaries already compiled (included the **vkcube** program test), from the following link.
 >
 > https://vulkan.lunarg.com/sdk/home
 
@@ -96,7 +96,7 @@ git clone https://github.com/PAMinerva/LearnVulkan
 
 ### 2.2.3 - IDE
 
-I will use Visual Studio Code to create the samples presented in this tutorial series, so you are encouraged to install and use it as well, making sure to check the following additional tasks during installation setup.
+I will use Visual Studio Code to develop the samples presented in this tutorial series, so you are encouraged to install and use it as well, making sure to check the following additional tasks during installation setup.
 
 <br>
 
