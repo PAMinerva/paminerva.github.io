@@ -88,7 +88,7 @@ https://vulkan.lunarg.com/sdk/home
 
 <br>
 
-Personally, I recommend installing the Vulkan SDK on both Windows and Linux anyway, since it includes the Loader, and others interesting tools, already compiled (included the **vkcube** program test). Alternatively, you can refer to the Khronos Group repositories to get updated header files, and build the Loader and tools directly from the source code.
+I recommend installing the Vulkan SDK on both Windows and Linux anyway, since it includes the Loader, and others interesting tools, already compiled (included the **vkcube** program test). Alternatively, you can refer to the Khronos Group repositories to get updated header files, and build the Loader and tools directly from the source code.
 
 ><br>
 >
