@@ -70,7 +70,7 @@ Windows, Linux and Android provide native support for Vulkan. This means that an
 
 ### 2.2.2 - Headers, libraries and tools
 
-The repository that hosts the code of this tutorial series includes the header files, import library and tools needed to write and build Vulkan applications. Therefore, you don't need anything else except cloning the repo locally on your PC using the following command:
+The repository that hosts the code of this tutorial series also includes the header files, import library and tools needed to write and build Vulkan applications. Therefore, you don't need anything else except cloning the repo locally on your PC using the following command:
 
 <br>
 
