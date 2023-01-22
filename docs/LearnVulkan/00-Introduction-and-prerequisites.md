@@ -70,7 +70,7 @@ Windows, Linux and Android provide native support for Vulkan. This means that an
 
 ### 2.2.2 - Headers, libraries and tools
 
-The repository that hosts the code of this tutorial series also includes the header files, libraries and tools needed to write and build Vulkan applications. Therefore, you don't need anything else except cloning the repo locally on your PC using the following command:
+The repository that hosts the code of this tutorial series includes the header files, import library and tools needed to write and build Vulkan applications. Therefore, you don't need anything else except cloning the repo locally on your PC using the following command:
 
 <br>
 
@@ -80,7 +80,7 @@ git clone https://github.com/PAMinerva/LearnVulkan
 
 <br>
 
-However, you also need the Vulkan Loader to execute Vulkan applications. On Windows, the Vulkan Loader is delivered with the hardware vendor driver update packages. On Linux, it should be the same if hardware vendor drivers are installed. Otherwise, you need to explicitly install it. For this purpose, you can download the Vulkan SDK from the following link.
+However, you still need the Vulkan Loader to execute Vulkan applications. On Windows, the Vulkan Loader is delivered with the hardware vendor driver update packages. On Linux, it should be the same if the hardware vendor driver is installed. Otherwise, you must explicitly install it. For this purpose, you can download the Vulkan SDK from the following link.
 
 <br>
 
@@ -88,7 +88,7 @@ https://vulkan.lunarg.com/sdk/home
 
 <br>
 
-Personally, I still recommend installing the Vulkan SDK on both Windows and Linux because it includes the Loader, and others interesting tools, already compiled (included the **vkcube** program test). Alternatively, you can refer to the Khronos Group repositories to get updated header files, and build the Loader and tools directly from the source code.
+Personally, I recommend installing the Vulkan SDK on both Windows and Linux anyway, since it includes the Loader, and others interesting tools, already compiled (included the **vkcube** program test). Alternatively, you can refer to the Khronos Group repositories to get updated header files, and build the Loader and tools directly from the source code.
 
 ><br>
 >
