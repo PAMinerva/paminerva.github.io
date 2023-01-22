@@ -64,7 +64,7 @@ Windows, Linux and Android provide native support for Vulkan. This means that an
 
 <br>
 
-> The focus of this tutorial series is to learn how to write graphics applications with the Vulkan API from scratch. If you are looking for a cross-platform development guide, this resource is not for you.
+> The focus of this tutorial series is to learn how to write graphics applications with the Vulkan API from scratch, rather than a cross-platform development guide.
 
 <br>
 
