@@ -84,7 +84,7 @@ However, you still need the Vulkan Loader to execute Vulkan applications. On Win
 
 <br>
 
-https://vulkan.lunarg.com/sdk/home
+[Vulkan SDK](https://vulkan.lunarg.com/sdk/home)
 
 <br>
 
