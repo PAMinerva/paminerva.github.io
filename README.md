@@ -1,6 +1,6 @@
 ## Tutorial series
 
-- [Learn DirectX 12 from code samples](/docs/LearnDirectX/LearnDirectX)
+- [Learn DirectX from code samples](/docs/LearnDirectX/LearnDirectX)
 
 - [Learn Vulkan from code samples](/docs/LearnVulkan/LearnVulkan)
 
