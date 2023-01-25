@@ -4,11 +4,12 @@
 - 01 - Hello World<br>
     - A - Hello Window
     - B - Hello Triangle
-    - C - Hello Constant Buffers
-    - D - Hello Texture
-    - E - Hello Frame Buffering
-    - F - Hello Transformations
-    - G - Hello Lighting<br><br>
+    - C - Hello Secondary Command Buffers
+    - D - Hello Constant Buffers
+    - E - Hello Texture
+    - F - Hello Frame Buffering
+    - G - Hello Transformations
+    - H - Hello Lighting<br><br>
   
 - 02 - Intermediate Topics
     - A - Blending
