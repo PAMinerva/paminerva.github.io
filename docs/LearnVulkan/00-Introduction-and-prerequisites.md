@@ -88,7 +88,7 @@ However, you still need the Vulkan Loader and other shared libraries to execute 
 
 <br>
 
-The Vulkan SDK also includes the header files, the layers (as shader libraries), and others interesting tools to validate and compile the shader code. I recommend installing the Vulkan SDK on both Windows and Linux, since it includes the binaries already compiled (included the **vkcube** program test). Additiobnally, the Vulkan SDK will automatically configure your system to be Vulkan-ready. This involve creating specific registry keys (on Windows), or folders and files (on Linux).
+The Vulkan SDK also includes the header files, the layers (as shader libraries), and others interesting tools to validate and compile the shader code. I recommend installing the Vulkan SDK on both Windows and Linux, since it includes the binaries already compiled (included the **vkcube** program test). Additiobnally, the Vulkan SDK will automatically configure your system to be Vulkan-ready. This involve creating some registry keys (on Windows), folders and files (both on Windows and Linux).
 
 <br>
 
