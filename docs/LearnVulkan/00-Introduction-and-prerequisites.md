@@ -80,7 +80,7 @@ git clone https://github.com/PAMinerva/LearnVulkan
 
 <br>
 
-However, you still need the Vulkan Loader to execute Vulkan applications. On Windows, the Vulkan Loader is delivered with the hardware vendor driver update packages. On Linux, it should be the same if propietary drivers are installed. Otherwise, you must explicitly install it. For this purpose, you can download the Vulkan SDK from the following link.
+However, you still need the Vulkan Loader and other shared libraries to execute Vulkan applications. On Windows, the Vulkan Loader is delivered with the hardware vendor driver update packages. On Linux, it should be the same if propietary drivers are installed. Otherwise, you must explicitly install it. For this purpose, you can download the Vulkan SDK from the following link.
 
 <br>
 
@@ -88,7 +88,7 @@ However, you still need the Vulkan Loader to execute Vulkan applications. On Win
 
 <br>
 
-The Vulkan SDK includes the header files, the Loader, and others interesting tools to validate and compile the shader code. I recommend installing the Vulkan SDK on both Windows and Linux anyway, since it includes the binaries already compiled (included the **vkcube** program test). 
+The Vulkan SDK also includes the header files, the layers (as shader libraries), and others interesting tools to validate and compile the shader code. I recommend installing the Vulkan SDK on both Windows and Linux, since it includes the binaries already compiled (included the **vkcube** program test). Additiobnally, the Vulkan SDK will automatically configure your system to be Vulkan-ready. This involve creating specific registry keys (on Windows), or folders and files (on Linux).
 
 <br>
 
@@ -96,7 +96,7 @@ The Vulkan SDK includes the header files, the Loader, and others interesting too
 
 <br>
 
-Alternatively, you can refer to the Khronos Group repositories to get updated header files, and build the Loader and other tools directly from the source code.
+Alternatively, you can refer to the Khronos Group repositories to get updated header files, and build the shader libraries and other tools directly from the source code.
 
 <br>
 
