@@ -4,7 +4,7 @@
 - 01 - Hello World<br>
     - A - Hello Window
     - B - Hello Triangle
-    - C - Hello Secondary Command Buffers
+    - C - Hello Secondary Command Buffer
     - D - Hello Constant Buffers
     - E - Hello Texture
     - F - Hello Frame Buffering
