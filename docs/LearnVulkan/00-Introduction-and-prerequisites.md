@@ -80,7 +80,7 @@ git clone https://github.com/PAMinerva/LearnVulkan
 
 <br>
 
-However, you still need the Vulkan Loader and other shared libraries to execute Vulkan applications. On Windows, the Vulkan Loader is delivered with the hardware vendor driver update packages. On Linux, it should be the same if propietary drivers are installed. Otherwise, you must explicitly install it. For this purpose, you can download the Vulkan SDK from the following link.
+However, you still need the Vulkan Loader and other shared libraries to execute Vulkan applications. On Windows, the Vulkan Loader is delivered with the hardware vendor driver update packages. On Linux, it should be the same if proprietary drivers are installed. Otherwise, you must explicitly install it. For this purpose, you can download the Vulkan SDK from the following link.
 
 <br>
 
@@ -88,7 +88,7 @@ However, you still need the Vulkan Loader and other shared libraries to execute 
 
 <br>
 
-The Vulkan SDK also includes the header files, the layers (as shader libraries), and others interesting tools to validate and compile the shader code. I recommend installing the Vulkan SDK on both Windows and Linux, since it includes the binaries already compiled (included the **vkcube** program test). Additiobnally, the Vulkan SDK will automatically configure your system to be Vulkan-ready. This involve creating some registry keys (on Windows), folders and files (both on Windows and Linux).
+The Vulkan SDK also includes the header files, the layers (as shader libraries), and others interesting tools to validate and compile the shader code. I recommend installing the Vulkan SDK on both Windows and Linux, since it includes the binaries already compiled (included the **vkcube** program test). Additionally, the Vulkan SDK will automatically configure your system to be Vulkan-ready. This involve creating some registry keys (on Windows), folders and files (both on Windows and Linux).
 
 <br>
 
