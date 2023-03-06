@@ -192,3 +192,13 @@ In addition to an application debugger, such as GDB or the one included in the M
 [7] A Tour of C++ (Stroustrup) <br>
 [8] The C++ Programming Language (Stroustrup) <br>
 [9] Write Great Code - Vol. 1 and 2 (Randall Hyde)
+
+<br>
+
+***
+If you found the content of this tutorial somewhat useful or interesting, please consider supporting this project by clicking on the **Sponsor** button.  Whether a small tip, a one time donation, or a recurring payment, it's all welcome! Thank you!<br><br>
+<p align="center">
+ <a href="https://github.com/sponsors/PAMinerva">
+         <img alt="Sponsor" src="https://paminerva.github.io/docs/LearnDirectX/images/sponsor.PNG">
+      </a>
+</p><br>
