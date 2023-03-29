@@ -24,7 +24,7 @@ With this tutorial series I'll try to fill the gap, providing a resource  which 
 
 I’m not claiming this will be the ultimate resource to learn the Vulkan API. By the way, the official documentation (see [1] and [2] in the reference list at the end of this tutorial) will always be the most important and fundamental resource to refer to during your studies. Here, I will simply try to provide as many details as possible to minimize the number of resources you need to look at.
 
-As a reference for writing the samples of this tutorial series, I used the source code already available and maintained by The Khronos Group and Sascha Willems in their repositories. In particular, I will use a minimal framework, trying to follow the [Orthodox C++ guidelines](https://gist.github.com/bkaradzic/2e39896bc7d8c34e042b) as much as possible to increase readability, and therefore to facilitate understanding of the source code.
+As a reference for writing the samples of this tutorial series, I used the source code already available and maintained by The Khronos Group and Sascha Willems in their repositories. In particular, I will use a minimal framework, trying to follow the [Orthodox C++ guidelines](https://gist.github.com/bkaradzic/2e39896bc7d8c34e042b) as much as possible to increase readability. This will facilitate understanding of the source code.
 
 <br>
 
