@@ -3,7 +3,7 @@
 
 - 01 - Hello World<br>
     - [A - Hello Window](https://paminerva.github.io/docs/LearnVulkan/01.A-Hello-Window)
-    - B - Hello Triangle
+    - [B - Hello Triangle](https://paminerva.github.io/docs/LearnVulkan/01.B-Hello-Triangle)
     - C - Hello Secondary Command Buffers
     - D - Hello Constant Buffers
     - E - Hello Texture
