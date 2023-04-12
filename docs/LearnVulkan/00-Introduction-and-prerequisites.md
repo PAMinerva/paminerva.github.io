@@ -1,5 +1,9 @@
-# vk.00 - Introduction and Prerequisites
-
+---
+layout: post
+date: 2023-04-12 09:31:01
+title: vk.00 - Introduction and Prerequisites
+author: P. A. Minerva
+---
 <br>
 
 ![Image](images/00/learn-vulkan.png)
