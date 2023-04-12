@@ -4,6 +4,8 @@ date: 2023-04-12 09:19:01
 title: Learn Vulkan from code samples
 author: P. A. Minerva
 ---
+<br>
+
 # Table of contents (tentative)
 - [00 - Introduction and Prerequisites](https://paminerva.github.io/docs/LearnVulkan/00-Introduction-and-prerequisites)<br><br>
 
