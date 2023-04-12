@@ -1,3 +1,6 @@
+---
+layout: post
+---
 # Table of contents (tentative)
 - [00 - Introduction and Prerequisites](https://paminerva.github.io/docs/LearnVulkan/00-Introduction-and-prerequisites)<br><br>
 
