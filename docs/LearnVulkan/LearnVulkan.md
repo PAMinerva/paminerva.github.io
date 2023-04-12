@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2023-04-12 09:19:01
-title: Learn Vulkan from code samples
+title: "Learn Vulkan from code samples: Tutorial series"
 author: P. A. Minerva
 ---
 <br>
