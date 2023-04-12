@@ -1,5 +1,7 @@
 ---
 layout: post
+date: 2014-03-07 0:30:01
+author: P. A. Minerva
 ---
 # Table of contents (tentative)
 - [00 - Introduction and Prerequisites](https://paminerva.github.io/docs/LearnVulkan/00-Introduction-and-prerequisites)<br><br>
