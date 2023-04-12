@@ -13,8 +13,8 @@ author: P. A. Minerva
     - [A - Hello Window](https://paminerva.github.io/docs/LearnVulkan/01.A-Hello-Window)
     - [B - Hello Triangle](https://paminerva.github.io/docs/LearnVulkan/01.B-Hello-Triangle)
     - C - Hello Secondary Command Buffers
-    - D - Hello Constant Buffers
-    - E - Hello Texture
+    - D - Hello Uniforms
+    - E - Hello Textures
     - F - Hello Frame Buffering
     - G - Hello Transformations
     - H - Hello Lighting<br><br>
