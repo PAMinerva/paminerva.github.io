@@ -14,8 +14,8 @@ author: P. A. Minerva
     - [B - Hello Triangle](https://paminerva.github.io/docs/LearnVulkan/01.B-Hello-Triangle)
     - [C - Hello Secondary Command Buffers](https://paminerva.github.io/docs/LearnVulkan/01.C-Hello-Secondary-CBs)
     - [D - Hello Uniforms](https://paminerva.github.io/docs/LearnVulkan/01.D-Hello-Uniforms)
-    - E - Hello Textures
-    - F - Hello Frame Buffering
+    - [E - Hello Frame Buffering](https://paminerva.github.io/docs/LearnVulkan/01.E-Hello-Frame-Buffering)
+    - F - Hello Textures
     - G - Hello Transformations
     - H - Hello Lighting<br><br>
   
