@@ -708,6 +708,7 @@ Refer to the complete source code to see how explicit conversions and constructo
 the following explicit conversion means that we can construct a **vec4** from four components of different types, both in C++ and GLSL.
 <br>
 
+GLM
 ```cpp
 /// Explicit conversions (From section 5.4.1 Conversion and scalar constructors of GLSL 1.30.08 specification)
 template<typename X, typename Y, typename Z, typename W>
