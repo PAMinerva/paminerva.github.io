@@ -10,7 +10,7 @@ author: P. A. Minerva
 
 A coordinate system, also called frame, is a fundamental concept in mathematics and geometry. It provides a way to uniquely determine a position in space by using one or more numbers called coordinates. <br>
 To define a coordinate system, we need three key components: an origin, a unit of measurement, and a positive direction. The origin is a reference point from which all positions are measured. The unit of measurement determines the scale or size of each coordinate value. The positive direction indicates which way the coordinates increase from the origin. <br>
-By using a coordinate system, we can bridge the gap between geometry and numerical problems. Geometrical problems involving positions, distances, angles, and shapes can be translated into numerical problems by assigning coordinates to the relevant points or objects. Similarly, numerical problems can be visualized and understood geometrically by mapping the numbers onto a coordinate system.
+By using a coordinate system, we can bridge the gap between geometry and numerical problems. Geometrical problems involving positions, distances, angles, and shapes can be translated into numerical problems by assigning coordinates to the geometric elements. Similarly, numerical problems can be visualized and understood geometrically by mapping the numbers that represent points and other geometric entities onto a coordinate system.
 
 <br>
 
