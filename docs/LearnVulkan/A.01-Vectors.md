@@ -704,7 +704,7 @@ struct vec<4, T, Q>
 ```
 <br>
 
-Refer to the complete source code to see how explicit conversions and constructors are implemented to mimic the GLSL behaviour. This approach will allow you to understand the practical implementation details without necessarily consulting the GLSL specification directly. For example,
+Refer to the complete source code to see how conversions and constructors are implemented to mimic the GLSL behaviour. This approach will allow you to understand the practical implementation details without necessarily consulting the GLSL specification directly. For example,
 the following explicit conversion means that we can construct a **vec4** from four components of different types, both in C++ and GLSL.
 
 <br>
