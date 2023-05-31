@@ -628,7 +628,7 @@ $\mathbf{a}\times(\mathbf{b}\times\mathbf{c})=\mathbf{b}(\mathbf{a}\cdot\mathbf{
 Vectors play a crucial role in computer graphics, making them a fundamental tool to use in Vulkan as well. They are widely used in both C++ (within the application code) and in GLSL (within shader code).
 
 In GLSL, vectors of two, three and four floating-point components are represented by the built-in types **vec2**, **vec3** and **vec4**, respectively. For vectors of signed integers, we use **ivec2**, **ivec3** and **ivec4** - the unsigned version can be specified by replacing the prefix **i** with **u**. <br>
-Array subscripting syntax can also be applied to vectors to provide numeric indexing. Alternatively, one of the following naming sets can be used:
+The components of a vector can be accessed using array subscripting syntax to provide numeric indexing. Alternatively, one of the following naming sets can be used:
 
  The position set:  $\ x,y,z,w$ <br>
  The color set: $\ r,g,b,a$ <br>
