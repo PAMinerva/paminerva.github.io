@@ -94,7 +94,7 @@ Since addition and scalar multiplication are performed element-wise on matrices,
 
 <br>
 
-## 3.4 - Matrix multiplication
+## 3.3 - Matrix multiplication
 
 In order to multiply two matrices $\mathbf{A}$ and $\mathbf{B}$, it is necessary for the number of columns in $\mathbf{A}$ to be equal to the number of rows in $\mathbf{B}$. This requirement arises because each element $C_{ij}$ of the resulting matrix $\mathbf{C}$ is obtained by taking the dot product of the i-th row of $\mathbf{A}$ and the j-th column of $\mathbf{B}$. This means that, if $\mathbf{A}$ is an $m\times n$ matrix and $\mathbf{B}$ is an $n\times p$ matrix, the resulting matrix $\mathbf{C}$ will have dimensions $m\times p$. This is because we need to multiply each of the $m$ rows of $\mathbf{A}$ by each of the $p$ columns of $\mathbf{B}$ in order to obtain all the elements of $\mathbf{C}$. That is,
 
@@ -117,7 +117,7 @@ Observe that matrix multiplication is always defined for square matrices of the 
 
 <br>
 
-### 3.4.1 - Matrix-vector multiplication
+### 3.3.1 - Matrix-vector multiplication
 
 A column vector is a $n\times 1$ matrix, so we can multiply it with a generic $m\times n$ matrix. For example, if $\mathbf{u}=(x, y, z)$ is a three-component vector that represent a column vector and $\mathbf{A}$ is a $3\times 3$ matrix, applying the equation $(1)$ we have that
 
@@ -187,7 +187,7 @@ Therefore, the product of a row vector and a matrix is a linear combination of t
 
 <br>
 
-### 3.4.2 - Properties of matrix multiplication
+### 3.3.2 - Properties of matrix multiplication
 
 Since matrix multiplication is performed element-wise, it inherits the following properties from real numbers:
 
