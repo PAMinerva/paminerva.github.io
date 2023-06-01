@@ -760,7 +760,7 @@ GLM_FUNC_QUALIFIER GLM_CONSTEXPR vec<3, T, Q> & vec<3, T, Q>::operator+=(vec<3, 
 ```
 <br>
 
-Similarly, you can verify that the normalization and the length of a vector $\mathbf{v}$ are defined as per the definition. From the properties of the dot product, we have that $\mathbf{v}\cdot\mathbf{v}=v_x^2+v_y^2+v_z^2$. As a result, we can present the pseudocode for these two operations as follow.
+Similarly, you can verify that the normalization and the length of a vector $\mathbf{v}$ are defined according to the definition presented in this tutorial. From the properties of the dot product, we have that $\mathbf{v}\cdot\mathbf{v}=v_x^2+v_y^2+v_z^2$. As a result, we can present the pseudocode for these two operations as follow.
 
 ```
 norm(v) = v * inversesqrt(dot(v, v));
