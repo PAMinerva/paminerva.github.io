@@ -222,7 +222,7 @@ Indeed, observe that the i-th component of $(\mathbf{v}\cdot\mathbf{n})\mathbf{n
 
 <br>
 
-# 4 - The transpose of a matrix
+# 4 - Transpose of a matrix
 
 The transpose of a matrix $\mathbf{M}$ is often denoted with $\mathbf{M}^T$. The transpose can be derived from the original matrix by simply interchanging its rows and columns.
 
@@ -256,7 +256,7 @@ $(\mathbf{B}^T\mathbf{A}^T)_ {ij}=\mathbf{B}_ {i\ast}^T\cdot\mathbf{A}_ {\ast j}
 
 <br>
 
-# 5 - The identity matrix
+# 5 - Identity matrix
 
 The identity matrix is a square matrix in which all the elements are zero, except for the entries on the main diagonal, which are all 1. The main diagonal consists of elements $M_{ij}$ where $i=j$.
 
@@ -276,7 +276,7 @@ Observe that the multiplication with the identity matrix is commutative by defin
 
 <br>
 
-# 6 - The determinant of a matrix
+# 6 - Determinant of a matrix
 
 The determinant of a matrix is closely related to the concept of hypervolume, which represents the measure of length in 1D, area in 2D, and volume in 3D. It is important to note that the determinant is only defined for square matrices. Now, you may be wondering what it means to have a signed length, area, or volume. As mentioned earlier in this tutorial (and as we will formally demonstrate in a subsequent appendix), matrices are associated with transformations, and the sign of the determinant indicates whether a transformation preserves or reverses the orientation of the standard basis vectors. In simpler terms, when multiplying (transforming) the standard basis vectors $\mathbf{i}$, $\mathbf{j}$, and $\mathbf{k}$ by a square matrix with a positive determinant, the handedness of the resulting coordinate system remains unchanged. <br>
 Before delving into the calculation of the determinant of a matrix, we first need to introduce the concept of matrix minors.
@@ -388,7 +388,7 @@ $det\left\lbrack\matrix{(1+3(2))&2\cr (3+3(4))&4}\right\rbrack=(7)(4)-(2)(15)=28
 
 <br>
 
-# 7 - The adjoint of a matrix
+# 7 - Adjoint of a matrix
 
 The cofactor $C_{ij}$ of the entry $A_{ij}$ in an $n\times n$ matrix $\mathbf{A}$ can be defined as follows
 
@@ -424,7 +424,7 @@ The adjoint of a matrix, and in particular the equation $(4)$, is useful to comp
 
 <br>
 
-# 8 - The inverse of a matrix
+# 8 - Inverse of a matrix
 
 In matrix algebra, the concept of inverse only applies to square matrices and is similar to the concept of inverse (or reciprocal) for real numbers. Specifically, for an $n\times n$ matrix $\mathbf{M}$, its inverse $\mathbf{M}^{-1}$ (which is still $n\times n$) can be computed as follows
 
