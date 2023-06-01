@@ -672,21 +672,19 @@ GLM_FUNC_QUALIFIER GLM_CONSTEXPR mat<4, 4, T, Q>::mat(mat<3, 3, T, Q> const& m)
         : value{col_type(m[0], 0), col_type(m[1], 0), col_type(m[2], 0), col_type(0, 0, 0, 1)}
 { }
 ```
-<br>
 
 C++
-
-<br>
-
 ```cpp
 // Odd way to build a 4x4 identity matrix.
 glm::mat3 m33 = glm::mat3(1.0f); // 3x3 identity matrix
 glm::mat4 m44(m33);              // 4x4 identity matrix
 ```
-<br>
 
 GLSL
-
+```glsl
+// 4x4 Identity matrix; initialize the diagonal of a matrix with all other elements set to zero
+mat4 m44 = mat4(mat3(1.0));
+```
 <br>
 
 ```glsl
