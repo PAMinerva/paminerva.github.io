@@ -713,7 +713,30 @@ GLM_FUNC_QUALIFIER mat<3, 3, T, Q> operator+(mat<3, 3, T, Q> const& m1, mat<3, 3
 ```
 <br>
 
-Similarly, you can verify that the transpose of a matrix $\mathbf{M}$ is defined according to the definition presented in this tutorial. The following pseudocode illustrates how to perform this straightforward matrix operation.
+However, the fact that GLM stores matrices using a column-major order has consequences for matrix multiplication. Indeed, we need to flips the indices with respect to the subscripts in equation $(1)$ to perform a matrix multiplication as the dot product between the rows in the left operand matrix and the columns in the right operand matrix. For example, the following listing shows how GLM implements the multiplication beween a $2\times 2$ matrix and a $2\times 3$ matrix, which returns a $2\times 3$ matrix.
+
+<br>
+
+>Observe that **mat3x2** in GLM denotes a matrix with 3 columns of two elements, that is a $2\times 3$ matrix.
+
+<br>
+
+```cpp
+template<typename T, qualifier Q>
+GLM_FUNC_QUALIFIER mat<3, 2, T, Q> operator*(mat<2, 2, T, Q> const& m1, mat<3, 2, T, Q> const& m2)
+{
+    return mat<3, 2, T, Q>(
+        m1[0][0] * m2[0][0] + m1[1][0] * m2[0][1],
+        m1[0][1] * m2[0][0] + m1[1][1] * m2[0][1],
+        m1[0][0] * m2[1][0] + m1[1][0] * m2[1][1],
+        m1[0][1] * m2[1][0] + m1[1][1] * m2[1][1],
+        m1[0][0] * m2[2][0] + m1[1][0] * m2[2][1],
+        m1[0][1] * m2[2][0] + m1[1][1] * m2[2][1]);
+}
+```
+<br>
+
+You can also verify that the transpose of a matrix $\mathbf{M}$ is defined according to the definition presented in this tutorial. The following pseudocode illustrates how to perform this straightforward matrix operation.
 
 <br>
 
