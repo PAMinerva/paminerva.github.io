@@ -687,12 +687,6 @@ mat4 m44 = mat4(mat3(1.0));
 ```
 <br>
 
-```glsl
-// 4x4 Identity matrix; initialize the diagonal of a matrix with all other elements set to zero
-mat4 m44 = mat4(mat3(1.0));
-```
-<br>
-
 Obviously, all the basic matrix operations discussed in this tutorial (sum, difference and various types of multiplication) are both defined in GLSL and implemented GLM, along with other helper functions that can be performed on matrices such as inversion, transposition and determinant calculation. For example, the sum of two **mat3** in GLM is defined exactly as per the definition (sum of the corresponding elements). Observe that, in this case, we can achieve the same result by simply summing the corresponding column vectors.
 
 <br>
