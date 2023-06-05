@@ -720,9 +720,9 @@ To conclude this section, when composing multiple transformations into a single 
 <br>
 
 ```
-T = glm::translate(IdentityMatrix, displacementVector);
-R = glm::rotate(IdentityMatrix, axisOfRotationVector);
 S = glm::scale(IdentityMatrix, scalingVector);
+R = glm::rotate(IdentityMatrix, axisOfRotationVector);
+T = glm::translate(IdentityMatrix, displacementVector);
 M = T * R * S;
 
 // Equivalent to:
