@@ -476,7 +476,7 @@ That’s exactly the definition of $T(\mathbf{p})$, but in homogeneous coordinat
 
 <br>
 
-$\mathbf{w}=\mathbf{vT}=\left\lbrack\matrix{1&0&0&t_x\cr 0&1&0&t_y\cr 0&0&1&t_z\cr 0&0&0&1}\right\rbrack\left\lbrack\matrix{v_x \cr v_y \cr v_z \cr 0}\right\rbrack=(v_x, v_y, v_z, 0)=\mathbf{v}$
+$\mathbf{w}=\mathbf{Tv}=\left\lbrack\matrix{1&0&0&t_x\cr 0&1&0&t_y\cr 0&0&1&t_z\cr 0&0&0&1}\right\rbrack\left\lbrack\matrix{v_x \cr v_y \cr v_z \cr 0}\right\rbrack=(v_x, v_y, v_z, 0)=\mathbf{v}$
 
 <br>
 
