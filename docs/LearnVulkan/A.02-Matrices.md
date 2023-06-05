@@ -746,7 +746,8 @@ transpose(M) = T[i][j] = M[j][i]; return T // swap subscripts
 
 <br>
 
-With respect to matrix transpose and inverse, GLM uses direct solutions derived from the recursive formulas presented in this tutorial. The process of deriving iterative or direct solutions from recursive formulas can sometimes lead to complex or convoluted code, especially for $4\times 4$ matrices and higher. Therefore, examining the implementation code for these operations here would not be very helpful. However, you can refer to the GLM library's source code to understand how they are implemented in practice. <br>
+With respect to matrix transpose and inverse, GLM uses direct solutions derived from the recursive formulas presented in this tutorial. The process of deriving iterative or direct solutions from recursive formulas can sometimes lead to complex or convoluted code, especially for $4\times 4$ matrices and higher. Therefore, examining the implementation code for these operations here would not be very helpful. However, you can refer to the GLM library's source code to understand how they are implemented in practice.
+
 In the next appendix, we will discuss other functions that operate on matrix to perform transformations.
 
 <br>
