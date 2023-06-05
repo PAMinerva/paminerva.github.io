@@ -722,14 +722,14 @@ To conclude this section, when composing multiple transformations into a single 
 ```
 T = glm::translate(IdentityMatrix, displacementVector);
 R = glm::rotate(IdentityMatrix, axisOfRotationVector);
-S = glm::scale(IdentityMatrix, scalingValuesVector);
+S = glm::scale(IdentityMatrix, scalingVector);
 M = T * R * S;
 
 // Equivalent to:
 
 T = glm::translate(IdentityMatrix, displacementVector);
 R = glm::rotate(T, axisOfRotationVector);
-M = glm::scale(R, scalingValuesVector); // M = TRS
+M = glm::scale(R, scalingVector); // M = TRS
 ```
 <br>
 
