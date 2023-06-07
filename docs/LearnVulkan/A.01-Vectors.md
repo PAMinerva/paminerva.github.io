@@ -57,7 +57,7 @@ Depending on the direction and order of the axes, a three-dimensional system may
 
 <br>
 
-Typically, the y-axis points up, the x-axis points right while the z-axis points forward. However, note that forward can mean different directions depending on whether a right-handed or left-handed coordinate system is being used. That’s not a strict rule, though. Sometimes, you can have the z-axis points up, amd in that case the y-axis points forward. You can always switch from a y-up to a z-up configuration with a simple transformation, but there's no point in providing further details here as we will mostly use a y-up configuration. Apparently, it seems that right-handed coordinate systems are commonly used by Vulkan programmers, so we will follow this convention in this tutorial series as well. However, again, it is not a strict rule and left-handed coordinate systems can also be used.
+Typically, the y-axis points up, the x-axis points right while the z-axis points forward. However, note that forward can mean different directions depending on whether a right-handed or left-handed coordinate system is being used. That’s not a strict rule, though. Sometimes, you can have the z-axis points up, and in that case the y-axis points forward. You can always switch from a y-up to a z-up configuration with a simple transformation, but there's no point in providing further details here as we will mostly use a y-up configuration. Apparently, it seems that right-handed coordinate systems are commonly used by Vulkan programmers, so we will follow this convention in this tutorial series as well. However, again, it is not a strict rule and left-handed coordinate systems can also be used.
 
 <br>
 
