@@ -200,11 +200,11 @@ $S^{-1}=\left\lbrack\matrix{1/s_x&0&0\cr 0&1/s_y&0\cr 0&0&1/s_z}\right\rbrack$
 
 ***Example***:
 
-Given a minimum point $\mathbf{p}=(-2,0,-2)$ and a maximum point $\mathbf{q}=(2,0,2)$ defining a square, if you want to scale it by a factor of $2$ along the x-axis, $0.5$ along the z-axis, and leave the y-coordinate unchanged, you can use the corresponding scaling matrix:
+Given a minimum point $\mathbf{p}=(-2,-2,0)$ and a maximum point $\mathbf{q}=(2,2,0)$ defining a square, if you want to scale it by a factor of $2$ along the x-axis, $0.5$ along the y-axis, and leave the z-coordinate unchanged, you can use the corresponding scaling matrix:
 
 <br>
 
-$\mathbf{S}=\left\lbrack\matrix{2&0&0\cr 0&1&0\cr 0&0&0.5}\right\rbrack$
+$\mathbf{S}=\left\lbrack\matrix{2&0&0\cr 0&0.5&0\cr 0&0&1}\right\rbrack$
 
 <br>
 
@@ -212,9 +212,9 @@ To scale the square, we need to multiply both $\mathbf{p}$ and $\mathbf{q}$ by $
 
 <br>
 
-$\left\lbrack\matrix{-2&0&-2}\right\rbrack\left\lbrack\matrix{2&0&0\cr 0&1&0\cr 0&0&0.5}\right\rbrack=\left\lbrack\matrix{-4&0&-1}\right\rbrack$
+$\left\lbrack\matrix{2&0&0\cr 0&0.5&0\cr 0&0&1}\right\rbrack\left\lbrack\matrix{-2\cr -2\cr 0}\right\rbrack=\left\lbrack\matrix{-4\cr -1\cr 0}\right\rbrack$
 
-$\ \quad\left\lbrack\matrix{2&0&2}\right\rbrack\left\lbrack\matrix{2&0&0\cr 0&1&0\cr 0&0&0.5}\right\rbrack=\left\lbrack\matrix{4&0&1}\right\rbrack$
+$\left\lbrack\matrix{2&0&0\cr 0&0.5&0\cr 0&0&1}\right\rbrack\left\lbrack\matrix{2\cr 2\cr 0}\right\rbrack=\left\lbrack\matrix{4\cr 1\cr 0}\right\rbrack$
 
 <br>
 
@@ -343,11 +343,11 @@ $\mathbf{R}_ x=\left\lbrack\matrix{1&0&0\cr 0&\cos\theta&-\sin\theta\cr 0&\sin\t
 
 ***Example***:
 
-Given a minimum point $\mathbf{p}=(-2,0,-2)$ and a maximum point $\mathbf{q}=(2,0,2)$ of a square, suppose you want to rotate it $-45°$ counterclockwise (that is, $45°$ clockwise) about the y-axis. The corresponding rotation matrix is:
+Given a minimum point $\mathbf{p}=(-2,-2,0)$ and a maximum point $\mathbf{q}=(2,2,0)$ of a square, suppose you want to rotate it $45°$ counterclockwise about the z-axis. The corresponding rotation matrix is:
 
 <br>
 
-$\mathbf{R}_ y=\left\lbrack\matrix{\cos\theta&0&\sin\theta\cr 0&1&0\cr -\sin\theta&0&\cos\theta}\right\rbrack=\left\lbrack\matrix{\cos{(-45°)}&0&\sin{(-45°)}\cr 0&1&0\cr -\sin{(-45°)}&0&\cos{(-45°)}}\right\rbrack=\left\lbrack\matrix{1/\sqrt{2}&0&-1/\sqrt{2}\cr 0&1&0\cr 1/\sqrt{2}&0&1/\sqrt{2}}\right\rbrack$
+$\mathbf{R}_ z=\left\lbrack\matrix{\cos\theta&-\sin\theta&0\cr \sin\theta&\cos\theta&0\cr 0&0&1}\right\rbrack=\left\lbrack\matrix{\cos{(45°)}&-\sin{(45°)}&0\cr \sin{(45°)}&\cos{(45°)}&0\cr 0&0&1}\right\rbrack=\left\lbrack\matrix{1/\sqrt{2}&-1/\sqrt{2}&0\cr 1/\sqrt{2}&1/\sqrt{2}&0\cr 0&0&1}\right\rbrack$
 
 <br>
 
@@ -355,9 +355,9 @@ To rotate the square we need to multiply $\mathbf{p}$ and $\mathbf{q}$ by the ro
 
 <br>
 
-$\left\lbrack\matrix{-2&0&-2}\right\rbrack\left\lbrack\matrix{1/\sqrt{2}&0&-1/\sqrt{2}\cr 0&1&0\cr 1/\sqrt{2}&0&1/\sqrt{2}}\right\rbrack=\left\lbrack\matrix{0&0&-2.83}\right\rbrack$
+$\left\lbrack\matrix{1/\sqrt{2}&-1/\sqrt{2}&0\cr 1/\sqrt{2}&1/\sqrt{2}&0\cr 0&0&1}\right\rbrack\left\lbrack\matrix{-2\cr -2\cr 0}\right\rbrack=\left\lbrack\matrix{0&-2.83&0}\right\rbrack$
 
-$\ \quad\left\lbrack\matrix{2&0&2}\right\rbrack\left\lbrack\matrix{1/\sqrt{2}&0&-1/\sqrt{2}\cr 0&1&0\cr 1/\sqrt{2}&0&1/\sqrt{2}}\right\rbrack=\left\lbrack\matrix{0&0&2.83}\right\rbrack$
+$\left\lbrack\matrix{1/\sqrt{2}&-1/\sqrt{2}&0\cr 1/\sqrt{2}&1/\sqrt{2}&0\cr 0&0&1}\right\rbrack\left\lbrack\matrix{2\cr 2\cr 0}\right\rbrack=\left\lbrack\matrix{0&2.83&0}\right\rbrack$
 
 <br>
 
