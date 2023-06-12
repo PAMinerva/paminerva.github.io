@@ -831,7 +831,7 @@ The framebuffer space is the coordinate system used by pipeline stages that oper
 
 <br>
 
-![Image](images/A/04/render-target-space.png)
+![Image](images/A/04/framebuffer-space.png)
 
 <br>
 
