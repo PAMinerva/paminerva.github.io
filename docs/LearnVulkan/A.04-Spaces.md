@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2023-06-05 09:16:01
+date: 2023-06-12 09:16:01
 title: vkA.04 - Spaces
 author: P. A. Minerva
 ---
