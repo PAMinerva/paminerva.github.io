@@ -190,7 +190,7 @@ Observe that we use the **LH** (left-handed) version of the more general **lookA
 ```cpp
 // pos: position (in world coordinates) of the (origin of the) view\camera space.
 // target: position (in world coordinates) where we want the camera is aimed at.
-// up == j (unit basis vector which points up).
+// up == -k (unit basis vector which points downwards).
 glm::vec3 c_pos = { 0.0f, -10.0f, 3.0f };
 glm::vec3 c_at =  { 0.0f, 0.0f, 1.0f };
 glm::vec3 c_up =  { 0.0f, 0.0f, -1.0f };
