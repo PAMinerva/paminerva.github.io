@@ -795,7 +795,7 @@ GLM_FUNC_DECL mat<4, 4, T, defaultp> frustumLH_ZO(
 ```
 <br>
 
-As for the orthographic projection, we can use the helper function **XMMatrixOrthographicOffCenterLH**.
+As for the orthographic projection, we can use the helper function **orthoLH_ZO**.
 
 <br>
 
