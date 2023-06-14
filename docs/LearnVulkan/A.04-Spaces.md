@@ -922,7 +922,8 @@ Source code: [LearnVulkan](https://github.com/PAMinerva/LearnVulkan)
 
 # References
 
-[1] Practical Linear Algebra: A Geometry Toolbox (Farin, Hansford) <br>
+[1] Essential Mathematics for Games and Interactive Applications (Van Verth, Bishop) <br>
+[2] 3D Graphics for Game Programming (Han)
 
 <br>
 
