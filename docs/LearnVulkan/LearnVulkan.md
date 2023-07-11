@@ -20,7 +20,7 @@ author: P. A. Minerva
     - [H - Hello Lighting](https://paminerva.github.io/docs/LearnVulkan/01.H-Hello-Lighting)<br><br>
   
 - 02 - Intermediate Topics
-    - A - Blending
+    - [A - Blending](https://paminerva.github.io/docs/LearnVulkan/02.A-Alpha-Blending)
     - B - Stenciling
     - C - Drawing normals
     - D - Simple rain effect
