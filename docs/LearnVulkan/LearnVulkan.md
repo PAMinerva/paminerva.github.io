@@ -42,7 +42,7 @@ author: P. A. Minerva
 - [A.02 - Matrices](https://paminerva.github.io/docs/LearnVulkan/A.02-Matrices)
 - [A.03 - Transformations](https://paminerva.github.io/docs/LearnVulkan/A.03-Transformations)
 - [A.04 - Spaces](https://paminerva.github.io/docs/LearnVulkan/A.04-Spaces)
-- A.05 - Analytic Geometry
+- [A.05 - Analytic Geometry](https://paminerva.github.io/docs/LearnVulkan/A.05-Analytic-Geometry)
 - A.06 - Bézier curves and surfaces
 - A.07 - (Yet to be determined)
 - A.0X - (Quaternions, Image processing, Bounding volumes, Spatial data structures, Monte Carlo integration, Physics of light, Animations, etc.)
