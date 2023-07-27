@@ -21,7 +21,7 @@ author: P. A. Minerva
   
 - 02 - Intermediate Topics
     - [A - Blending](https://paminerva.github.io/docs/LearnVulkan/02.A-Alpha-Blending)
-    - B - Stenciling
+    - [B - Stenciling](https://paminerva.github.io/docs/LearnVulkan/02.B-Stenciling)
     - C - Drawing normals
     - D - Simple rain effect
     - E - Simple Bézier surface
