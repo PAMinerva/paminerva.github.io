@@ -47,7 +47,9 @@ In conclusion, if you are looking for a comprehensive, updated resource to learn
 
 ## 2.1 - Background knowledge
 
-Of course I can’t explain everything, so you need basic math skills to completely understand the content of the tutorials, as well as the techniques used in the related samples. Fortunately, college math (algebra, trigonometry and single variable calculus) covers about 90% of the math used in this tutorial series. If your math got a bit rusty, don't worry: you can consider [3] as a brilliant math review from scratch for everyone. As for the remaining 10%, I’m going to write dedicated math appendices. However, if you prefer a book, you can consider [4] (for self-study) or [5] (for a formal education) as a reference for advanced topics. Additional textbook recommendations will be provided at the appropriate time.
+Of course, I can’t explain everything, so having basic math skills is essential to completely understand the content of the tutorials and the techniques used in the related samples. Fortunately, knowledge of college-level math, including algebra, trigonometry, and calculus, covers about 90% of the math used throughout this tutorial series. For the remaining 10%, I will provide dedicated math appendices.
+
+If your math skills are a bit rusty, don't worry! You can consider [3] as an brilliant math review that starts from the basics and is accessible to everyone. Additionally, I recommend [4] (for self-study) or [5] (for formal education) as excellent references for more advanced topics. Additional textbook recommendations will be provided at the appropriate time.
 
 If you need an introductory textbook on C++ you can take a look at [6] and [7], then use [8] as a reference, and [9] to really understand the low-level details.
 
@@ -55,7 +57,7 @@ If you need an introductory textbook on C++ you can take a look at [6] and [7], 
 
 ## 2.1 - Hardware
 
-Obviously, you need system with a Vulkan-capable graphics card if you want to run the samples examined in this tutorial series. Actually, most of the GPUs produced in the last decade should be compatible. However, you can directly verify it by running **vkcube**, a simple Vulkan test program you can find in the Vulkan-Tools repo, or in the Vulkan SDK (more on this shortly). <br>
+Obviously, if you want to run the samples examined in this tutorial series, you need a system with a Vulkan-capable graphics card. Actually, most of the GPUs produced in the last decade should be compatible. However, you can directly verify it by running **vkcube**, a simple Vulkan test program you can find in the Vulkan-Tools repo, or in the Vulkan SDK (more on this shortly). <br>
 Also, make sure to update the drivers for your graphics card to the latest version.
 
 <br>
