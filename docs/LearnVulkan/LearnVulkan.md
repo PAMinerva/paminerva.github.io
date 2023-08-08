@@ -22,7 +22,7 @@ author: P. A. Minerva
 - 02 - Intermediate Topics
     - [A - Blending](https://paminerva.github.io/docs/LearnVulkan/02.A-Alpha-Blending)
     - [B - Stenciling](https://paminerva.github.io/docs/LearnVulkan/02.B-Stenciling)
-    - C - Drawing normals
+    - [C - Geometry Shader](https://paminerva.github.io/docs/LearnVulkan/02.C-Geometry-Shader)
     - D - Simple rain effect
     - E - Simple Bézier surface
     - F - Dynamic LOD
