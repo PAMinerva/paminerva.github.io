@@ -23,7 +23,7 @@ author: P. A. Minerva
     - [A - Blending](https://paminerva.github.io/docs/LearnVulkan/02.A-Alpha-Blending)
     - [B - Stenciling](https://paminerva.github.io/docs/LearnVulkan/02.B-Stenciling)
     - [C - Geometry Shader](https://paminerva.github.io/docs/LearnVulkan/02.C-Geometry-Shader)
-    - D - Simple rain effect
+    - [D - Transform Feedback](https://paminerva.github.io/docs/LearnVulkan/02.D-Transform-Feedback)
     - E - Simple Bézier surface
     - F - Dynamic LOD
     - G - Simple compute
