@@ -24,10 +24,9 @@ author: P. A. Minerva
     - [B - Stenciling](https://paminerva.github.io/docs/LearnVulkan/02.B-Stenciling)
     - [C - Geometry Shader](https://paminerva.github.io/docs/LearnVulkan/02.C-Geometry-Shader)
     - [D - Transform Feedback](https://paminerva.github.io/docs/LearnVulkan/02.D-Transform-Feedback)
-    - E - Simple Bézier surface
-    - F - Dynamic LOD
-    - G - Simple compute
-    - H - Compute Particles <br><br>
+    - [E - Tessellation]
+    - F - Compute Shader
+    - G - (Yet to be determined) <br><br>
 - 03 - Advanced Topics
     - (Yet to be determined)
     - (Instancing, 2D text, multi-threading, Mesh shaders, Variable Rate Shading, User input, etc.) <br><br>
