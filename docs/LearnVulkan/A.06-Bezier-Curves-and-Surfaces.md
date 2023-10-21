@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2023-09-23 07:40:01
-title: vkA.05 - Analytic Geometry
+title: vkA.06 - Bézier Curves and Surfaces
 author: P. A. Minerva
 ---
 <br>
