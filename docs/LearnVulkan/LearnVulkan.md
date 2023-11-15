@@ -26,6 +26,7 @@ author: P. A. Minerva
     - [D - Transform Feedback](https://paminerva.github.io/docs/LearnVulkan/02.D-Transform-Feedback)
     - [E - Tessellation](https://paminerva.github.io/docs/LearnVulkan/02.E-Tessellation)
     - [F - Compute Shader](https://paminerva.github.io/docs/LearnVulkan/02.F-Compute-Shader)
+    - [G - Compute Particles](https://paminerva.github.io/docs/LearnVulkan/02.G-Compute-Particles)
     - G - (Yet to be determined) <br><br>
 - 03 - Advanced Topics
     - (Yet to be determined)
