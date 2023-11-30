@@ -12,6 +12,11 @@ New graphics APIs, like DirectX 12 and Vulkan, have a reputation for being diffi
 
 <br>
 
+> [!NOTE]  
+>The graphical capabilities provided by a specific GPU at the hardware level remain the same, regardless of the API used to develop graphics applications that can leverage those capabilities. In particular, using DirectX 12 instead of DirectX 11/10 to implement the same rendering techniques might not necessarily result in a performance boost simply because you’re using the latest version of the graphics API. However, as mentioned earlier, using DirectX 12 offers greater control over many aspects that could potentially lead to performance improvements. 
+
+<br>
+
 Currently, you have three ways to learn DirectX 12 from scratch, each with its pros and cons:
 
 **Frank Luna's book: Introduction to 3D Game Programming with DirectX 12** <br>
