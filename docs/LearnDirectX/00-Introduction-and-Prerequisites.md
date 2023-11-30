@@ -12,14 +12,7 @@ New graphics APIs, like DirectX 12 and Vulkan, have a reputation for being diffi
 
 <br>
 
->[!NOTE]  
->If your application’s performance bottleneck is not CPU-side (meaning the GPU doesn't wait for the CPU to send work for execution), using DirectX 12 may not necessarily provide a performance boost. The functionalities offered by the latest version of DirectX are largely similar to those in older versions. Therefore, if your application is limited by GPU rendering performance, then it's unlikely that DirectX 12 will yield better results.  However, even if your application isn’t CPU-limited, learning and using DirectX 12 might still be beneficial. This is because it enables you to free up CPU time, enhancing overall performance and efficiency.
-
-<br>
-
-Currently, you have three ways to learn DirectX 12 from scratch, each with its pros and cons.
-
-<br>
+Currently, you have three ways to learn DirectX 12 from scratch, each with its pros and cons:
 
 **Frank Luna's book: Introduction to 3D Game Programming with DirectX 12** <br>
 $\color{#44FFAA}\text{The Good}$: It provides a comprehensive explanation of both theory and practice. It can also serve as both an API reference and a computer graphics textbook, especially for beginners. <br>
